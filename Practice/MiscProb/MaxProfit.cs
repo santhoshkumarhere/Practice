@@ -9,7 +9,7 @@ namespace Practice.MiscProb
     {
         public static void Test()
         {
-            int[] stockPrices = new int[] { 10, 7, 12};
+            int[] stockPrices = new int[] { 10, 7, 5, 3, 12, 15, 3};
             Calculate(stockPrices);
         }
 

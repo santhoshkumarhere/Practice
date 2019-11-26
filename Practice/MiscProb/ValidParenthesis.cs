@@ -9,7 +9,7 @@ namespace Practice.MiscProb
 
         public bool IsValidParenthesis(string s)
         {
-            //[])
+            // []({(})
             if (string.IsNullOrEmpty(s))
             {
                 return true;

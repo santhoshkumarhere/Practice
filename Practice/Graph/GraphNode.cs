@@ -11,7 +11,6 @@ namespace Practice.Graph
         public string Label { get; }
         public ISet<GraphNode> Neighbors { get; }
         public string Color { get; set; }
-        public bool HasColor { get { return Color != null; } }
 
         public GraphNode(string label)
         {

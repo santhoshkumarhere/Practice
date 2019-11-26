@@ -20,7 +20,7 @@ namespace Practice
          // ZombieMatrix.Test();
            
 
-        ArrayRangeSearch.Test(new[] { 1,2,3,3,3,4,5 }, 3);
+       // ArrayRangeSearch.Test(new[] { 1,2,3,3,3,4,5 }, 3);
            // ArrayRangeSearch.Test(new[] { 2, 2 }, 3);
            // ArrayRangeSearch.Test(new[] { 2, 2,2 }, 2);
            // ArrayRangeSearch.Test(new []{5, 7, 7, 8, 8, 10}, 6);
@@ -88,6 +88,8 @@ namespace Practice
             // MakingChange.Test();
             //MakingChange.Test();
             //MaxProfit.Test();
+
+            Dijkstra.Test();
             Console.ReadLine();
         }
 
