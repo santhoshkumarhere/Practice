@@ -9,10 +9,10 @@ namespace Practice.MiscProb
     {
         public static void Test()
         {
-            //var result = ChangePossibilitiesBottomUp(5, new int[]{1, 3, 5});
+            var result = ChangePossibilitiesBottomUp(5, new int[]{1, 3, 5});
             //var result = CombinationSum(new int[]{2, 3, 6, 7}, 7);
-            CombinationSum(new int[] { 2, 3, 6, 7 },  7);
-            List<IList<int>> result = new List<IList<int>>(); 
+            //CombinationSum(new int[] { 2, 3, 6, 7 },  7);
+           // List<IList<int>> result = new List<IList<int>>(); 
         }
         // static List<List<int>> results = new List<List<int>>();
         static List<int> results = new List<int>();

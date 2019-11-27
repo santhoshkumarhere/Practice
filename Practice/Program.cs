@@ -15,25 +15,25 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-           // ConnectedComponentGraph.Test();
-          // CountIslands.Test();
-         // ZombieMatrix.Test();
-           
+            // ConnectedComponentGraph.Test();
+            // CountIslands.Test();
+            // ZombieMatrix.Test();
 
-       // ArrayRangeSearch.Test(new[] { 1,2,3,3,3,4,5 }, 3);
-           // ArrayRangeSearch.Test(new[] { 2, 2 }, 3);
-           // ArrayRangeSearch.Test(new[] { 2, 2,2 }, 2);
-           // ArrayRangeSearch.Test(new []{5, 7, 7, 8, 8, 10}, 6);
+
+            // ArrayRangeSearch.Test(new[] { 1,2,3,3,3,4,5 }, 3);
+            // ArrayRangeSearch.Test(new[] { 2, 2 }, 3);
+            // ArrayRangeSearch.Test(new[] { 2, 2,2 }, 2);
+            // ArrayRangeSearch.Test(new []{5, 7, 7, 8, 8, 10}, 6);
             //ArrayRangeSearch.Test(new[] { 5, 7, 7, 8, 8, 10, 11 }, 8);
-           // SubArray.Test();
-          // PascalTriangle.Test();
-          //  ArrayInsert.Test();
-          //LinkedListTest.Test();
-           // ArrayRangeSearch.Test(new[] { 5, 7, 7, 8, 8, 10, 11 }, 10);
-           // ArrayRangeSearch.Test(new[] { 5, 7, 7, 8, 8, 10 }, 10);
-           // ArrayRangeSearch.Test(new[] { 5, 7, 7, 8, 8, 10, 11 }, 11);
+            // SubArray.Test();
+            // PascalTriangle.Test();
+            //  ArrayInsert.Test();
+            //LinkedListTest.Test();
+            // ArrayRangeSearch.Test(new[] { 5, 7, 7, 8, 8, 10, 11 }, 10);
+            // ArrayRangeSearch.Test(new[] { 5, 7, 7, 8, 8, 10 }, 10);
+            // ArrayRangeSearch.Test(new[] { 5, 7, 7, 8, 8, 10, 11 }, 11);
 
-           // TestGraph();
+            // TestGraph();
             // Console.WriteLine("");
             // TestAVL();
             // PrintBT();
@@ -84,12 +84,12 @@ namespace Practice
             //x.letterCombinations("2345");
 
             //PermutationPalindrome.Test();
-            //Combinations.Test();
-            // MakingChange.Test();
-            //MakingChange.Test();
+            // Combinations.Test();
+            // MakingChange.Test(); 
             //MaxProfit.Test();
-
-            Dijkstra.Test();
+            RotateMatrix.Test();
+            TopKFrequent.RecursionTest(new string[]{"xxx", "xx", "er", "df", "ab", "ab", "cert", "cer", "bat", "bat"}, 2);
+           // Dijkstra.Test();
             Console.ReadLine();
         }
 
