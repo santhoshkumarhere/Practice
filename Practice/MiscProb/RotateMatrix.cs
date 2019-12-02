@@ -16,7 +16,7 @@ namespace Practice.MiscProb
                     new int[]{7, 8, 9}
                 };
 
-            RotateAntiClockWise(input);
+            RotateClockwise(input);
         }
 
         public static void RotateAntiClockWise(int[][] mat)

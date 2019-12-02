@@ -87,11 +87,11 @@ namespace Practice
             // Combinations.Test();
             // MakingChange.Test(); 
             //MaxProfit.Test();
-            // RotateMatrix.Test();
+             RotateMatrix.Test();
             //TopKFrequent.RecursionTest(new string[]{"xxx", "xx", "er", "df", "ab", "ab", "cert", "cer", "bat", "bat"}, 2);
-            TopKFrequent.FrequentWord(new int[]{1, 1, 1, 2, 2, 3, 3}, 2);
-            TopKFrequent.FrequentWord(new int[] { 1}, 1);
-            TopKFrequent.FrequentWord(new int[] {5, 3, 1, 1, 1, 3, 73, 1}, 2);
+            //TopKFrequent.FrequentWord(new int[]{1, 1, 1, 2, 2, 3, 3}, 2);
+            //TopKFrequent.FrequentWord(new int[] { 1}, 1);
+            //TopKFrequent.FrequentWord(new int[] {5, 3, 1, 1, 1, 3, 73, 1}, 2);
                 
         // Dijkstra.Test();
         Console.ReadLine();

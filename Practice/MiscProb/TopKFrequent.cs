@@ -10,9 +10,12 @@ namespace Practice.MiscProb
 {
     class TopKFrequent
     {
-        public static void RecursionTest(String[] words, int k)
+        public static void RecursionTest(string[] words, int k)
         {
               Dictionary<string, int> count = new Dictionary<string, int>();
+
+              //var test = words.Distinct().ToDictionary(t => t, t => words.Count(c => c== t));
+
                 foreach (string word in words) {
                     count[word] = count.ContainsKey(word) ? count[word] + 1 : 1;
                 }
