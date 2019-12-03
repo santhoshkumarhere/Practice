@@ -10,18 +10,17 @@ namespace Practice.LinkedList
     {
         public static void Test()
         {
-            var list = new SinglyLinkedListNode(1);
-            list.Next = new SinglyLinkedListNode(2);
-            list.Next.Next = new SinglyLinkedListNode(3);
-            list.Next.Next.Next = new SinglyLinkedListNode(4);
-            list.Next.Next.Next.Next = list.Next;
-            //Print(list);
-            //var prev =  ReverseList(list);
+            var list = new LinkNode(1);
+            list.Next = new LinkNode(2);
+            list.Next.Next = new LinkNode(3);
+            list.Next.Next.Next = new LinkNode(4);
+            list.Next.Next.Next.Next = list.Next; 
+            var prev =  ReverseList(list);
             //Print(prev);
             Console.WriteLine($"Cyclical: {IsCyclical(list)}");
         }
 
-        public static void Print(SinglyLinkedListNode list)
+        public static void Print(LinkNode list)
         {
             while (list != null)
             {
@@ -30,7 +29,7 @@ namespace Practice.LinkedList
             }
         }
 
-        public static bool IsCyclical(SinglyLinkedListNode head)
+        public static bool IsCyclical(LinkNode head)
         {
             var fastPointer = head;
             var slowPointer = head;
@@ -51,11 +50,11 @@ namespace Practice.LinkedList
             return false;
         }
 
-        public static SinglyLinkedListNode ReverseList(SinglyLinkedListNode list)
+        public static LinkNode ReverseList(LinkNode list)
         {
-            SinglyLinkedListNode curr = list;
-            SinglyLinkedListNode prev = null;
-            SinglyLinkedListNode next = null;
+            LinkNode curr = list;
+            LinkNode prev = null;
+            LinkNode next = null;
 
             while (curr != null)
             {
@@ -69,12 +68,12 @@ namespace Practice.LinkedList
         }
     }
 
-    class SinglyLinkedListNode
+    class LinkNode
     {
         public int Value { get; set; }
-        public SinglyLinkedListNode Next { get; set; }
+        public LinkNode Next { get; set; }
 
-        public SinglyLinkedListNode(int val)
+        public LinkNode(int val)
         {
             this.Value = val;
         }

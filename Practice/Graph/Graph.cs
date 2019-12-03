@@ -9,7 +9,7 @@ namespace Practice.Graph
     public class Graph
     {
         private readonly int v;
-        private readonly LinkedList<int>[] list;
+        public readonly LinkedList<int>[] list;
 
         public Graph(int ver)
         {
