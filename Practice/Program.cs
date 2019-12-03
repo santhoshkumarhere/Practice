@@ -7,6 +7,7 @@ using Practice.Tree;
 using Practice.Tree.AVL;
 using Practice.Graph;
 using Practice.LinkedList;
+using Practice.Matrix;
 using Practice.Patterns.Observer;
 
 namespace Practice
@@ -94,8 +95,10 @@ namespace Practice
             //TopKFrequent.FrequentWord(new int[] {5, 3, 1, 1, 1, 3, 73, 1}, 2);
 
             // Dijkstra.Test();
-           //LinkedListTest.Test();
-            RemoveKthFromLinkedList.Test();
+            //LinkedListTest.Test();
+            // RemoveKthFromLinkedList.Test();
+            //UniquePathII.Test();
+            CriticalNetworkBridge.Test();
         Console.ReadLine();
         }
 
