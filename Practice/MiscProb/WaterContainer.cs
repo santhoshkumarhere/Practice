@@ -6,6 +6,7 @@ namespace Practice.MiscProb
 {
     internal class WaterContainer
     {
+        //{ 1, 8, 6, 2, 5, 4, 8, 3, 7 }
         public int Compute(int[] arr)
         {
             var max_prod = 0;
@@ -20,6 +21,20 @@ namespace Practice.MiscProb
             }
             Console.WriteLine(max_prod);
             return max_prod;
+        }
+
+        public int maxArea(int[] height)
+        {
+            int maxarea = 0, l = 0, r = height.Length - 1;
+            while (l < r)
+            {
+                maxarea = Math.Max(maxarea, Math.Min(height[l], height[r]) * (r - l));
+                if (height[l] < height[r])
+                    l++;
+                else
+                    r--;
+            }
+            return maxarea;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
+using System.Threading;
 using Practice.HashTable;
 using Practice.MiscProb;
 using Practice.ThreadConcepts;
@@ -100,8 +101,21 @@ namespace Practice
             // RemoveKthFromLinkedList.Test();
             //UniquePathII.Test();
             //CriticalNetworkBridge.Test();
-            MaximumPathSum.Test();
+            //MaximumPathSum.Test();
+           // NumberOfThreadPools();
+           MergeSortedList.Test();
         Console.ReadLine();
+        }
+
+        static void NumberOfThreadPools()
+        {
+            int minimumWorkerThreadCount, minimumIOCThreadCount;
+            int logicalProcessorCount = System.Environment.ProcessorCount;
+            ThreadPool.GetMinThreads(out minimumWorkerThreadCount, out minimumIOCThreadCount);
+            Console.WriteLine("No.of processors: " +logicalProcessorCount);
+            Console.WriteLine("Minimum no.of Worker threads: " +minimumWorkerThreadCount);
+            Console.WriteLine("Minimum no.of IOCP threads: " +minimumIOCThreadCount);
+            Console.Read();
         }
 
         static void TestObserver()
