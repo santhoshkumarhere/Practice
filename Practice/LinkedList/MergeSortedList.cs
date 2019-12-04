@@ -9,8 +9,8 @@ namespace Practice.LinkedList
         public static void Test()
         {
             var list1 = new ListNode(1);
-            list1.next = new ListNode(5);
-            list1.next.next = new ListNode(4);
+            list1.next = new ListNode(4);
+            list1.next.next = new ListNode(5);
 
             var list2 = new ListNode(1);
             list2.next = new ListNode(3);
@@ -40,8 +40,8 @@ namespace Practice.LinkedList
                 prev = prev.next;
             }
 
-            prev.next = l1 ?? l2;
-            return prehead.next;
+                prev.next = l1 ?? l2;
+                return prehead.next;
             }
         }
     }
