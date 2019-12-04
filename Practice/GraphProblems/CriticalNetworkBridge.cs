@@ -10,20 +10,28 @@ namespace LeetCode.GraphProblems
         static Graph g;
         public static void Test()
         {
-            g = new Graph(4);
-            IList<IList<int>> connections = new List<IList<int>>();
-            connections.Add(new List<int>() { 0, 1 });
-            connections.Add(new List<int>() { 1, 2 });
-            connections.Add(new List<int>() { 2, 0 });
-            connections.Add(new List<int>() { 1, 3 });
+            //g = new Graph(4);
+            //IList<IList<int>> connections = new List<IList<int>>();
+            //connections.Add(new List<int>() { 0, 1 });
+            //connections.Add(new List<int>() { 1, 2 });
+            //connections.Add(new List<int>() { 2, 0 });
+            //connections.Add(new List<int>() { 1, 3 });
 
-            foreach (var connection in connections)
-            {
-                g.AddNeighbours(connection[0], connection[1]);
-            }
-            var result = new List<IList<int>>();
-            bridge(4);
-         
+            //foreach (var connection in connections)
+            //{
+            //    g.AddNeighbours(connection[0], connection[1]);
+            //}
+            //var result = new List<IList<int>>();
+            //bridge(4);
+
+            g = new Graph(5);
+            g.AddNeighbours(1, 0);
+            g.AddNeighbours(0, 2);
+            g.AddNeighbours(2, 1);
+            g.AddNeighbours(0, 3);
+            g.AddNeighbours(3, 4);
+             bridge(5);
+            Console.ReadLine();
 
         }
         static void bridgeUtil(int u, bool[] visited, int[] disc,
@@ -83,7 +91,7 @@ namespace LeetCode.GraphProblems
             // arrays 
             for (int i = 0; i < V; i++)
             {
-                //parent[i] = null;
+                parent[i] = int.MinValue;
                 visited[i] = false;
             }
 

@@ -9,6 +9,7 @@ using Practice.Graph;
 using Practice.LinkedList;
 using Practice.Matrix;
 using Practice.Patterns.Observer;
+using LeetCode.GraphProblems;
 
 namespace Practice
 {
@@ -98,7 +99,8 @@ namespace Practice
             //LinkedListTest.Test();
             // RemoveKthFromLinkedList.Test();
             //UniquePathII.Test();
-            CriticalNetworkBridge.Test();
+            //CriticalNetworkBridge.Test();
+            MaximumPathSum.Test();
         Console.ReadLine();
         }
 
