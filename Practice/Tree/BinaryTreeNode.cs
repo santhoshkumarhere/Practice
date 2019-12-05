@@ -28,6 +28,40 @@ namespace Practice.Tree
             Right = new BinaryTreeNode(rightValue);
             return Right;
         }
+
+
+
+        private void InsertMap(int dist, int val, SortedDictionary<int, IList<int>> dict)
+        {
+            if (!dict.ContainsKey(dist))
+            {
+                dict[dist] = new List<int>();
+            }
+            dict[dist].Add(val);
+        }
+
+        private void PreOrder(int dist, BinaryTreeNode node, SortedDictionary<int, IList<int>> dict)
+        {
+            if (node == null)
+            {
+                return;
+            }
+
+                InsertMap(dist, node.Value, dict);
+                PreOrder(dist-1, node.Left, dict);
+                PreOrder(dist+1, node.Right, dict);
+            }
+
+        public void VerticalTraversal(BinaryTreeNode node)
+        {
+            var map = new SortedDictionary<int, IList<int>>(); 
+            PreOrder(0, node, map);
+
+            foreach (var list in map.Values)
+            {
+               Console.WriteLine(String.Join("",list));
+            }
+        }
     }
 
     public class CheckBinaryTreeBalance
