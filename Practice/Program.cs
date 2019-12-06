@@ -110,7 +110,10 @@ namespace Practice
             //MergeSortedList.Test();
             //  PmanipulateImage();
             // NewTree();
-            BinaryTreeBoundary.Test();
+            //BinaryTreeBoundary.Test();
+            //DepthofTree.Test();
+            //BalancedTree.Test();
+            MinimumCostTreeFromLeaf.Test();
           Console.ReadLine();
         }
 
