@@ -109,7 +109,8 @@ namespace Practice
             // NumberOfThreadPools();
             //MergeSortedList.Test();
             //  PmanipulateImage();
-            NewTree();
+            // NewTree();
+            BinaryTreeBoundary.Test();
           Console.ReadLine();
         }
 
@@ -117,15 +118,15 @@ namespace Practice
         {
             BinaryTreeNode root = new BinaryTreeNode(1);
              
-            root.InsertLeft(2);
-            root.InsertRight(3);
-            root.Right.InsertLeft(5);
-            root.Right.InsertRight(6);
-            root.Right.Left.InsertLeft(7);
-            root.Right.Left.InsertRight(8);
-            root.Right.Left.Right.InsertLeft(9);
-            root.Right.Left.Right.InsertRight(10);
-            root.VerticalTraversal(root);
+            //root.InsertLeft(2);
+            //root.InsertRight(3);
+            //root.Right.InsertLeft(5);
+            //root.Right.InsertRight(6);
+            //root.Right.Left.InsertLeft(7);
+            //root.Right.Left.InsertRight(8);
+            //root.Right.Left.Right.InsertLeft(9);
+            //root.Right.Left.Right.InsertRight(10);
+            //root.VerticalTraversal(root);
             /*
            		  1
 		        /   \
@@ -145,6 +146,14 @@ namespace Practice
             3 8
             6 10
             */
+            BinaryTreeNode tree = new BinaryTreeNode(1); 
+            tree.InsertLeft(2);
+            tree.InsertRight(3);
+            tree.Left.InsertLeft(7);
+            tree.Left.InsertRight(6);
+            tree.Right.InsertLeft(5);
+            tree.Right.InsertRight(4);
+            tree.ZigZag(tree);
         }
 
         static void PmanipulateImage()
