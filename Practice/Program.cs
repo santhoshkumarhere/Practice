@@ -113,7 +113,11 @@ namespace Practice
             //BinaryTreeBoundary.Test();
             //DepthofTree.Test();
             //BalancedTree.Test();
-            MinimumCostTreeFromLeaf.Test();
+            // MinimumCostTreeFromLeaf.Test();
+            //  BinaryTreeLCA.Test();
+            //BTVerticalTraversal.Test();
+            //  BSTLCA.Test();
+            BTSubTreeCheck.Test();
           Console.ReadLine();
         }
 
@@ -155,8 +159,7 @@ namespace Practice
             tree.Left.InsertLeft(7);
             tree.Left.InsertRight(6);
             tree.Right.InsertLeft(5);
-            tree.Right.InsertRight(4);
-            tree.ZigZag(tree);
+            tree.Right.InsertRight(4); 
         }
 
         static void PmanipulateImage()

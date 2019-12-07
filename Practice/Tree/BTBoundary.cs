@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Practice.Tree
 {
-    class BinaryTreeBoundary
+    class BTBoundary
     {
         public static void Test()
         {
