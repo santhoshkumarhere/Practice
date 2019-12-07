@@ -15,6 +15,7 @@ using Practice.Patterns.Observer;
 using LeetCode.GraphProblems;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
+using LeetCode.Misc;
 
 namespace Practice
 {
@@ -117,7 +118,9 @@ namespace Practice
             //  BinaryTreeLCA.Test();
             //BTVerticalTraversal.Test();
             //  BSTLCA.Test();
-            BTSubTreeCheck.Test();
+            // BTSubTreeCheck.Test();
+            // WordBreak.Test();
+            CountIslands.Test();
           Console.ReadLine();
         }
 

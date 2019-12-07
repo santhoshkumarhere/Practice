@@ -45,7 +45,7 @@ namespace Practice.Graph
 
             // mark source node as processed
             processed[i,j] = true;
-
+            int count = 0;
             // run till queue is not empty
             while (q.Count > 0)
             {
@@ -53,7 +53,7 @@ namespace Practice.Graph
                 int x = q.Peek().x;
                 int y = q.Peek().y;
                 q.Dequeue();
-
+                count++;
                 // check for all 8 possible movements from current cell
                 // and enqueue each valid movement
                 for (int k = 0; k < 8; k++)
@@ -69,6 +69,7 @@ namespace Practice.Graph
                     }
                 }
             }
+            Console.WriteLine(count);
         }
 
         public static void Test()

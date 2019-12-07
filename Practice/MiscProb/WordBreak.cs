@@ -8,10 +8,30 @@ namespace LeetCode.Misc
     {
         public static void Test()
         {
-            var res = WordBreaks("leetcode", new List<string>() { "leet", "code" });
-            var res2 = wordBreakQueue("catsanddog", new List<string>() { "cat", "cats", "and", "sand", "dog" });
-            var dict = new Dictionary<int, bool>();
-            var res3 = WordBreakWithMemoization("aaaaaaa", new HashSet<string>() { "aaaa", "aaa" }, 0, dict);
+          // var res = WordBreaks("leetcode", new List<string>() { "leet", "code" });
+             //var res2 = wordBreakQueue("catsanddog", new List<string>() { "cat", "cats", "and", "sand", "dog" });
+            //var dict = new Dictionary<int, bool>();
+            //var res3 = WordBreakWithMemoization("aaaaaaa", new HashSet<string>() { "aaaa", "aaa" }, 0, dict);
+
+             var r= word_Break("leetcode", new HashSet<string>() { "leet", "code" }, 0);
+            r = word_Break("catsanddog", new HashSet<string>() { "cat", "cats", "and", "sand", "dog" }, 0);
+        }
+        public static bool word_Break(String s, HashSet<String> wordDict, int start)
+        {
+            if (start == s.Length)
+            {
+                return true;
+            }
+            for (int end = start + 1; end <= s.Length; end++)
+            {
+                var subs =  s.Substring(start, end - start);
+                if (wordDict.Contains(subs) && word_Break(s, wordDict, end))
+                {
+                    Console.WriteLine(subs);
+                    return true;
+                }
+            }
+            return false;
         }
 
         public static bool WordBreakWithMemoization(string s, HashSet<string> set, int start, Dictionary<int, bool> memo)
@@ -76,7 +96,7 @@ namespace LeetCode.Misc
                 for (int j = 0; j < i; j++)
                 {
                     var subs = s.Substring(j, i - j);
-                    // Console.WriteLine(subs);
+                   Console.WriteLine(subs);
                     if (dp[j] == true && wordDictSet.Contains(subs))
                     {
                         dp[i] = true;
