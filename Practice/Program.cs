@@ -14,6 +14,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            GameOfLifeProblem.Test();
             // ConnectedComponentGraph.Test();
             // CountIslands.Test();
             // ZombieMatrix.Test();
@@ -115,7 +116,7 @@ namespace Practice
             // RottenOranges.Test();
             //  MakingChangeRecursive.Test();
             // CoinChange.Test();
-            ShortestPathBinaryMatrix.Test();
+           // ShortestPathBinaryMatrix.Test();
           Console.ReadLine();
         }
 
