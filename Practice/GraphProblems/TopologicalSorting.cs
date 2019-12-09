@@ -4,21 +4,25 @@ using System.Text;
 
 namespace LeetCode.GraphProblems
 {
-    class GraphNode
+    class TopologicalSorting
     {
-        public Dictionary<string, IList<string>> Adj = new Dictionary<string, IList<string>>();
-        public int Size => Adj.Count;
-        public void AddNode(string node)
+        public class Graph
         {
-            Adj.Add(node, null);           
+            public Dictionary<string, IList<string>> Adj = new Dictionary<string, IList<string>>();
+            public int Size => Adj.Count;
+
+            public void AddNode(string node)
+            {
+                Adj.Add(node, null);
+            }
+
+            public void AddEdge(string source, IList<string> adj)
+            {
+                this.Adj[source] = adj;
+            }
         }
 
-        public void AddEdge(string source, IList<string> adj)
-        {
-            this.Adj[source] = adj;
-        }
-
-        static void TopologicalSortUtil(Stack<string> stack, Dictionary<string, bool> visited, string key, GraphNode g)
+        static void TopologicalSortUtil(Stack<string> stack, Dictionary<string, bool> visited, string key, Graph g)
         {
             visited[key] = true;
             if(g.Adj[key] != null)
@@ -32,12 +36,10 @@ namespace LeetCode.GraphProblems
                 }
 
             }
-
             stack.Push(key);
-
         }
 
-        public static void TopologicalSort(GraphNode g)
+        public static void TopologicalSort(Graph g)
         {
             var stack = new Stack<String>();
             var visited = new Dictionary<string, bool>();
@@ -56,7 +58,7 @@ namespace LeetCode.GraphProblems
 
         public static void Test()
         {
-            var g = new GraphNode();
+            var g = new Graph();
             g.AddNode("A");
             g.AddNode("B");
             g.AddNode("C");

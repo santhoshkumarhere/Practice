@@ -5,8 +5,9 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Threading;
-
+using LeetCode.GraphProblems;
 using Practice.GraphProblems;
+using Practice.Matrix;
 
 namespace Practice
 {
@@ -14,7 +15,10 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            GameOfLifeProblem.Test();
+            //GameOfLifeProblem.Test();
+            //MinimumCostTreeFromLeaf.Test();
+            TopologicalSorting.Test();
+            WordLadder.Test();
             // ConnectedComponentGraph.Test();
             // CountIslands.Test();
             // ZombieMatrix.Test();
@@ -116,8 +120,8 @@ namespace Practice
             // RottenOranges.Test();
             //  MakingChangeRecursive.Test();
             // CoinChange.Test();
-           // ShortestPathBinaryMatrix.Test();
-          Console.ReadLine();
+            // ShortestPathBinaryMatrix.Test();
+            Console.ReadLine();
         }
 
         static void NewTree()
