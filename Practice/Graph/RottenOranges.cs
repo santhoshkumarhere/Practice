@@ -9,13 +9,12 @@ namespace LeetCode.Matrix
 
         public static void Test()
         {
-            //var grid = new int[][] { new int[] { 2, 1, 1 },
-            //                         new int[] {0, 1, 1 }, 
-            //                         new int[] { 1, 0, 1 } 
-            //};
-
-            var grid = new int[][] { new int[] { 0, 1, 1, 1, 1,0}
+            var grid = new int[][] { new int[] { 2, 1, 1 },
+                                     new int[] {0, 1, 1 },
+                                     new int[] { 1, 0, 1 }
             };
+
+           // var grid = new int[][] { new int[] { 0, 1, 1, 1, 1,0}            };
             bool isContainsFresh = false;
             var q = new Queue<int[]>();
             for(var i = 0; i < grid.Length; i++)

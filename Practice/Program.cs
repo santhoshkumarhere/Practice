@@ -1,21 +1,12 @@
-﻿using System;
-using System.Drawing;
-using System.IO;
-using System.Runtime.CompilerServices;
-using System.Threading;
-using Practice.HashTable;
-using Practice.MiscProb;
-using Practice.ThreadConcepts;
+﻿using Practice.Patterns.Observer;
 using Practice.Tree;
 using Practice.Tree.AVL;
-using Practice.Graph;
-using Practice.LinkedList;
-using Practice.Matrix;
-using Practice.Patterns.Observer;
-using LeetCode.GraphProblems;
-using System.Drawing.Drawing2D;
-using System.Drawing.Imaging;
-using LeetCode.Misc;
+using System;
+using System.Drawing;
+using System.IO;
+using System.Threading;
+
+using Practice.GraphProblems;
 
 namespace Practice
 {
@@ -120,7 +111,11 @@ namespace Practice
             //  BSTLCA.Test();
             // BTSubTreeCheck.Test();
             // WordBreak.Test();
-            CountIslands.Test();
+            // CountIslands.Test();
+            // RottenOranges.Test();
+            //  MakingChangeRecursive.Test();
+            // CoinChange.Test();
+            ShortestPathBinaryMatrix.Test();
           Console.ReadLine();
         }
 

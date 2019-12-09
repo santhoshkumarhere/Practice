@@ -10,19 +10,9 @@ namespace Practice.MiscProb
 
         public static void Test()
         {
-           //var res =  ChangePossibilitiesTopDown(4, new int[] {1, 2, 3}, 0);
-           RunUntilTarget(7, 10);
+         var res =  ChangePossibilitiesTopDown(4, new int[] {1, 2, 3}, 0); 
         }
-
-        public static void RunUntilTarget(int value, int target)
-        {
-            var remaining = target;
-            while (remaining > 0)
-            {
-                remaining = remaining - value;
-            }
-        }
-
+ 
         
         public static int ChangePossibilitiesTopDown(
             int amountLeft, int[] denominations, int currentIndex = 0)
