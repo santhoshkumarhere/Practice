@@ -140,8 +140,7 @@ namespace Practice.Graph
     }
     private static bool IsSafe(char[][] board, int x, int y, char c)
     {
-        if (x >= 0 && x < board.Length && y >= 0 && y < board[0].Length && board[x][y].Equals(c)
-        && !visited[x, y])
+        if (x >= 0 && x < board.Length && y >= 0 && y < board[0].Length && board[x][y].Equals(c) && !visited[x, y])
         {
             return true;
         }
