@@ -8,7 +8,7 @@ using System.Threading;
 using LeetCode.GraphProblems;
 using Practice.GraphProblems;
 using Practice.Matrix;
-
+using Practice.HashTable;
 namespace Practice
 {
     class Program
@@ -17,8 +17,9 @@ namespace Practice
         {
             //GameOfLifeProblem.Test();
             //MinimumCostTreeFromLeaf.Test();
-            TopologicalSorting.Test();
-            WordLadder.Test();
+            //TopologicalSorting.Test();
+            //WordLadder.Test();
+            Map<string, int>.Test();
             // ConnectedComponentGraph.Test();
             // CountIslands.Test();
             // ZombieMatrix.Test();
