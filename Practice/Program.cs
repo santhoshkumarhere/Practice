@@ -10,18 +10,22 @@ using Practice.GraphProblems;
 using Practice.Matrix;
 using Practice.HashTable;
 using Practice.Graph;
+using LeetCode.Misc; 
 namespace Practice
 {
     class Program
     {
         static void Main(string[] args)
         {
+            //UniquePath.Test();
             //WordSearch.Test();
-            GameOfLifeProblem.Test();
+            //GameOfLifeProblem.Test();
+            //WordBreakII.Test();
+            MinimumPathSum.Test();
             //MinimumCostTreeFromLeaf.Test();
             //TopologicalSorting.Test();
             //WordLadder.Test();
-           // Map<string, int>.Test();
+            // Map<string, int>.Test();
             // ConnectedComponentGraph.Test();
             // CountIslands.Test();
             // ZombieMatrix.Test();

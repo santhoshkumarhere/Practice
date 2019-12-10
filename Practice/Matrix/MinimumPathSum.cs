@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Practice.Matrix
 {
-    class MaximumPathSum
+    class MinimumPathSum
     {
 
         public static void Test()
