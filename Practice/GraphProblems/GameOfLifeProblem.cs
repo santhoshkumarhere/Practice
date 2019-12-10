@@ -69,26 +69,29 @@ namespace Practice.GraphProblems
             visited[i, j] = true;
             while (q.Count > 0)
             {
-                var p = q.Dequeue();
-                var noOfNeighbourLiveCells = 0;
-                var isCurrentLiveCell = board[p[0]][p[1]] == 1;
-                for (var k = 0; k < 8; k++)
+                for (var size = q.Count; size > 0; size--)
                 {
-                    var x = p[0] + rows[k];
-                    var y = p[1] + cols[k];
-
-                    if (IsSafe(board, x, y))
+                    var p = q.Dequeue();
+                    var noOfNeighbourLiveCells = 0;
+                    var isCurrentLiveCell = board[p[0]][p[1]] == 1;
+                    for (var k = 0; k < 8; k++)
                     {
-                        noOfNeighbourLiveCells = noOfNeighbourLiveCells + board[x][y];
+                        var x = p[0] + rows[k];
+                        var y = p[1] + cols[k];
 
-                        if (!visited[x, y])
+                        if (IsSafe(board, x, y))
                         {
-                            q.Enqueue(new int[] { x, y });
+                            noOfNeighbourLiveCells = noOfNeighbourLiveCells + board[x][y];
+
+                            if (!visited[x, y])
+                            {
+                                q.Enqueue(new int[] { x, y });
+                            }
+                            visited[x, y] = true;
                         }
-                        visited[x, y] = true;
                     }
+                    UpdateLives(isCurrentLiveCell, noOfNeighbourLiveCells, originalBoard, p[0], p[1]);
                 }
-                UpdateLives(isCurrentLiveCell, noOfNeighbourLiveCells, originalBoard, p[0], p[1]);
             }
         }
 

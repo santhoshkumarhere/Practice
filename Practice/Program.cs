@@ -9,17 +9,19 @@ using LeetCode.GraphProblems;
 using Practice.GraphProblems;
 using Practice.Matrix;
 using Practice.HashTable;
+using Practice.Graph;
 namespace Practice
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //GameOfLifeProblem.Test();
+            //WordSearch.Test();
+            GameOfLifeProblem.Test();
             //MinimumCostTreeFromLeaf.Test();
             //TopologicalSorting.Test();
             //WordLadder.Test();
-            Map<string, int>.Test();
+           // Map<string, int>.Test();
             // ConnectedComponentGraph.Test();
             // CountIslands.Test();
             // ZombieMatrix.Test();
