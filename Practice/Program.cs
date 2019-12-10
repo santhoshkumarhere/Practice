@@ -10,18 +10,20 @@ using Practice.GraphProblems;
 using Practice.Matrix;
 using Practice.HashTable;
 using Practice.Graph;
-using LeetCode.Misc; 
+using LeetCode.Misc;
+using Practice.stringProblems;
 namespace Practice
 {
     class Program
     {
         static void Main(string[] args)
         {
+            VowelSpellChecker.Test();
             //UniquePath.Test();
             //WordSearch.Test();
             //GameOfLifeProblem.Test();
             //WordBreakII.Test();
-            MinimumPathSum.Test();
+            //MinimumPathSum.Test();
             //MinimumCostTreeFromLeaf.Test();
             //TopologicalSorting.Test();
             //WordLadder.Test();
