@@ -14,6 +14,8 @@ using LeetCode.Misc;
 using Practice.stringProblems;
 using Practice.MiscProb;
 using Practice.LinkedList;
+using Practice.StringProblems;
+
 namespace Practice
 {
     class Program
@@ -22,7 +24,8 @@ namespace Practice
         {
             //RemoveDuplicatesFromSortedArray.Test();
             // ArrayRemoveElement.Test();
-            RemoveLinkedListElement.Test();
+            //RemoveLinkedListElement.Test();
+            AlienDictionary.Test();
              //RemoveDuplicatesFromSortedArray.Test();
              //VowelSpellChecker.Test();
              //UniquePath.Test();
