@@ -22,12 +22,16 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            TopologicalSorting.Test();
             //RemoveDuplicatesFromSortedArray.Test();
             // ArrayRemoveElement.Test();
             //RemoveLinkedListElement.Test();
-            AlienDictionary.Test();
+            //  ValidatingAlienDictionary.Test(); 
+            //AlienDictionaryLeetCode.Test();
+           /// WordLadder.Test();
+           // AlienDictionary.Test();
              //RemoveDuplicatesFromSortedArray.Test();
-             //VowelSpellChecker.Test();
+             VowelSpellChecker.Test();
              //UniquePath.Test();
              //WordSearch.Test();
              //GameOfLifeProblem.Test();

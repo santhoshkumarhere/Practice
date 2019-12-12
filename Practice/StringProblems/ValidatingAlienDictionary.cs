@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Practice.StringProblems
 {
-    class AlienDictionary
+    class ValidatingAlienDictionary
     {
         public static void Test()
         {

@@ -16,6 +16,69 @@ namespace Practice.Matrix
             var res = LadderLength(beginWord, endWord, wordList);
             res = LeetSolution(beginWord, endWord, wordList);
         }
+       
+        public static int LeetSolution(string beginWord, string endWord, IList<string> wordList)
+        {
+            int L = beginWord.Length;
+    
+            var allComboDict = new Dictionary<string, List<string>>();
+
+            foreach(var word in wordList)
+            {
+               
+                for (var i=0; i<word.Length; i++)
+                {
+                    var curr = TransformWord(word, i);
+                    var transformations = allComboDict.ContainsKey(curr) ? allComboDict[curr] : new List<string>();
+                    transformations.Add(word);
+                    allComboDict[curr] = transformations;
+                }
+            }
+            return BFS(beginWord, endWord, allComboDict);
+        }
+
+        private static string TransformWord(string word, int position)
+        {
+            var currWord = new StringBuilder(word);
+            currWord[position] = '*';
+            return currWord.ToString();
+        }
+
+        private static int BFS(string beginWord, string endWord, Dictionary<string, List<string>> allComboDict)
+        {
+            var L = beginWord.Length;
+            var  Q = new Queue<string>();
+            Q.Enqueue(beginWord);
+
+           var  visited = new Dictionary<string, Boolean>();
+            visited.Add(beginWord, true);
+            var steps = 0;
+            while (Q.Count > 0)
+            {
+                string word = Q.Dequeue();
+                for (int i = 0; i < L; i++)
+                {
+                    string newWord = TransformWord(word, i);
+                    foreach (var adjacentWord in allComboDict.ContainsKey(newWord) ? allComboDict[newWord] : new List<string>())
+                    {
+                        if (adjacentWord.Equals(endWord))
+                        {
+                            steps++;
+                            return steps;
+                        }
+
+                        if (!visited.ContainsKey(adjacentWord))
+                        {
+                            visited.Add(adjacentWord, true);
+                            Q.Enqueue(adjacentWord);
+                        }
+                    }
+                }
+                steps++;
+            }
+            return 0;
+        }
+
         private static int LadderLength(string beginWord, string endWord, IList<string> wordList)
         {
             var wordSet = new HashSet<string>(wordList);
@@ -73,61 +136,16 @@ namespace Practice.Matrix
             return 0;
         }
 
-        public static int LeetSolution(string beginWord, string endWord, IList<string> wordList)
-        {
-            int L = beginWord.Length;
-    
-            var allComboDict = new Dictionary<string, List<string>>();
-
-            wordList.ToList().ForEach(
-                word =>
-                {
-                    for (int i = 0; i < L; i++)
-                    {
-                        string newWord = word.Substring(0, i) + '*' + word.Substring(i + 1, L - (i + 1));
-                        List<string> transformations = allComboDict.ContainsKey(newWord) ? allComboDict[newWord] : new List<string>();
-                        transformations.Add(word);
-                        allComboDict[newWord] = transformations;
-                    }
-                });
-
-            return BFS(beginWord, endWord, allComboDict);
-        }
-
-        private static int BFS(string beginWord, string endWord, Dictionary<string, List<string>> allComboDict)
-        {
-            var steps = 0;
-            var L = beginWord.Length;
-            var  Q = new Queue<string>();
-            Q.Enqueue(beginWord);
-
-           var  visited = new Dictionary<string, Boolean>();
-            visited.Add(beginWord, true);
-
-            while (Q.Count > 0)
-            {
-                string word = Q.Dequeue();
-                for (int i = 0; i < L; i++)
-                {
-                    string newWord = word.Substring(0, i) + '*' + word.Substring(i + 1, L - (i + 1));
-                    foreach (var adjacentWord in allComboDict.ContainsKey(newWord) ? allComboDict[newWord] : new List<string>())
-                    {
-                        if (adjacentWord.Equals(endWord))
-                        {
-                            steps++;
-                            return steps;
-                        }
-
-                        if (!visited.ContainsKey(adjacentWord))
-                        {
-                            visited.Add(adjacentWord, true);
-                            Q.Enqueue(adjacentWord);
-                        }
-                    }
-                }
-                steps++;
-            }
-            return 0;
-        }
     }
 }
+//wordList.ToList().ForEach(
+//    word =>
+//    {
+//        for (int i = 0; i < L; i++)
+//        {
+//            string newWord = word.Substring(0, i) + '*' + word.Substring(i + 1, L - (i + 1));
+//            List<string> transformations = allComboDict.ContainsKey(newWord) ? allComboDict[newWord] : new List<string>();
+//            transformations.Add(word);
+//            allComboDict[newWord] = transformations;
+//        }
+//    });
