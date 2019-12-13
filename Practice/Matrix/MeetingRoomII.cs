@@ -32,17 +32,12 @@ namespace Practice.Matrix
 
             while (startPointer < intervals.Length)
             {
-
                 // If there is a meeting that has ended by the time the meeting at `start_pointer` starts
                 if (start[startPointer] >= end[endPointer])
                 {
                     usedRooms -= 1;
                     endPointer += 1;
-                }
-
-                // We do this irrespective of whether a room frees up or not.
-                // If a room got free, then this used_rooms += 1 wouldn't have any effect. used_rooms would
-                // remain the same in that case. If no room was free, then this would increase used_rooms
+                } 
                 usedRooms += 1;
                 startPointer += 1;
             }
