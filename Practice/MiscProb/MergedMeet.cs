@@ -27,7 +27,6 @@ namespace Practice.MiscProb
             {
                 sortedMeeting[0]
             };
-
             foreach (var currentMeeting in sortedMeeting)
             {
                 var lastMeeting = mergedMeeting.Last();

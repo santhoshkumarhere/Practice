@@ -13,6 +13,10 @@ namespace Practice.Matrix
             var beginWord = "hit";
             var endWord = "cog";
             var wordList = new List<string>() {"hot", "dot", "dog", "lot", "log", "cog"};
+
+            beginWord = "a";
+            endWord = "c";
+            wordList = new List<string>() { "a", "b", "c" };
             var res = LadderLength(beginWord, endWord, wordList);
             res = LeetSolution(beginWord, endWord, wordList);
         }
@@ -47,15 +51,16 @@ namespace Practice.Matrix
         private static int BFS(string beginWord, string endWord, Dictionary<string, List<string>> allComboDict)
         {
             var L = beginWord.Length;
-            var  Q = new Queue<string>();
-            Q.Enqueue(beginWord);
+            var  Q = new Queue<KeyValuePair<string, int>>();
+            Q.Enqueue(new KeyValuePair<string, int>(beginWord, 1));
 
            var  visited = new Dictionary<string, Boolean>();
-            visited.Add(beginWord, true);
-            var steps = 0;
+            visited.Add(beginWord, true); 
             while (Q.Count > 0)
             {
-                string word = Q.Dequeue();
+                var pair = Q.Dequeue();
+                string word = pair.Key;
+                int level = pair.Value;
                 for (int i = 0; i < L; i++)
                 {
                     string newWord = TransformWord(word, i);
@@ -63,18 +68,16 @@ namespace Practice.Matrix
                     {
                         if (adjacentWord.Equals(endWord))
                         {
-                            steps++;
-                            return steps;
+                            return level+1;
                         }
 
                         if (!visited.ContainsKey(adjacentWord))
                         {
                             visited.Add(adjacentWord, true);
-                            Q.Enqueue(adjacentWord);
+                            Q.Enqueue(new KeyValuePair<string, int>(adjacentWord, level+1) ); 
                         }
                     }
                 }
-                steps++;
             }
             return 0;
         }

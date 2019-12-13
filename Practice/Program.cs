@@ -22,28 +22,29 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            TopologicalSorting.Test();
+            MeetingRoomII.Test();
+            //TopologicalSorting.Test();
             //RemoveDuplicatesFromSortedArray.Test();
             // ArrayRemoveElement.Test();
             //RemoveLinkedListElement.Test();
             //  ValidatingAlienDictionary.Test(); 
             //AlienDictionaryLeetCode.Test();
-           /// WordLadder.Test();
-           // AlienDictionary.Test();
-             //RemoveDuplicatesFromSortedArray.Test();
-             VowelSpellChecker.Test();
-             //UniquePath.Test();
-             //WordSearch.Test();
-             //GameOfLifeProblem.Test();
-             //WordBreakII.Test();
-             //MinimumPathSum.Test();
-             //MinimumCostTreeFromLeaf.Test();
-             //TopologicalSorting.Test();
-             //WordLadder.Test();
-             // Map<string, int>.Test();
-             // ConnectedComponentGraph.Test();
-             // CountIslands.Test();
-             // ZombieMatrix.Test();
+            // WordLadder.Test();
+            // AlienDictionary.Test();
+            //RemoveDuplicatesFromSortedArray.Test();
+            // VowelSpellChecker.Test();
+            //UniquePath.Test();
+            //WordSearch.Test();
+            //GameOfLifeProblem.Test();
+            //WordBreakII.Test();
+            //MinimumPathSum.Test();
+            //MinimumCostTreeFromLeaf.Test();
+            //TopologicalSorting.Test();
+            //WordLadder.Test();
+            // Map<string, int>.Test();
+            // ConnectedComponentGraph.Test();
+            // CountIslands.Test();
+            // ZombieMatrix.Test();
 
 
             // ArrayRangeSearch.Test(new[] { 1,2,3,3,3,4,5 }, 3);
