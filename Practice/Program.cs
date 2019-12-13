@@ -22,7 +22,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MeetingRoomII.Test();
+            //LinkedListTest.Test();
+            //MeetingRoomII.Test();
+            MergeSortedList.Test();
             //TopologicalSorting.Test();
             //RemoveDuplicatesFromSortedArray.Test();
             // ArrayRemoveElement.Test();
