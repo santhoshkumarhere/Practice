@@ -22,6 +22,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+
             // MeetingRoomII.Test();
             // TopologicalSorting.Test();
             //RemoveDuplicatesFromSortedArray.Test();
@@ -46,7 +47,7 @@ namespace Practice
             // CountIslands.Test();
             // ZombieMatrix.Test();
 
-
+            RotatedArraySearch.Search();
             // ArrayRangeSearch.Test(new[] { 1,2,3,3,3,4,5 }, 3);
             // ArrayRangeSearch.Test(new[] { 2, 2 }, 3);
             // ArrayRangeSearch.Test(new[] { 2, 2,2 }, 2);
@@ -121,7 +122,7 @@ namespace Practice
             //TopKFrequent.FrequentWord(new int[] {5, 3, 1, 1, 1, 3, 73, 1}, 2);
 
             // Dijkstra.Test();
-            ShortestPathWeightedMatrixDijkstras.Test();
+            // ShortestPathWeightedMatrixDijkstras.Test();
             //LinkedListTest.Test();
             // RemoveKthFromLinkedList.Test();
             //UniquePathII.Test();
@@ -136,7 +137,8 @@ namespace Practice
             //BalancedTree.Test();
             // MinimumCostTreeFromLeaf.Test();
             //  BinaryTreeLCA.Test();
-            //BTVerticalTraversal.Test();
+            // // BTVerticalTraversal.Test();
+            // BTZigZag.Test();
             //  BSTLCA.Test();
             // BTSubTreeCheck.Test();
             // WordBreak.Test();

@@ -37,6 +37,8 @@ namespace Practice.Tree
             root.Right.Left.InsertRight(8);
             root.Right.Left.Right.InsertLeft(9);
             root.Right.Left.Right.InsertRight(10);
+            PreOrder(root);
+            Console.WriteLine("");
             VerticalTraversal(root);
         }
 
@@ -47,6 +49,16 @@ namespace Practice.Tree
                 dict[dist] = new List<int>();
             }
             dict[dist].Add(val);
+        }
+
+        private static void PreOrder(BinaryTreeNode currentNode)
+        {
+            if(currentNode != null)
+            {
+                Console.Write(currentNode.Value + " ");
+                PreOrder(currentNode.Left);
+                PreOrder(currentNode.Right);
+            }
         }
 
         private static void PreOrder(int dist, BinaryTreeNode node, SortedDictionary<int, IList<int>> dict)
@@ -69,7 +81,7 @@ namespace Practice.Tree
 
             foreach (var list in map.Values)
             {
-                Console.WriteLine(String.Join("", list));
+                Console.WriteLine(String.Join(" ", list));
             }
         }
     }
