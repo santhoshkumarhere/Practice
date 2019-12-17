@@ -47,7 +47,7 @@ namespace Practice
             // CountIslands.Test();
             // ZombieMatrix.Test();
 
-            RotatedArraySearch.Search();
+            // RotatedArraySearch.Search();
             // ArrayRangeSearch.Test(new[] { 1,2,3,3,3,4,5 }, 3);
             // ArrayRangeSearch.Test(new[] { 2, 2 }, 3);
             // ArrayRangeSearch.Test(new[] { 2, 2,2 }, 2);
@@ -110,10 +110,10 @@ namespace Practice
             // var x = new LetterCombination();
 
             //x.letterCombinations("2345");
-
+            //Permutation.Test();
             //PermutationPalindrome.Test();
             // Combinations.Test();
-            // MakingChange.Test(); 
+            MakingChange.Test(); 
             //MaxProfit.Test();
             // RotateMatrix.Test();
             //TopKFrequent.RecursionTest(new string[]{"xxx", "xx", "er", "df", "ab", "ab", "cert", "cer", "bat", "bat"}, 2);
@@ -122,7 +122,7 @@ namespace Practice
             //TopKFrequent.FrequentWord(new int[] {5, 3, 1, 1, 1, 3, 73, 1}, 2);
 
             // Dijkstra.Test();
-            // ShortestPathWeightedMatrixDijkstras.Test();
+             //ShortestPathWeightedMatrixDijkstras.Test();
             //LinkedListTest.Test();
             // RemoveKthFromLinkedList.Test();
             //UniquePathII.Test();

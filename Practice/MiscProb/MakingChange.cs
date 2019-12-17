@@ -9,29 +9,10 @@ namespace Practice.MiscProb
     {
         public static void Test()
         {
-            var result = ChangePossibilitiesBottomUp(5, new int[]{1, 3, 5});
-            //var result = CombinationSum(new int[]{2, 3, 6, 7}, 7);
-            //CombinationSum(new int[] { 2, 3, 6, 7 },  7);
-           // List<IList<int>> result = new List<IList<int>>(); 
+           // var result = ChangePossibilitiesBottomUp(5, new int[]{1, 3, 5});
+            var result = CombinationSum(new int[]{2, 3, 6, 7}, 7);
         }
-        // static List<List<int>> results = new List<List<int>>();
-        static List<int> results = new List<int>();
-
-        public static void CombinationTest(int[] nums, int value, int start, int end, int target)
-        {
-            if (nums.Length == 0)
-            {
-                results.Add(value);
-            }
-            else
-            {
-                for (int i = 0; i < nums.Length; i++)
-                {
-                    CombinationTest(nums, nums[i], i + 1, nums.Length - 1, target);
-                }
-            }
-        }
-
+        
         public static IList<IList<int>> CombinationSum(int[] candidates, int target)
         {
             List<IList<int>> result = new List<IList<int>>();

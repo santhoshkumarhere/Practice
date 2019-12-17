@@ -28,7 +28,7 @@ namespace Practice.GraphProblems
 				dict.Add(new DistanceTracker(i, false, i == 0 ? src : int.MaxValue));
 			}
 
-			for (int count = 0; count < row - 1; count++)
+			for (int count = 0; count < row; count++)
 			{
 				int u = dict.Where(x => x.Processed == false).Aggregate((i1, i2) => i1.Distance < i2.Distance ? i1 : i2).Vertex;
 				dict[u].Processed = true;

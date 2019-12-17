@@ -94,7 +94,8 @@ namespace Practice.Graph
             g.addEdge(3, 4);
             Console.WriteLine("Following are connected components");
             g.connectedComponents();
-            //.DFS(2);
+           // bool[] visited = new bool[5];
+            //g.DFS(0,visited);
         }
 
 
