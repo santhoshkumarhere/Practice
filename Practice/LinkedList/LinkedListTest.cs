@@ -14,8 +14,8 @@ namespace Practice.LinkedList
             list.Next = new LinkNode(2);
             list.Next.Next = new LinkNode(3);
             list.Next.Next.Next = new LinkNode(4);
-            list.Next.Next.Next.Next = list.Next; 
-            var prev =  ReverseList(list);
+           // list.Next.Next.Next.Next = list.Next;
+            var prev = Reverse(list);//ReverseList(list);
             //Print(prev);
             Console.WriteLine($"Cyclical: {IsCyclical(list)}");
         }
@@ -48,6 +48,21 @@ namespace Practice.LinkedList
             }
 
             return false;
+        }
+
+        private static LinkNode Reverse(LinkNode head)
+        {
+            LinkNode prev = null;
+            var curr = head;
+            while (curr != null)
+            {
+                var next = curr.Next;
+                curr.Next = prev;
+                prev = curr;
+                curr = next;
+            }
+
+            return prev;
         }
 
         public static LinkNode ReverseList(LinkNode list)
