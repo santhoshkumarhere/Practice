@@ -8,7 +8,7 @@ namespace Practice.Graph
     {
         public string Label;
         public int Distance { get; set; }
-        public LinkedList<Edge> Edges;
+        public List<Edge> Edges;
 
         public Node(string label)
         {
@@ -19,10 +19,10 @@ namespace Practice.Graph
         {
             if (this.Edges == null)
             {
-                this.Edges = new LinkedList<Edge>();
+                this.Edges = new List<Edge>();
             }
 
-            this.Edges.AddLast(e);
+            this.Edges.Add(e);
         }
     }
 

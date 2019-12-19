@@ -36,7 +36,7 @@ namespace Practice.MiscProb
 
             return maxSum;
         }
-
+        //   var res = MaxSubArray(new[] {-2, 1, -3, 4, -1, 2, 1, -5, 4, 3, 4, 5});
         public static int MaxSubArray(int[] arr, int o)
         {
             int max_end = 0;

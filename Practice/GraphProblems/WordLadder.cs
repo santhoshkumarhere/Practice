@@ -17,8 +17,7 @@ namespace Practice.Matrix
             beginWord = "a";
             endWord = "c";
             wordList = new List<string>() { "a", "b", "c" };
-            var res = LadderLength(beginWord, endWord, wordList);
-            res = LeetSolution(beginWord, endWord, wordList);
+            var res = LeetSolution(beginWord, endWord, wordList);
         }
        
         public static int LeetSolution(string beginWord, string endWord, IList<string> wordList)
@@ -51,14 +50,14 @@ namespace Practice.Matrix
         private static int BFS(string beginWord, string endWord, Dictionary<string, List<string>> allComboDict)
         {
             var L = beginWord.Length;
-            var  Q = new Queue<KeyValuePair<string, int>>();
-            Q.Enqueue(new KeyValuePair<string, int>(beginWord, 1));
+            var  q = new Queue<KeyValuePair<string, int>>();
+            q.Enqueue(new KeyValuePair<string, int>(beginWord, 1));
 
            var  visited = new Dictionary<string, Boolean>();
             visited.Add(beginWord, true); 
-            while (Q.Count > 0)
+            while (q.Count > 0)
             {
-                var pair = Q.Dequeue();
+                var pair = q.Dequeue();
                 string word = pair.Key;
                 int level = pair.Value;
                 for (int i = 0; i < L; i++)
@@ -74,71 +73,13 @@ namespace Practice.Matrix
                         if (!visited.ContainsKey(adjacentWord))
                         {
                             visited.Add(adjacentWord, true);
-                            Q.Enqueue(new KeyValuePair<string, int>(adjacentWord, level+1) ); 
+                            q.Enqueue(new KeyValuePair<string, int>(adjacentWord, level+1) ); 
                         }
                     }
                 }
             }
             return 0;
         }
-
-        private static int LadderLength(string beginWord, string endWord, IList<string> wordList)
-        {
-            var wordSet = new HashSet<string>(wordList);
-
-            var result = new List<IList<string>>();
-            if (!wordSet.Contains(endWord))
-            {
-                return 0;
-            }
-
-            var queue = new Queue<string>();
-            queue.Enqueue(beginWord);
-
-            var length = 1;
-
-            while (queue.Any())
-            {
-                var count = queue.Count;
-                for (int c = 0; c < count; c++)
-                {
-                    var cur = queue.Dequeue();
-                    wordSet.Remove(cur);
-
-                    var wordArray = cur.ToArray();
-                    for (int i = 0; i < cur.Length; i++)
-                    {
-                        var curChar = cur[i];
-                        for (var j = 'a'; j <= 'z'; j++)
-                        {
-                            if (curChar != j)
-                            {
-                                wordArray[i] = j;
-                                var next = new string(wordArray);
-
-                                // save one level from BFS
-                                if (next == endWord)
-                                {
-                                    return length + 1;
-                                }
-
-                                if (wordSet.Contains(next))
-                                {
-                                    queue.Enqueue(next);
-                                    // save time for the duplication.
-                                    wordSet.Remove(next);
-                                }
-                                wordArray[i] = curChar;
-                            }
-                        }
-                    }
-                }
-                length++;
-            }
-
-            return 0;
-        }
-
     }
 }
 //wordList.ToList().ForEach(
