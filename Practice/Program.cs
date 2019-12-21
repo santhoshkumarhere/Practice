@@ -94,7 +94,7 @@ namespace Practice
             //Console.WriteLine("AGGTAB - GXTXAYB");
             //Console.WriteLine(l.Find("AGGTAB", "GXTXAYB", 0, 0));
             //TestObserver();
-            //var x = new HouseThief();
+           // HouseThief.Test();
             // Console.WriteLine(x.Calculate(new int[] { 3, 1, 2, 5, 4, 2 }, 0));
             //Console.WriteLine(new RomanToInteger().RomanToInt("IV"));
             // Console.WriteLine(new ConvertString().Convert("table", "tagable", 0, 0));
@@ -110,10 +110,10 @@ namespace Practice
             // var x = new LetterCombination();
 
             //x.letterCombinations("2345");
-            //Permutation.Test();
+            Permutation.Test();
             //PermutationPalindrome.Test();
             // Combinations.Test();
-            MakingChange.Test(); 
+            // MakingChange.Test(); 
             //MaxProfit.Test();
             // RotateMatrix.Test();
             //TopKFrequent.RecursionTest(new string[]{"xxx", "xx", "er", "df", "ab", "ab", "cert", "cer", "bat", "bat"}, 2);
@@ -122,7 +122,7 @@ namespace Practice
             //TopKFrequent.FrequentWord(new int[] {5, 3, 1, 1, 1, 3, 73, 1}, 2);
 
             // Dijkstra.Test();
-             //ShortestPathWeightedMatrixDijkstras.Test();
+            //ShortestPathWeightedMatrixDijkstras.Test();
             //LinkedListTest.Test();
             // RemoveKthFromLinkedList.Test();
             //UniquePathII.Test();
@@ -142,6 +142,7 @@ namespace Practice
             //  BSTLCA.Test();
             // BTSubTreeCheck.Test();
             // WordBreak.Test();
+           // WordBreakII.Test                ();
             // CountIslands.Test();
             // RottenOranges.Test();
             //  MakingChangeRecursive.Test();

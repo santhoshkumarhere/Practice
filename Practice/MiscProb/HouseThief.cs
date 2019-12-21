@@ -9,7 +9,27 @@ namespace Practice.MiscProb
     //{1, 3, 6}
     internal class HouseThief
     {
-        public int Calculate(int[] netWorth, int currentIndex)
+
+        public static void Test()
+        {
+            var arr = new int[] { 3, 1, 2, 5, 4, 2 };
+            var res = Calculate(arr, 0);
+            var list = new List<int>();
+            var count = 0;
+            var ct = Calc(arr, 0, list, 0);
+        }
+
+        public static int Calc(int[] net, int currentIndex, List<int> res, int count)
+        {
+            if (currentIndex >= net.Length)
+            {
+                return count;
+            }
+            count += net[currentIndex];
+            res.Add(net[currentIndex]);
+            return Calc(net, currentIndex + 2, res, count);
+        }
+        public static int Calculate(int[] netWorth, int currentIndex)
         {
             if (currentIndex >= netWorth.Length)
             {
@@ -20,5 +40,6 @@ namespace Practice.MiscProb
             var skipCurrent = Calculate(netWorth, currentIndex + 1);
             return Math.Max(stealCurrentHouse, skipCurrent);
         }
+
     }
 }
