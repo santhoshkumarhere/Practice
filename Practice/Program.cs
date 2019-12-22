@@ -22,7 +22,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-
+            ClimbingStairs.Test();
             // MeetingRoomII.Test();
             // TopologicalSorting.Test();
             //RemoveDuplicatesFromSortedArray.Test();
