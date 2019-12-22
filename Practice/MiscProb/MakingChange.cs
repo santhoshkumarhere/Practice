@@ -9,8 +9,7 @@ namespace Practice.MiscProb
     {
         public static void Test()
         {
-           // var result = ChangePossibilitiesBottomUp(5, new int[]{1, 3, 5});
-            var result = CombinationSum(new int[]{2, 3, 6, 7}, 7);
+            var result = CombinationSum(new int[]{1, 2, 3}, 5);
         }
         
         public static IList<IList<int>> CombinationSum(int[] candidates, int target)
@@ -36,25 +35,6 @@ namespace Practice.MiscProb
                 CombinationSum(result, candidates, combination, target - candidates[i], i);
                 combination.Remove(combination.Last());
             }
-        }
-
-        public static int ChangePossibilitiesBottomUp(int amount, int[] denominations)
-        {
-            // Array of zeros from 0..amount
-            int[] waysOfDoingNCents = new int[amount + 1];
-
-            waysOfDoingNCents[0] = 1;
-
-            foreach (int coin in denominations)
-            {
-                for (int higherAmount = coin; higherAmount <= amount; higherAmount++)
-                {
-                    int higherAmountRemainder = higherAmount - coin;
-                    waysOfDoingNCents[higherAmount] = waysOfDoingNCents[higherAmount] + waysOfDoingNCents[higherAmountRemainder];
-                }
-            }
-
-            return waysOfDoingNCents[amount];
         }
     }
 }

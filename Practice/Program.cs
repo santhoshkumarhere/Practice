@@ -36,6 +36,7 @@ namespace Practice
             // VowelSpellChecker.Test();
             //UniquePath.Test();
             // WordSearch.Test();
+           // ReverseString.Test();
             //GameOfLifeProblem.Test();
             //WordBreakII.Test();
             //MinimumPathSum.Test();
@@ -110,10 +111,10 @@ namespace Practice
             // var x = new LetterCombination();
 
             //x.letterCombinations("2345");
-            Permutation.Test();
+            //Permutation.Test();
             //PermutationPalindrome.Test();
             // Combinations.Test();
-            // MakingChange.Test(); 
+             MakingChange.Test(); 
             //MaxProfit.Test();
             // RotateMatrix.Test();
             //TopKFrequent.RecursionTest(new string[]{"xxx", "xx", "er", "df", "ab", "ab", "cert", "cer", "bat", "bat"}, 2);

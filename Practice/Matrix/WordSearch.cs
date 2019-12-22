@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Practice.Graph
+namespace Practice.Matrix
 {
     class WordSearch
     {
