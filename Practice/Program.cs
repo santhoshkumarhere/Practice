@@ -15,7 +15,7 @@ using Practice.stringProblems;
 using Practice.MiscProb;
 using Practice.LinkedList;
 using Practice.StringProblems;
-using Practice.LeetCode75;
+using Practice.LeetCode75.Array;
 
 namespace Practice
 {
@@ -24,8 +24,9 @@ namespace Practice
         static void Main(string[] args)
         {
             SearchRotatedArray.Test();
-            ClimbingStairs.Test();
-            MaximumSubArray.Test();
+            MinimumInRotatedArray.Test();
+            //ClimbingStairs.Test();
+           // MaximumSubArray.Test();
             // MeetingRoomII.Test();
             // TopologicalSorting.Test();
             //RemoveDuplicatesFromSortedArray.Test();

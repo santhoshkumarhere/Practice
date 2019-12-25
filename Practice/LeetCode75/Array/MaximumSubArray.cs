@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Practice.LeetCode75
+namespace Practice.LeetCode75.Array
 {
     class MaximumSubArray
     {
