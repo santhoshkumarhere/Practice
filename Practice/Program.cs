@@ -23,8 +23,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            SearchRotatedArray.Test();
-            MinimumInRotatedArray.Test();
+            ProductExceptSelf.Test();
+           // SearchRotatedArray.Test();
+            //MinimumInRotatedArray.Test();
             //ClimbingStairs.Test();
            // MaximumSubArray.Test();
             // MeetingRoomII.Test();
