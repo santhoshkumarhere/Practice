@@ -82,6 +82,10 @@ namespace Practice.Tree.Trie
                 Delete(root, word, 0);
             }
         }
+        //Case 1 - Greater than 1 children
+        //Case 2 - End of the word reached
+        //Case 3 - EOW true
+        //Case 4 - No dependency
 
         // CASE#1 -- Some other word's prefix is same as Prefix of this word (BCDE, BCKG)
         // CASE#2 -- We are at last character of this word and This word is a Prefix of some other word (BCDE, BCDEFG)
