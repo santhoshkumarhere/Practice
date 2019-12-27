@@ -16,6 +16,7 @@ using Practice.MiscProb;
 using Practice.LinkedList;
 using Practice.StringProblems;
 using Practice.LeetCode75.Array;
+using Practice.Tree.Trie;
 
 namespace Practice
 {
@@ -23,11 +24,15 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            ProductExceptSelf.Test();
-           // SearchRotatedArray.Test();
+            Trie t = new Trie();
+            t.Insert("BCDE");
+            t.Insert("BCKG");
+            t.Delete("BCDE");
+            //ProductExceptSelf.Test();
+            // SearchRotatedArray.Test();
             //MinimumInRotatedArray.Test();
             //ClimbingStairs.Test();
-           // MaximumSubArray.Test();
+            // MaximumSubArray.Test();
             // MeetingRoomII.Test();
             // TopologicalSorting.Test();
             //RemoveDuplicatesFromSortedArray.Test();
@@ -119,7 +124,7 @@ namespace Practice
             //Permutation.Test();
             //PermutationPalindrome.Test();
             // Combinations.Test();
-            MakingChange.Test(); 
+            //MakingChange.Test(); 
             //MaxProfit.Test();
             // RotateMatrix.Test();
             //TopKFrequent.RecursionTest(new string[]{"xxx", "xx", "er", "df", "ab", "ab", "cert", "cer", "bat", "bat"}, 2);
@@ -148,7 +153,7 @@ namespace Practice
             //  BSTLCA.Test();
             // BTSubTreeCheck.Test();
             // WordBreak.Test();
-           // WordBreakII.Test                ();
+            // WordBreakII.Test                ();
             // CountIslands.Test();
             // RottenOranges.Test();
             //  MakingChangeRecursive.Test();
