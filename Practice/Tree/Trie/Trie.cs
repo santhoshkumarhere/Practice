@@ -114,9 +114,7 @@ namespace Practice.Tree.Trie
                 {
                     Console.WriteLine("Character " + ch + " has no dependency, hence deleting it from last");
                     parentNode.Children.Remove(ch);
-                    return true;// If this word is not a prefix of some other word, and since this is last
-                                // character, we should
-                                // return true, indicating we are ok to delete this node
+                    return true;// If this word is not a prefix of some other word, and since this is last character, we should return true, indicating we are ok to delete this node
                 }
             }
 
