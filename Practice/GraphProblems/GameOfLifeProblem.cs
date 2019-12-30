@@ -69,9 +69,7 @@ namespace Practice.GraphProblems
             visited[i, j] = true;
             while (q.Count > 0)
             {
-                for (var size = q.Count; size > 0; size--)
-                {
-                    var p = q.Dequeue();
+                   var p = q.Dequeue();
                     var noOfNeighbourLiveCells = 0;
                     var isCurrentLiveCell = board[p[0]][p[1]] == 1;
                     for (var k = 0; k < 8; k++)
@@ -91,7 +89,6 @@ namespace Practice.GraphProblems
                         }
                     }
                     UpdateLives(isCurrentLiveCell, noOfNeighbourLiveCells, originalBoard, p[0], p[1]);
-                }
             }
         }
 

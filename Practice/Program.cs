@@ -23,7 +23,10 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            ProductExceptSelf.Test();
+            GameOfLifeProblem.Test();
+            //CountIslands.Test();
+            ShortestPathBinaryMatrix.Test();
+           // ProductExceptSelf.Test();
            // SearchRotatedArray.Test();
             //MinimumInRotatedArray.Test();
             //ClimbingStairs.Test();
