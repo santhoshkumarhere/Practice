@@ -9,13 +9,6 @@ namespace LeetCode.GraphProblems
         public class Graph
         {
             public Dictionary<string, IList<string>> Adj = new Dictionary<string, IList<string>>();
-            public int Size => Adj.Count;
-
-            public void AddNode(string node)
-            {
-                Adj.Add(node, null);
-            }
-
             public void AddEdge(string source, IList<string> adj)
             {
                 this.Adj[source] = adj;
@@ -25,7 +18,7 @@ namespace LeetCode.GraphProblems
         static void TopologicalSortUtil(Stack<string> stack, Dictionary<string, bool> visited, string key, Graph g)
         {
             visited[key] = true;
-            if(g.Adj[key] != null)
+            if(g.Adj.ContainsKey(key))
             {
                 foreach(var adj in g.Adj[key])
                 {
@@ -34,14 +27,13 @@ namespace LeetCode.GraphProblems
                         TopologicalSortUtil(stack, visited, adj, g);
                     }
                 }
-
             }
             stack.Push(key);
         }
 
         public static void TopologicalSort(Graph g)
         {
-            var stack = new Stack<String>();
+            var stack = new Stack<string>();
             var visited = new Dictionary<string, bool>();
             foreach(var key in g.Adj.Keys)
             {
@@ -59,15 +51,6 @@ namespace LeetCode.GraphProblems
         public static void Test()
         {
             var g = new Graph();
-            g.AddNode("A");
-            g.AddNode("B");
-            g.AddNode("C");
-            g.AddNode("D");
-            g.AddNode("E");
-            g.AddNode("F");
-            g.AddNode("G");
-            g.AddNode("H");
-            
             g.AddEdge("A", new List<string>() { "C" });
             g.AddEdge("B", new List<string>() { "C", "D" });
             g.AddEdge("C", new List<string>() { "E" });

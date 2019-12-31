@@ -23,7 +23,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Autocomplete.Test();
+            
+           // Autocomplete.Test();
            // GameOfLifeProblem.Test();
             //CountIslands.Test();
             //ShortestPathBinaryMatrix.Test();
@@ -50,10 +51,10 @@ namespace Practice
             //WordBreakII.Test();
             //MinimumPathSum.Test();
             //MinimumCostTreeFromLeaf.Test();
-            //TopologicalSorting.Test();
+             TopologicalSorting.Test();
             //WordLadder.Test();
             // Map<string, int>.Test();
-            // ConnectedComponentGraph.Test();
+             ConnectedComponentGraph.Test();
             // CountIslands.Test();
             // ZombieMatrix.Test();
 
