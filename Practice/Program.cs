@@ -23,9 +23,10 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            GameOfLifeProblem.Test();
+            Autocomplete.Test();
+           // GameOfLifeProblem.Test();
             //CountIslands.Test();
-            ShortestPathBinaryMatrix.Test();
+            //ShortestPathBinaryMatrix.Test();
            // ProductExceptSelf.Test();
            // SearchRotatedArray.Test();
             //MinimumInRotatedArray.Test();
@@ -122,7 +123,7 @@ namespace Practice
             //Permutation.Test();
             //PermutationPalindrome.Test();
             // Combinations.Test();
-            MakingChange.Test(); 
+           // MakingChange.Test(); 
             //MaxProfit.Test();
             // RotateMatrix.Test();
             //TopKFrequent.RecursionTest(new string[]{"xxx", "xx", "er", "df", "ab", "ab", "cert", "cer", "bat", "bat"}, 2);
