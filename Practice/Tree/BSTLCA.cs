@@ -15,7 +15,7 @@ namespace Practice.Tree
             tree.left.right = new TreeNode(12);
             tree.left.right.left = new TreeNode(10);
             tree.left.right.right = new TreeNode(14);
-            var lc1 = FindBSTLCA(tree, 10, 22);
+            var lc1 = FindBSTLCA(tree, 10, 14);
             var lc = lca(tree, 10, 14);
         }
 
