@@ -42,15 +42,6 @@ namespace Practice.Tree
             VerticalTraversal(root);
         }
 
-        private static void InsertMap(int dist, int val, SortedDictionary<int, IList<int>> dict)
-        {
-            if (!dict.ContainsKey(dist))
-            {
-                dict[dist] = new List<int>();
-            }
-            dict[dist].Add(val);
-        }
-
         private static void PreOrder(BinaryTreeNode currentNode)
         {
             if(currentNode != null)
@@ -73,6 +64,14 @@ namespace Practice.Tree
             PreOrder(dist + 1, node.Right, dict);
         }
 
+        private static void InsertMap(int dist, int val, SortedDictionary<int, IList<int>> dict)
+        {
+            if (!dict.ContainsKey(dist))
+            {
+                dict[dist] = new List<int>();
+            }
+            dict[dist].Add(val);
+        }
 
         public static void VerticalTraversal(BinaryTreeNode node)
         {
