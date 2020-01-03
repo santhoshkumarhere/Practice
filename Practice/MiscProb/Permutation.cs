@@ -27,7 +27,7 @@ namespace Practice.MiscProb
             {
                 for (var i = 0; i < next.Length; i++)
                 {
-                    Permutate(combination + next[i], next.Substring(0, i) + next.Substring(i + 1, next.Length - (i + 1)));
+                    Permutate(combination + next[i], next.Substring(0, i) + next.Substring(i + 1));
                 }
             }
            

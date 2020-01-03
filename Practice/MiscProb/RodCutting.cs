@@ -12,7 +12,7 @@ namespace Practice.MiscProb
             //int[] price = { 1, 5, 8, 9, 10, 17, 17, 20 };
             var price = new int[] { 3, 5, 8, 9, 10, 17, 17, 20 };
             var x = RodCut(price, 8);
-            x = RodCut2(price, 8);
+           // x = RodCut2(price, 8);
         }
 
         private static int RodCut(int[] price, int n)

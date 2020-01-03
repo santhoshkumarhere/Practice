@@ -22,8 +22,10 @@ namespace Practice
     class Program
     {
         static void Main(string[] args)
-        {
-            RodCutting.Test();
+        { 
+           // SubSet.Test();
+           // Permutation.Test();
+            //RodCutting.Test();
            // Autocomplete.Test();
            // GameOfLifeProblem.Test();
             //CountIslands.Test();
@@ -31,7 +33,7 @@ namespace Practice
            // ProductExceptSelf.Test();
            // SearchRotatedArray.Test();
             //MinimumInRotatedArray.Test();
-            //ClimbingStairs.Test();
+             ClimbingStairs.Test();
            // MaximumSubArray.Test();
             // MeetingRoomII.Test();
             // TopologicalSorting.Test();
