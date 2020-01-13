@@ -13,7 +13,7 @@ namespace Practice.LeetCode75.Graph
             public int val;
             public IList<Node> neighbors;
 
-            public Node (int val, List<Node> neighbors)
+            public Node(int val, List<Node> neighbors)
             {
                 this.val = val;
                 this.neighbors = neighbors;
@@ -36,17 +36,17 @@ namespace Practice.LeetCode75.Graph
 
             node4.neighbors.Add(node1);
             node4.neighbors.Add(node3);
-            var result =  Clone(node1);
+            var result = Clone(node1);
             return result;
         }
 
         private static Node Clone(Node node)
         {
-            if(node == null)
+            if (node == null)
             {
                 return node;
             }
-            if(visited.ContainsKey(node))
+            if (visited.ContainsKey(node))
             {
                 return visited[node];
             }
@@ -54,7 +54,7 @@ namespace Practice.LeetCode75.Graph
             Node clonedNode = new Node(node.val, new List<Node>());
             visited[node] = clonedNode;
 
-            foreach(var neighbor in node.neighbors)
+            foreach (var neighbor in node.neighbors)
             {
                 clonedNode.neighbors.Add(Clone(neighbor));
             }
@@ -62,3 +62,4 @@ namespace Practice.LeetCode75.Graph
         }
     }
 }
+ 
