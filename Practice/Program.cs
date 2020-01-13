@@ -16,13 +16,15 @@ using Practice.MiscProb;
 using Practice.LinkedList;
 using Practice.StringProblems;
 using Practice.LeetCode75.Array;
+using Practice.LeetCode75.Graph;
 
 namespace Practice
 {
     class Program
     {
         static void Main(string[] args)
-        { 
+        {
+            CloneGraph.Test();
            // SubSet.Test();
            // Permutation.Test();
             //RodCutting.Test();
@@ -33,7 +35,7 @@ namespace Practice
            // ProductExceptSelf.Test();
            // SearchRotatedArray.Test();
             //MinimumInRotatedArray.Test();
-             ClimbingStairs.Test();
+           //  ClimbingStairs.Test();
            // MaximumSubArray.Test();
             // MeetingRoomII.Test();
             // TopologicalSorting.Test();
