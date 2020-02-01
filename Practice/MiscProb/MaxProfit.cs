@@ -27,8 +27,8 @@ namespace Practice.MiscProb
             
             for (var i = 2; i < prices.Length; i++)
             {
-                maxProfit = Math.Max(maxProfit, prices[i] - minBuy);
                 minBuy = Math.Min(minBuy, prices[i]);
+                maxProfit = Math.Max(maxProfit, prices[i] - minBuy);
             }
         }
     }

@@ -24,19 +24,23 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            CloneGraph.Test();
-           // SubSet.Test();
-           // Permutation.Test();
+            CountPrime.Test();
+            // SortedArrayToHeightBalancedBST.Test();
+            //StockBuyMultipleTransactions.Test();
+            //ContainsDuplicate.Test();
+            // CloneGraph.Test();
+            // SubSet.Test();
+            // Permutation.Test();
             //RodCutting.Test();
-           // Autocomplete.Test();
-           // GameOfLifeProblem.Test();
+            // Autocomplete.Test();
+            // GameOfLifeProblem.Test();
             //CountIslands.Test();
             //ShortestPathBinaryMatrix.Test();
-           // ProductExceptSelf.Test();
-           // SearchRotatedArray.Test();
+            // ProductExceptSelf.Test();
+            // SearchRotatedArray.Test();
             //MinimumInRotatedArray.Test();
-           //  ClimbingStairs.Test();
-           // MaximumSubArray.Test();
+            //  ClimbingStairs.Test();
+            // MaximumSubArray.Test();
             // MeetingRoomII.Test();
             // TopologicalSorting.Test();
             //RemoveDuplicatesFromSortedArray.Test();
@@ -109,7 +113,7 @@ namespace Practice
             //Console.WriteLine("AGGTAB - GXTXAYB");
             //Console.WriteLine(l.Find("AGGTAB", "GXTXAYB", 0, 0));
             //TestObserver();
-            // HouseThief.Test();
+            HouseThief.Test();
             // Console.WriteLine(x.Calculate(new int[] { 3, 1, 2, 5, 4, 2 }, 0));
             //Console.WriteLine(new RomanToInteger().RomanToInt("IV"));
             // Console.WriteLine(new ConvertString().Convert("table", "tagable", 0, 0));
@@ -128,8 +132,8 @@ namespace Practice
             //Permutation.Test();
             //PermutationPalindrome.Test();
             // Combinations.Test();
-           // MakingChange.Test(); 
-            //MaxProfit.Test();
+            // MakingChange.Test(); 
+            // MaxProfit.Test();
             // RotateMatrix.Test();
             //TopKFrequent.RecursionTest(new string[]{"xxx", "xx", "er", "df", "ab", "ab", "cert", "cer", "bat", "bat"}, 2);
             //TopKFrequent.FrequentWord(new int[]{1, 1, 1, 2, 2, 3, 3}, 2);
@@ -154,10 +158,10 @@ namespace Practice
             //  BinaryTreeLCA.Test();
             // // BTVerticalTraversal.Test();
             // BTZigZag.Test();
-            BSTLCA.Test();
+            //BSTLCA.Test();
             // BTSubTreeCheck.Test();
             // WordBreak.Test();
-           // WordBreakII.Test                ();
+            // WordBreakII.Test                ();
             // CountIslands.Test();
             // RottenOranges.Test();
             //  MakingChangeRecursive.Test();

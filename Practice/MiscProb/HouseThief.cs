@@ -13,10 +13,10 @@ namespace Practice.MiscProb
         public static void Test()
         {
             var arr = new int[] { 3, 1, 2, 5, 4, 2 };
-            var res = Calculate(arr, 0);
+            var res = Rob(arr);
             var list = new List<int>();
             var count = 0;
-            var ct = Calc(arr, 0, list, 0);
+            var ct = Calculate(arr, 0);
         }
 
         public static int Calc(int[] net, int currentIndex, List<int> res, int count)
@@ -39,6 +39,19 @@ namespace Practice.MiscProb
             var stealCurrentHouse = netWorth[currentIndex] +  Calculate(netWorth, currentIndex + 2);
             var skipCurrent = Calculate(netWorth, currentIndex + 1);
             return Math.Max(stealCurrentHouse, skipCurrent);
+        }
+
+        public static int Rob(int[] nums)
+        {
+            int prevMax = 0;
+            int currMax = 0;
+            foreach (var x in nums)
+            {
+                int temp = currMax;
+                currMax = Math.Max(prevMax + x, currMax);
+                prevMax = temp;
+            }
+            return currMax;
         }
 
     }

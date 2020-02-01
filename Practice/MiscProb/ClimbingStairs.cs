@@ -13,8 +13,8 @@ namespace Practice.MiscProb
 
             var dp = new int[n+1];
             var result = Climb(n, 0, dp);
-            result = Climb(n, 0);
-            result = ClimbLoop(new int[] { 1, 2 }, 3, 0);
+            //result = Climb(n, 0);
+           // result = ClimbLoop(new int[] { 1, 2 }, 3, 0);
         }
 
         private static int ClimbLoop(int[] nums , int target, int i)
