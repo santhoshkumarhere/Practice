@@ -24,7 +24,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            CountPrime.Test();
+            CountAndSay.Test();
+            //CountPrime.Test();
             // SortedArrayToHeightBalancedBST.Test();
             //StockBuyMultipleTransactions.Test();
             //ContainsDuplicate.Test();
