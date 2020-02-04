@@ -17,6 +17,7 @@ using Practice.LinkedList;
 using Practice.StringProblems;
 using Practice.LeetCode75.Array;
 using Practice.LeetCode75.Graph;
+using Practice.SixtyDaysChallenge;
 
 namespace Practice
 {
@@ -24,7 +25,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            CountAndSay.Test();
+            AddTwoNumbers_M.Test();
+            //TwoSum.Test();
+            // CountAndSay.Test();
             //CountPrime.Test();
             // SortedArrayToHeightBalancedBST.Test();
             //StockBuyMultipleTransactions.Test();
