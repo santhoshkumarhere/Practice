@@ -25,7 +25,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            AddTwoNumbers_M.Test();
+            MergeSortedList.Test();
+            //AddTwoNumbers_M.Test();
             //TwoSum.Test();
             // CountAndSay.Test();
             //CountPrime.Test();

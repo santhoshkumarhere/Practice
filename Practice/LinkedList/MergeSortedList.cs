@@ -14,34 +14,34 @@ namespace Practice.LinkedList
 
             var list2 = new ListNode(1);
             list2.next = new ListNode(3);
-            list2.next.next = new ListNode(4);
+           // list2.next.next = new ListNode(4);
             MergeTwoLists(list1, list2);
         }
 
         public static ListNode MergeTwoLists(ListNode l1, ListNode l2)
         {
-            ListNode prehead = new ListNode(-1);
+            var dummy = new ListNode(-1);
 
-            ListNode prev = prehead;
+            ListNode curr = dummy;
 
             while (l1 != null && l2 != null)
             {
                 if (l1.val <= l2.val)
                 {
-                    prev.next = l1;
+                    curr.next = l1;
                     l1 = l1.next;
                 }
                 else
                 {
-                    prev.next = l2;
+                    curr.next = l2;
                     l2 = l2.next;
                 }
 
-                prev = prev.next;
+                curr = curr.next;
             }
 
-                prev.next = l1 ?? l2;
-                return prehead.next;
+            curr.next = l1 ?? l2;
+                return dummy.next;
             }
         }
     }
