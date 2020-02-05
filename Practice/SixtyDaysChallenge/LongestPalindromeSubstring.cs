@@ -26,12 +26,12 @@ namespace Practice.SixtyDaysChallenge
 
         public static string LongestPalindrome(string s)
         {
-            if(string.IsNullOrEmpty(s))
+            var len = s.Length;
+            if (len == 1 || s == string.Empty || IsPalindrome(s))
             {
                 return s;
             }
-
-            var len = s.Length;
+                       
             int min = 0, max = 0;
             
             for(var startIndex = 0; startIndex < len; startIndex++)
@@ -51,7 +51,8 @@ namespace Practice.SixtyDaysChallenge
                 }
             }
             if (min == 0 && max == 0)
-                return s;
+                return s[0].ToString();
+
             return s.Substring(min, max);
         }
     }
