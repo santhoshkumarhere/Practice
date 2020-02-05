@@ -19,7 +19,7 @@ namespace Practice.SixtyDaysChallenge
             }
 
             var dict = new Dictionary<char, char> {
-                {'}', '{' },
+                {'}', '{'},
                 {']', '['},
                 {')', '('}
             };
