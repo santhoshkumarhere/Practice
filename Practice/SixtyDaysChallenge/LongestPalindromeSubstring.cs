@@ -39,6 +39,10 @@ namespace Practice.SixtyDaysChallenge
                 for(var endIndex = len-1; endIndex > startIndex; endIndex--)
                 {
                     var noOfWords = endIndex - startIndex + 1;
+                    if(noOfWords < max)
+                    {
+                        continue;
+                    }
                     if (s[startIndex] == s[endIndex])
                     {                        
                         var isPalindrome = IsPalindrome(s.Substring(startIndex, noOfWords));
