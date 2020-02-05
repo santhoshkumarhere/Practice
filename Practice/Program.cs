@@ -25,7 +25,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MergeSortedList.Test();
+            NoOfIslands_M_.Test();
+           // MergeSortedList.Test();
             //AddTwoNumbers_M.Test();
             //TwoSum.Test();
             // CountAndSay.Test();
@@ -118,7 +119,7 @@ namespace Practice
             //Console.WriteLine("AGGTAB - GXTXAYB");
             //Console.WriteLine(l.Find("AGGTAB", "GXTXAYB", 0, 0));
             //TestObserver();
-            HouseThief.Test();
+            //HouseThief.Test();
             // Console.WriteLine(x.Calculate(new int[] { 3, 1, 2, 5, 4, 2 }, 0));
             //Console.WriteLine(new RomanToInteger().RomanToInt("IV"));
             // Console.WriteLine(new ConvertString().Convert("table", "tagable", 0, 0));
