@@ -53,21 +53,6 @@ namespace Practice.MiscProb
             Console.WriteLine(newString);
         }
 
-        public static bool PalindromeString(string input)
-        {
-            var len = input.Length;
-            for (var i = 0; i < len/2; i++)
-            {
-                if (input[i] != input[len - i - 1])
-                {
-                   // Console.WriteLine("Not a palindrome");
-                    return false;
-                }
-            }
-            // Console.WriteLine("Palindrome");
-            return true;
-        }
-
         public int maxArea(int[] height)
         {
             int maxarea = 0, l = 0, r = height.Length - 1;
@@ -80,6 +65,19 @@ namespace Practice.MiscProb
                     r--;
             }
             return maxarea;
+        }
+
+        public static bool PalindromeString(string input)
+        {
+            var len = input.Length;
+            for (var i = 0; i < len / 2; i++)
+            {
+                if (input[i] != input[len - i - 1])
+                {
+                    return false;
+                }
+            }
+            return true;
         }
 
         public static string LongestPalindrome(string s)
@@ -97,16 +95,13 @@ namespace Practice.MiscProb
                 {
                     if (s[startIndex] == s[endingIndex])
                     {
-                        var sub = s.Substring(startIndex, startIndex == 0 ? endingIndex + 1 : (endingIndex - startIndex  + 1));
+                        var noOfWords = endingIndex - startIndex + 1;
+                        var sub = s.Substring(startIndex, noOfWords);
                         var result = PalindromeString(sub);
-                        if (result)
-                        {
-                            var stringCount = endingIndex - startIndex + 1;
-                            if (stringCount > max )
-                            {
-                                min = startIndex;
-                                max = startIndex == 0 ? endingIndex + 1 : stringCount;
-                            }
+                        if (result && noOfWords > max)
+                        {  
+                            min = startIndex;
+                            max = noOfWords;                          
                         }
                     }
                 }
@@ -116,7 +111,8 @@ namespace Practice.MiscProb
                 return s[0].ToString();
             }
 
-            return s.Substring(min, max);
+            var res= s.Substring(min, max);
+            return res;
         } //xaabaax   abbc maadaax maamm
 
         public static string Test(string s)
