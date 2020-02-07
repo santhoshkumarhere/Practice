@@ -25,8 +25,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-
-            HappyNumbers_E_.Test();
+            LongestSubsWithNonRepeatingChar_M_.Test();
+            //HappyNumbers_E_.Test();
            // ValidParenthesis_E_.Test();
             //NoOfIslands_M_C.Test();
             //NoOfIslands_M_.Test();
