@@ -25,7 +25,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MergeIntervals_M_.Test();
+            GameOfLife_M_.Test();
+           // MergeIntervals_M_.Test();
            // CopyListWithPOinter_M_.Test();
            // ReverseLinkedList.Test();
            //LongestSubsWithNonRepeatingChar_M_.Test();
