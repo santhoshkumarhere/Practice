@@ -25,7 +25,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MeetingRoomII_M_.Test();
+            MergeSortedArray_E_.Test();
+           // MeetingRoomII_M_.Test();
             //SearchInRotatedSortedArray_M_.Test();
             // GameOfLife_M_.Test();
             // MergeIntervals_M_.Test();
