@@ -9,38 +9,31 @@ namespace Practice.SixtyDaysChallenge
         public static void Test()
         {
             var res = CoinChange(new int[] {186, 419, 83, 408 }, 6249);
-            //var res = CoinChange(new int[] { 1, 2, 5, 10 }, 18);
-            //res = CoinChange(new int[] { 1, 2, 5 }, 11);
-            //res = CoinChange(new int[] { 1, 3, 5 }, 4);
-            //res = CoinChange(new int[] { 1 }, 11);
-            //res = CoinChange(new int[] { 2 }, 3);
+            res = CoinChange(new int[] { 1, 2, 5, 10 }, 18);
+            res = CoinChange(new int[] { 1, 2, 5 }, 11);
+            res = CoinChange(new int[] { 1, 3, 5 }, 4);
+           res = CoinChange(new int[] { 1 }, 11);
+           res = CoinChange(new int[] { 2 }, 3);
         }
 
         public static int CoinChange(int[] coins, int amount)
         {
             if (amount == 0) return 0;
-            Array.Sort(coins);
-            var set = new HashSet<int>(coins);
-            var count = 0; var i = coins.Length - 1;
-            while (amount > 0 && i >=0)
-            {
-                if (amount >= coins[i])
-                {
-                    count = count + amount / coins[i];
+          
+            var dp = new int[amount + 1];
 
-                    amount = amount % coins[i];
-                }
-                else if (set.Contains(amount))
-                {                    
-                    return count + 1 ;
-                }
-                else
+            Array.Fill(dp, amount+1);
+
+            dp[0] = 0;
+            for (var i=1; i <= amount; i++)
+            {
+                for( var j=0; j < coins.Length; j++)
                 {
-                    i--;
+                    if(i >= coins[j])
+                    dp[i] = Math.Min(1 + dp[i - coins[j]], dp[i]);
                 }
             }
-
-            return amount == 0 ? count : -1;
+            return dp[amount] > amount ? -1 : dp[amount];
         }
     }
 }
