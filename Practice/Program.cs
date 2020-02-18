@@ -25,13 +25,14 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MergeSortedArray_E_.Test();
+            CoinChange_M_.Test();
+           // MergeSortedArray_E_.Test();
            // MeetingRoomII_M_.Test();
-            //SearchInRotatedSortedArray_M_.Test();
-            // GameOfLife_M_.Test();
-            // MergeIntervals_M_.Test();
-            // CopyListWithPOinter_M_.Test();
-            // ReverseLinkedList.Test();
+           //SearchInRotatedSortedArray_M_.Test();
+           // GameOfLife_M_.Test();
+           // MergeIntervals_M_.Test();
+           // CopyListWithPOinter_M_.Test();
+           // ReverseLinkedList.Test();
             //LongestSubsWithNonRepeatingChar_M_.Test();
             //HappyNumbers_E_.Test();
             // ValidParenthesis_E_.Test();
