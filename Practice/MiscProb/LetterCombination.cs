@@ -36,14 +36,6 @@ namespace Practice.MiscProb
                 }
             }
         }
-
-
-        public IList<string> letterCombinations(string digits)
-        {
-            if (digits.Length != 0)
-                backtrack("", digits);
-            return output;
-        }
     }
 }
 
