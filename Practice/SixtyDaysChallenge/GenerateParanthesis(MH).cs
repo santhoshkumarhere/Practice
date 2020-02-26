@@ -8,7 +8,7 @@ namespace Practice.SixtyDaysChallenge
     {
         public static void Test()
         {
-            var res = GenerateParenthesis(4);
+            var res = GenerateParenthesis(3);
         }
 
         public static List<string> GenerateParenthesis(int n)

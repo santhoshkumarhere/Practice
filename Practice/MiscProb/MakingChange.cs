@@ -29,7 +29,7 @@ namespace Practice.MiscProb
                 return;
             }
 
-            for (int i = start; i < candidates.Length && target >= candidates[i]; ++i)
+            for (int i = start; i < candidates.Length && target >= candidates[i]; i++)
             {
                 combination.Add(candidates[i]);
                 CombinationSum(result, candidates, combination, target - candidates[i], i);
