@@ -25,7 +25,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            SixtyDaysChallenge.WordBreak.Test();
+            ValidPalindrome_E_.Test();
+           // SixtyDaysChallenge.WordBreak.Test();
            // MakingChange.Test();
            //   GenerateParanthesis_MH_.Test();
            // Permutation.Test();
