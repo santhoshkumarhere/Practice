@@ -18,6 +18,7 @@ using Practice.StringProblems;
 using Practice.LeetCode75.Array;
 using Practice.LeetCode75.Graph;
 using Practice.SixtyDaysChallenge;
+using Practice.Search;
 
 namespace Practice
 {
@@ -25,7 +26,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            ValidPalindrome_E_.Test();
+            BinarySearch.Test();
+           // ValidPalindrome_E_.Test();
            // SixtyDaysChallenge.WordBreak.Test();
            // MakingChange.Test();
            //   GenerateParanthesis_MH_.Test();
@@ -97,7 +99,7 @@ namespace Practice
             //ArrayRangeSearch.Test(new[] { 5, 7, 7, 8, 8, 10, 11 }, 8);
             // SubArray.Test();
             // PascalTriangle.Test();
-            //  ArrayInsert.Test();
+           //  ArrayInsert.Test();
             //LinkedListTest.Test();
             // ArrayRangeSearch.Test(new[] { 5, 7, 7, 8, 8, 10, 11 }, 10);
             // ArrayRangeSearch.Test(new[] { 5, 7, 7, 8, 8, 10 }, 10);
