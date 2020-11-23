@@ -9,12 +9,27 @@ namespace Practice.MiscProb
     {
         public static void Test()
         {
-            int n = 3;
-
+            int n = 4;
+            ClimbNewStyle(n);
             var dp = new int[n+1];
-            var result = Climb(n, 0, dp);
+           // var result = Climb(n, 0, dp);
             //result = Climb(n, 0);
            // result = ClimbLoop(new int[] { 1, 2 }, 3, 0);
+        }
+
+
+        private static void ClimbNewStyle(int steps)
+        {
+            var previous = 1;
+            var oneBefore = 1;
+            var noOfWays = 0;
+            for(var i = 2; i <= steps; i++)
+            {
+                noOfWays = previous + oneBefore;
+                oneBefore = previous;
+                previous = noOfWays;
+            }
+            Console.WriteLine(noOfWays);
         }
 
         private static int ClimbLoop(int[] nums , int target, int i)

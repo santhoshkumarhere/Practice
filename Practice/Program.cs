@@ -26,7 +26,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            BinarySearch.Test();
+         //   BinarySearch.Test();
            // ValidPalindrome_E_.Test();
            // SixtyDaysChallenge.WordBreak.Test();
            // MakingChange.Test();
@@ -64,7 +64,7 @@ namespace Practice
            // ProductExceptSelf.Test();
            // SearchRotatedArray.Test();
            //MinimumInRotatedArray.Test();
-           //  ClimbingStairs.Test();
+            ClimbingStairs.Test();
            // MaximumSubArray.Test();
            // MeetingRoomII.Test();
            // TopologicalSorting.Test();
@@ -154,7 +154,7 @@ namespace Practice
             // var x = new LetterCombination();
 
             //x.letterCombinations("2345");
-            //Permutation.Test();
+           // Permutation.Test();
             //PermutationPalindrome.Test();
             // Combinations.Test();
             // MakingChange.Test(); 
