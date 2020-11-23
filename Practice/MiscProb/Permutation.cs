@@ -13,7 +13,7 @@ namespace Practice.MiscProb
         // Driver Code 
         public static void Test()
         {
-            Permutate("", "1234");
+            Permutate("", "ABC");
         }
 
         public static void Permutate(string combination, string next)
@@ -27,6 +27,7 @@ namespace Practice.MiscProb
             {
                 for (var i = 0; i < next.Length; i++)
                 {
+                                                //,characters before next[i], characters after next[i])
                    Permutate(combination + next[i], next.Substring(0, i) + next.Substring(i + 1));
                 }
             }
