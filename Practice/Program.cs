@@ -31,7 +31,8 @@ namespace Practice
             // SixtyDaysChallenge.WordBreak.Test();
             // MakingChange.Test();
             //   GenerateParanthesis_MH_.Test();
-             Permutation.Test();
+            //Permutation.Test();
+            LinkedListPalindrome.Test();
             // CoinChange_M_.Test();
             // MergeSortedArray_E_.Test();
             // MeetingRoomII_M_.Test();
@@ -66,7 +67,7 @@ namespace Practice
             //MinimumInRotatedArray.Test();
             //ClimbingStairs.Test();
 
-            PermutationString.Permutate();
+            //PermutationString.Permutate();
             // MaximumSubArray.Test();
                                   // MeetingRoomII.Test();
                                   // TopologicalSorting.Test();
@@ -110,7 +111,7 @@ namespace Practice
             // TestGraph();
             // Console.WriteLine("");
             // TestAVL();
-            PrintBT();
+            //PrintBT();
             //CheckBalancedBST();
             // Console.ReadLine();
             // MonkWatchFight();
