@@ -129,6 +129,27 @@ namespace Practice.Tree
             }
         }
 
+        public void InOrderTraverseIterative(Node currentNode)
+        {
+            Node curr = currentNode;
+            var stack = new Stack<Node>();
+
+            while(stack.Count() > 0 || curr != null)
+            {
+                if(curr != null )
+                {
+                    stack.Push(curr);
+                    curr = curr.Left;
+                }
+                else
+                {
+                    curr = stack.Pop();
+                    Console.Write(" " + curr.data);
+                    curr = curr.Right;
+                }
+            }
+        }
+
         public void PostOrderTraverse(Node currentNode)
         {
             if (currentNode != null)

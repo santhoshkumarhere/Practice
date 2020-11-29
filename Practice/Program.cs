@@ -106,7 +106,7 @@ namespace Practice
             // TestGraph();
             // Console.WriteLine("");
             // TestAVL();
-            // PrintBT();
+            PrintBT();
             //CheckBalancedBST();
             // Console.ReadLine();
             // MonkWatchFight();
@@ -367,26 +367,31 @@ namespace Practice
             bst.DeleteNode(20);
             Console.WriteLine("\nResult After delete (20): ");
             bst.InOrderTraverse(bst.root);
+            bst.InOrderTraverseIterative(bst.root);
 
             bst = CreateBST();
             bst.DeleteNode(25);
             Console.WriteLine("\nResult After delete (25): ");
             bst.InOrderTraverse(bst.root);
+            bst.InOrderTraverseIterative(bst.root);
 
             bst = CreateBST();
             bst.DeleteNode(15);
             Console.WriteLine("\nResult After delete (15): ");
             bst.InOrderTraverse(bst.root);
+            bst.InOrderTraverseIterative(bst.root);
 
             bst = CreateBST();
             bst.DeleteNode(45);
             Console.WriteLine("\nResult After delete (45): ");
             bst.InOrderTraverse(bst.root);
+            bst.InOrderTraverseIterative(bst.root);
 
             bst = CreateBST();
             bst.DeleteNode(70);
             Console.WriteLine("\nResult After delete (70): ");
             bst.InOrderTraverse(bst.root);
+            bst.InOrderTraverseIterative(bst.root);
 
             bst = CreateBST();
             Console.WriteLine("\nHeight: " + bst.Height());
