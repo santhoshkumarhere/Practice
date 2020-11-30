@@ -19,6 +19,7 @@ using Practice.LeetCode75.Array;
 using Practice.LeetCode75.Graph;
 using Practice.SixtyDaysChallenge;
 using Practice.Search;
+using Practice.NickWhiteLeetCode;
 
 namespace Practice
 {
@@ -26,13 +27,14 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            IntegerPalindrome.Test();
             //   BinarySearch.Test();
             // ValidPalindrome_E_.Test();
             // SixtyDaysChallenge.WordBreak.Test();
             // MakingChange.Test();
             //   GenerateParanthesis_MH_.Test();
             //Permutation.Test();
-            LinkedListPalindrome.Test();
+           // LinkedListPalindrome.Test();
             // CoinChange_M_.Test();
             // MergeSortedArray_E_.Test();
             // MeetingRoomII_M_.Test();
