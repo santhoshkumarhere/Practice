@@ -19,6 +19,7 @@ using Practice.LeetCode75.Array;
 using Practice.LeetCode75.Graph;
 using Practice.SixtyDaysChallenge;
 using Practice.Search;
+using Practice.Tree.TreeProblems;
 
 namespace Practice
 {
@@ -32,7 +33,7 @@ namespace Practice
             // MakingChange.Test();
             //   GenerateParanthesis_MH_.Test();
             //Permutation.Test();
-            LinkedListPalindrome.Test();
+            //LinkedListPalindrome.Test();
             // CoinChange_M_.Test();
             // MergeSortedArray_E_.Test();
             // MeetingRoomII_M_.Test();
@@ -69,30 +70,30 @@ namespace Practice
 
             //PermutationString.Permutate();
             // MaximumSubArray.Test();
-                                  // MeetingRoomII.Test();
-                                  // TopologicalSorting.Test();
-                                  //RemoveDuplicatesFromSortedArray.Test();
-                                  // ArrayRemoveElement.Test();
-                                  //RemoveLinkedListElement.Test();
-                                  //  ValidatingAlienDictionary.Test(); 
-                                  //AlienDictionaryLeetCode.Test();
-                                  // WordLadder.Test();
-                                  // AlienDictionary.Test();
-                                  //RemoveDuplicatesFromSortedArray.Test();
-                                  // VowelSpellChecker.Test();
-                                  //UniquePath.Test();
-                                  // WordSearch.Test();
-                                  // ReverseString.Test();
-                                  //GameOfLifeProblem.Test();
-                                  //WordBreakII.Test();
-                                  //MinimumPathSum.Test();
-                                  //MinimumCostTreeFromLeaf.Test();
-                                  // TopologicalSorting.Test();
-                                  //WordLadder.Test();
-                                  // Map<string, int>.Test();
-                                  // ConnectedComponentGraph.Test();
-                                  // CountIslands.Test();
-                                  // ZombieMatrix.Test();
+            // MeetingRoomII.Test();
+            // TopologicalSorting.Test();
+            //RemoveDuplicatesFromSortedArray.Test();
+            // ArrayRemoveElement.Test();
+            //RemoveLinkedListElement.Test();
+            //  ValidatingAlienDictionary.Test(); 
+            //AlienDictionaryLeetCode.Test();
+            // WordLadder.Test();
+            // AlienDictionary.Test();
+            //RemoveDuplicatesFromSortedArray.Test();
+            // VowelSpellChecker.Test();
+            //UniquePath.Test();
+            // WordSearch.Test();
+            // ReverseString.Test();
+            //GameOfLifeProblem.Test();
+            //WordBreakII.Test();
+            //MinimumPathSum.Test();
+            //MinimumCostTreeFromLeaf.Test();
+            // TopologicalSorting.Test();
+            //WordLadder.Test();
+            // Map<string, int>.Test();
+            // ConnectedComponentGraph.Test();
+            // CountIslands.Test();
+            // ZombieMatrix.Test();
 
             // RotatedArraySearch.Search();
             // ArrayRangeSearch.Test(new[] { 1,2,3,3,3,4,5 }, 3);
@@ -111,7 +112,8 @@ namespace Practice
             // TestGraph();
             // Console.WriteLine("");
             // TestAVL();
-            //PrintBT();
+            // PrintBT();
+            InvertBinaryTree.Test();
             //CheckBalancedBST();
             // Console.ReadLine();
             // MonkWatchFight();
@@ -358,6 +360,17 @@ namespace Practice
         {
 
             var bst = CreateBST();
+            Console.WriteLine();
+            Console.WriteLine("PostOrder Traversal of Btree");
+            bst.PostOrderTraverse(bst.root);
+            Console.WriteLine();
+            bst.PostOrderTraverseIterative(bst.root);
+
+            Console.WriteLine("Pre Traversal of Btree");
+            bst.PreOrderTraverse(bst.root);
+            Console.WriteLine();
+            bst.PreOrderTraverseIterative(bst.root);
+
             var node = bst.GetNode(25);
             Console.WriteLine("\n Search: " + node?.data);
 
