@@ -119,6 +119,28 @@ namespace Practice.Tree
             }
         }
 
+        public void PreOrderTraverseIterative(Node currentNode)
+        {
+            var result = new LinkedList<int>();
+
+            var stack = new Stack<Node>();
+
+            stack.Push(currentNode);
+
+            while (stack.Count > 0)
+            {
+                var curr = stack.Pop();
+                result.AddLast(curr.data);
+                if (curr.Right != null) stack.Push(curr.Right);
+                if (curr.Left != null) stack.Push(curr.Left);
+            }
+
+            foreach (var list in result)
+            {
+                Console.Write(" " + list);
+            }
+        }
+
         public void InOrderTraverse(Node currentNode)
         {
             if (currentNode != null)
@@ -157,6 +179,28 @@ namespace Practice.Tree
                 PostOrderTraverse(currentNode.Left);
                 PostOrderTraverse(currentNode.Right);
                 Console.Write(" " + currentNode.data);
+            }
+        }
+
+        public void PostOrderTraverseIterative(Node currentNode)
+        {
+            var result = new LinkedList<int>();
+
+            var stack = new Stack<Node>();
+             
+            stack.Push(currentNode);
+
+            while(stack.Count > 0)
+            {
+                var curr = stack.Pop();
+                result.AddFirst(curr.data);
+                if(curr.Left != null) stack.Push(curr.Left);
+                if(curr.Right != null) stack.Push(curr.Right);
+            }
+            
+            foreach(var list in result)
+            {
+                Console.Write(" " +list);
             }
         }
 
