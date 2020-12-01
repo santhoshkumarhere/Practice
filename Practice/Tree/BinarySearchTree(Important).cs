@@ -249,6 +249,34 @@ namespace Practice.Tree
             return 1 + Math.Max(leftHeight, rightHeight);
         }
 
+        //GetDepthTopDown(node , 1);
+        private int answer = 0;
+        public void GetDepthTopDown(Node node, int depth)
+        {
+            if(node == null)
+            {
+                return;
+            }
+
+            if(node.Left == null && node.Right == null)
+            {
+                answer = Math.Max(answer, depth);
+            }
+
+            GetDepthTopDown(node.Left, depth + 1);
+            GetDepthTopDown(node.Right, depth + 1);
+        }
+
+        public int GetDepthBottomsUp(Node node)
+        {
+            if (node == null)
+            {
+                return 0;
+            }            
+
+            return 1 + Math.Max(GetDepthBottomsUp(node.Left),  GetDepthBottomsUp(node.Right));
+        }
+
         public int Height()
         {
             return this.GetHeight(this.root);
