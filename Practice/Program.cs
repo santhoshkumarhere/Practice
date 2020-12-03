@@ -27,7 +27,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            IntegerPalindrome.Test();
+            ToLowerCase.Test();
+            //IntegerPalindrome.Test();
             //   BinarySearch.Test();
             // ValidPalindrome_E_.Test();
             // SixtyDaysChallenge.WordBreak.Test();
