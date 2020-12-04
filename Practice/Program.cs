@@ -27,6 +27,14 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            ToLowerCase.Test();
+            //IntegerPalindrome.Test();
+            //   BinarySearch.Test();
+            // ValidPalindrome_E_.Test();
+            // SixtyDaysChallenge.WordBreak.Test();
+            // MakingChange.Test();
+            //   GenerateParanthesis_MH_.Test();
+            //Permutation.Test();
             OddEvenLinkedList.Test();
            //IntegerPalindrome.Test();
            //   BinarySearch.Test();
