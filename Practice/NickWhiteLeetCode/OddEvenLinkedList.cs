@@ -42,9 +42,9 @@ namespace Practice.NickWhiteLeetCode
 
             while(even != null && even.Next != null)
             {
-                odd.Next = even.Next;
-                odd = odd.Next;
-                even.Next = odd.Next;
+                odd.Next = even.Next; 
+                odd = odd.Next;// odd still pointing to head nodes
+                even.Next = odd.Next; // even parted away from head due to above line above line
                 even = even.Next;
             }
 
