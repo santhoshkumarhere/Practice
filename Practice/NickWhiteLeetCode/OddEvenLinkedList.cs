@@ -38,14 +38,15 @@ namespace Practice.NickWhiteLeetCode
 
             var odd = head; //(odd head)
             var even = head.Next;
-            var evenHead = even; //(even head)
+            var evenHead = even; //(even head )
 
             while(even != null && even.Next != null)
             {
                 odd.Next = even.Next; 
-                odd = odd.Next; //both odd and even pointing to head 
+                odd = odd.Next;  
                 even.Next = odd.Next;
                 even = even.Next;
+                even.Next = null;
             }
 
             odd.Next = evenHead;
