@@ -8,40 +8,35 @@ namespace Practice.NickWhiteLeetCode
     {
         public static void Test()
         {
-            var str = ".,";
+            var str = "race .,'  .,  acar";
             var res = IsPalindrome(str);
         }
 
         public static bool IsPalindrome(string s)
         {
-            if (string.IsNullOrEmpty(s))
-            {
-                return true;
-            }
+            if (s == null || s.Length == 1) return true;
 
-            var left = 0;
-            var right = s.Length - 1;
+            int left = 0, right = s.Length - 1;
 
-            while (left < right)
+            while (left <= right)
             {
-                if (!char.IsLetterOrDigit(s[left]))
+                while (left < s.Length - 1 && !char.IsLetterOrDigit(s[left]))
                 {
                     left++;
                 }
-                else if (!char.IsLetterOrDigit(s[right]))
+
+                while (right > 0 && !char.IsLetterOrDigit(s[right]))
                 {
-                    right--;
-                }
-                else
-                {
-                    if (char.ToLower(s[left]) != char.ToLower(s[right]))
-                    {
-                        return false;
-                    }
-                    left++;
                     right--;
                 }
 
+                if (left < s.Length - 1 && right >= 0 && (char.ToLower(s[left]) != char.ToLower(s[right])))
+                {
+                    return false;
+                }
+
+                left++;
+                right--;
             }
             return true;
         }
