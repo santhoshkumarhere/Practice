@@ -27,7 +27,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            BackSpaceString.Test();
+            ValidPalindrome.Test();
+          // ReverseStringArray.Test();
+            //BackSpaceString.Test();
             //ToLowerCase.Test();
             //IntegerPalindrome.Test();
             //   BinarySearch.Test();
