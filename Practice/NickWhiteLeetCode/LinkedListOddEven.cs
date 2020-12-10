@@ -13,7 +13,7 @@ namespace Practice.NickWhiteLeetCode
         public ListNode(int x) => this.Val = x;
     }
 
-    public class OddEvenLinkedList
+    public class LinkedListOddEven
     {
         public static void Test()
         {

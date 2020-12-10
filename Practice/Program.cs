@@ -27,8 +27,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            ValidPalindrome.Test();
-          // ReverseStringArray.Test();
+            LinkedListFindMiddle.Test();
+            //ValidPalindrome.Test();
+            // ReverseStringArray.Test();
             //BackSpaceString.Test();
             //ToLowerCase.Test();
             //IntegerPalindrome.Test();
