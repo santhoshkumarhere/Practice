@@ -27,7 +27,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LinkedListFindMiddle.Test();
+            LinkedListMergeTwoSortedList.Test();
+            //LinkedListFindMiddle.Test();
             //ValidPalindrome.Test();
             // ReverseStringArray.Test();
             //BackSpaceString.Test();
@@ -39,7 +40,7 @@ namespace Practice
             // MakingChange.Test();
             //   GenerateParanthesis_MH_.Test();
             //Permutation.Test();
-            // OddEvenLinkedList.Test();
+           // LinkedListOddEven.Test();
             //IntegerPalindrome.Test();
             //   BinarySearch.Test();
             // ValidPalindrome_E_.Test();

@@ -28,7 +28,7 @@ namespace Practice.NickWhiteLeetCode
             if (head == null) return head;
             var slow = head;
             var fast = head;
-            ListNode middle = null;
+            ListNode middle;
 
             while(fast != null && fast.Next != null)
             {
