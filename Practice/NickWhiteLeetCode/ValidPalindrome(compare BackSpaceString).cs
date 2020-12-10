@@ -8,8 +8,16 @@ namespace Practice.NickWhiteLeetCode
     {
         public static void Test()
         {
-            var str = "race .,'  .,  acar";
+            var str = ",.";
             var res = IsPalindrome(str);
+
+            str = "racecar";
+            var res1 = IsPalindrome(str);
+
+            str = "race .,  ;' ,. a car";
+            var res2 = IsPalindrome(str);
+
+
         }
 
         public static bool IsPalindrome(string s)
@@ -20,7 +28,7 @@ namespace Practice.NickWhiteLeetCode
 
             while (left <= right)
             {
-                while (left < s.Length - 1 && !char.IsLetterOrDigit(s[left]))
+                while (left < s.Length - 1 && !char.IsLetterOrDigit(s[left])) //increment only within index
                 {
                     left++;
                 }
@@ -30,7 +38,8 @@ namespace Practice.NickWhiteLeetCode
                     right--;
                 }
 
-                if (left < s.Length - 1 && right >= 0 && (char.ToLower(s[left]) != char.ToLower(s[right])))
+                //keep in mind right can go beyond right because of inner while loop
+                if (left <= right && left <= s.Length - 1 && right >= 0 && (char.ToLower(s[left]) != char.ToLower(s[right])))
                 {
                     return false;
                 }
