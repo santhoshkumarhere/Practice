@@ -27,7 +27,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LinkedListMergeTwoSortedList.Test();
+            RobotReturn2DPlane.Test();
+            //LinkedListMergeTwoSortedList.Test();
             //LinkedListFindMiddle.Test();
             //ValidPalindrome.Test();
             // ReverseStringArray.Test();
@@ -40,7 +41,7 @@ namespace Practice
             // MakingChange.Test();
             //   GenerateParanthesis_MH_.Test();
             //Permutation.Test();
-           // LinkedListOddEven.Test();
+            // LinkedListOddEven.Test();
             //IntegerPalindrome.Test();
             //   BinarySearch.Test();
             // ValidPalindrome_E_.Test();

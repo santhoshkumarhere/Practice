@@ -48,7 +48,7 @@ namespace Practice.NickWhiteLeetCode
             curr.Next = l1 ?? l2;
             return dummy.Next;
          }
-        public static ListNode MergeListTryListNode( l1, ListNode l2)
+        public static ListNode MergeListTryListNode(ListNode l1, ListNode l2)
         {
             if (l1 == null) return l2;
             if (l2 == null) return l1;
