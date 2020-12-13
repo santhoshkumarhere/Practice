@@ -27,7 +27,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            RobotReturn2DPlane.Test();
+            KeysAndRooms.Test();
+            //RobotReturn2DPlane.Test();
             //LinkedListMergeTwoSortedList.Test();
             //LinkedListFindMiddle.Test();
             //ValidPalindrome.Test();
