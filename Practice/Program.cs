@@ -27,7 +27,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            SquareOfSortedArray.Test();
+            _3Sum.Test();
+            //SquareOfSortedArray.Test();
             //KeysAndRooms.Test();
             //RobotReturn2DPlane.Test();
             //LinkedListMergeTwoSortedList.Test();
