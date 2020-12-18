@@ -20,6 +20,7 @@ using Practice.LeetCode75.Graph;
 using Practice.SixtyDaysChallenge;
 using Practice.Search;
 using Practice.NickWhiteLeetCode;
+using Practice.NickWhiteLeetCode.TreeProblems;
 
 namespace Practice
 {
@@ -27,7 +28,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            _3Sum.Test();
+            TreeMaxValueInRow.Test();
+            //_3Sum.Test();
             //SquareOfSortedArray.Test();
             //KeysAndRooms.Test();
             //RobotReturn2DPlane.Test();
