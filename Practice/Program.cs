@@ -28,7 +28,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            TreeMaxValueInRow.Test();
+            PermutateString.Test();
+            //TreeMaxValueInRow.Test();
             //_3Sum.Test();
             //SquareOfSortedArray.Test();
             //KeysAndRooms.Test();
