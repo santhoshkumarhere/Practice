@@ -21,6 +21,7 @@ using Practice.SixtyDaysChallenge;
 using Practice.Search;
 using Practice.NickWhiteLeetCode;
 using Practice.NickWhiteLeetCode.TreeProblems;
+using Practice.BackTracking;
 
 namespace Practice
 {
@@ -28,7 +29,10 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            PermutateString.Test();
+           //MakingChange.Test();
+             Combination.Test();
+            //PermutateNoSwap.Test();
+            //PermutateString.Test();
             //TreeMaxValueInRow.Test();
             //_3Sum.Test();
             //SquareOfSortedArray.Test();
