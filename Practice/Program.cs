@@ -29,9 +29,10 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Subset.Test();
+            CoinChange2.Test();
+           // Subset.Test();
            //MakingChange.Test();
-           //  Combination.Test();
+            //Combination.Test();
            //PermutateNoSwap.Test();
            //PermutateString.Test();
            //TreeMaxValueInRow.Test();
