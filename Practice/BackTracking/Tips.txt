@@ -1,8 +1,10 @@
 ﻿BackTracking techniques:
 
-Always draw the tree and decide how you wanna manipulat forloop i
+Always draw the tree and decide how you wanna manipulate starting index of forloop i
 
 For Permutation, let the for loop to run with i = 0 and add it to track only if the current value
 does not exists already
 
-For combinations (making change, coins), manipulate i = start with current + 1
+For combinations (making change, coins), manipulate i = start
+
+Subset use i+1
