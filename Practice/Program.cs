@@ -29,10 +29,12 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            CoinChange2.Test();
+
+            ConvertAStringToAnother_Recursion_.Test();
+           // CoinChange2.Test();
            // Subset.Test();
            //MakingChange.Test();
-            //Combination.Test();
+           //Combination.Test();
            //PermutateNoSwap.Test();
            //PermutateString.Test();
            //TreeMaxValueInRow.Test();
