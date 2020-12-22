@@ -6,6 +6,7 @@ namespace Practice.NickWhiteLeetCode
 {
     public class CoinChange2
     {
+        // no of ways
         public static void Test()
         {
             var res = Change(10, new int[] { 10 });
