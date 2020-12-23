@@ -11,10 +11,15 @@ namespace Practice.NickWhiteLeetCode
         {
             var res1 = CoinChangeMySolution(new int[] { 1, 2, 5 }, 11);
             var res5 = CoinChangeMySolution(new int[] { 186, 419, 83, 408 }, 6249);
-
             var res2 = CoinChangeMySolution(new int[] { 2 }, 3);
             var res3 = CoinChangeMySolution(new int[] { 1 }, 0);
             var res4 = CoinChangeMySolution(new int[] { 1 }, 2);
+            //var res1 = MakeChange(new int[] { 1, 2, 5 }, 11, 0, 0, 0, 12);
+            //var res5 = MakeChange(new int[] { 186, 419, 83, 408 }, 6249, 0, 0, 0, 6250);
+
+            //var res2 = MakeChange(new int[] { 2 }, 3, 0, 0, 0, 4);
+            //var res3 = MakeChange(new int[] { 1 }, 0, 0, 0, 0, 1);
+            //var res4 = MakeChange(new int[] { 1 }, 2, 0, 0, 0, 3);
         }
 
         private static int CoinChangeMySolution(int[] coins, int amount)
@@ -36,30 +41,24 @@ namespace Practice.NickWhiteLeetCode
               return dp[amount] > amount ? -1 : dp[amount];
         }
 
-        private static int CoinChange(int[] coins, int amount)
-        {
-            if(amount == 0)
+        private static int MakeChange(int[] coins, int amount, int start, int currentMinimum, int currentSum, int result)
+        {   //Timelimit exceeded solution - well tried 
+            if(currentSum == amount)
             {
-                return 0;
+                result = Math.Min(currentMinimum, result);
+                return result;
             }
             
-            Array.Sort(coins);
-            
-            int i = coins.Length - 1, count = 0;
-
-            while(amount > 0 && i >= 0)
+            for(var i = start; i < coins.Length; i++)
             {
-                if(amount >= coins[i])
+                currentMinimum++;
+                if(amount >= currentSum + coins[i])
                 {
-                    amount -= coins[i];
-                    count++;
+                   result =  MakeChange(coins, amount, i, currentMinimum, currentSum + coins[i], result);
                 }
-                else
-                {
-                    i--;
-                }              
+                currentMinimum--;
             }
-            return amount == 0 ? count : -1;
+            return result;
         }
     }
 }
