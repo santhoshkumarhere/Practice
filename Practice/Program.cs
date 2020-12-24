@@ -30,7 +30,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            BinaryTreePruning.Test();
+            HandOfStraights.Test();
+           // BinaryTreePruning.Test();
            // CoinChange1.Test();
            //  ConvertAStringToAnother_Recursion_.Test();
            // CoinChange2.Test();
