@@ -46,7 +46,6 @@ namespace Practice.NickWhiteLeetCode
                 odd = odd.Next;  
                 even.Next = odd.Next;
                 even = even.Next;
-                even.Next = null;
             }
 
             odd.Next = evenHead;

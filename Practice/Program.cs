@@ -30,7 +30,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            HandOfStraights.Test();
+            LinkedListOddEven.Test();
+            LinkedListSwapNodesInPair.Test();
+           // HandOfStraights.Test();
            // BinaryTreePruning.Test();
            // CoinChange1.Test();
            //  ConvertAStringToAnother_Recursion_.Test();
