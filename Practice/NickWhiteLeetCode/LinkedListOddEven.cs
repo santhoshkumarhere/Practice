@@ -35,10 +35,10 @@ namespace Practice.NickWhiteLeetCode
             if (head == null) return head;
 
             //1->2->3->4->5->
-
-            var odd = head; //(odd head)
+            //there are two use ful patterns in below code
+            var odd = head; //(odd head) head will keep track of values we do odd.next.
             var even = head.Next;
-            var evenHead = even; //(even head )
+            var evenHead = even; //(even head ) even head will keep track of even if we do even.next.
 
             while(even != null && even.Next != null)
             {

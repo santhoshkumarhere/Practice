@@ -30,8 +30,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LinkedListOddEven.Test();
-            LinkedListSwapNodesInPair.Test();
+            LinkedListMergeTwoSortedList.Test();
+            //LinkedListSwapNodesInPair.Test();
            // HandOfStraights.Test();
            // BinaryTreePruning.Test();
            // CoinChange1.Test();
