@@ -30,7 +30,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LinkedListMergeTwoSortedList.Test();
+            LinkedListPartitionList.Test();
+            //FindBottomLeftValueInTree.Test();
+           // LinkedListMergeTwoSortedList.Test();
             //LinkedListSwapNodesInPair.Test();
            // HandOfStraights.Test();
            // BinaryTreePruning.Test();
