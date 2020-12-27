@@ -40,7 +40,7 @@ namespace Practice.NickWhiteLeetCode
                 {
                     curr.Next = ptr.Next;
                     curr = curr.Next;
-                    ptr.Next = ptr.Next?.Next;
+                    ptr.Next = ptr.Next?.Next; // or curr.Next;
                 }
                 else
                 {
