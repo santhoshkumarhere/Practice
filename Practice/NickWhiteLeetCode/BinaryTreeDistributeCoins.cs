@@ -18,6 +18,7 @@ namespace Practice.NickWhiteLeetCode.TreeProblems
             int right = DistributeCoins(root.right);
             moves += Math.Abs(left) + Math.Abs(right);
             return root.val + left + right - 1;
+
         }
     }
 }
