@@ -30,7 +30,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            BinaryTreeMaximumWidth.Test();
+            BinaryTreeToFlattenLinkedList.Test();
+           // BinaryTreeMaximumWidth.Test();
            // BinaryTreeCompleteness.Test();
             //LinkedListPartitionList.Test();
             //FindBottomLeftValueInTree.Test();
