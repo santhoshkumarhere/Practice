@@ -30,7 +30,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            BinaryTreeRightSideView.Test();
+            JewelsAndStones.Test();
+           // BinaryTreeRightSideView.Test();
            // BinaryTreeToFlattenLinkedList.Test();
            // BinaryTreeMaximumWidth.Test();
            // BinaryTreeCompleteness.Test();
