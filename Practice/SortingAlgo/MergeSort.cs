@@ -32,58 +32,47 @@ namespace Practice.SortingAlgo
 
         private static void MergeII(int[] input, int left, int middle, int right)
         {
-            System.Diagnostics.Debug.WriteLine($"left = {left}, middle = {middle}, right = {right} ");
             int[] leftArray = new int[middle - left + 1];
             int[] rightArray = new int[right - middle];
             Array.Copy(input, left, leftArray, 0, middle - left + 1);
             Array.Copy(input, middle + 1, rightArray, 0, right - middle);
 
-            
-            System.Diagnostics.Debug.WriteLine("leftArray =>  " + string.Join(",", leftArray));
-            System.Diagnostics.Debug.WriteLine("rightArray =>  " + string.Join(",", rightArray));
-            int i = 0;
-            int j = 0;
+            int l = 0;
+            int r= 0;
             for (int k = left; k < right + 1; k++)
             {
-                if (i == leftArray.Length)
+                if (l == leftArray.Length)
                 {
-                    input[k] = rightArray[j];
-                    j++;
+                    input[k] = rightArray[r];
+                    r++;
                 }
-                else if (j == rightArray.Length)
+                else if (r == rightArray.Length)
                 {
-                    input[k] = leftArray[i];
-                    i++;
+                    input[k] = leftArray[l];
+                    l++;
                 }
-                else if (leftArray[i] <= rightArray[j])
+                else if (leftArray[l] <= rightArray[r])
                 {
-                    input[k] = leftArray[i];
-                    i++;
+                    input[k] = leftArray[l];
+                    l++;
                 }
                 else
                 {
-                    input[k] = rightArray[j];
-                    j++;
+                    input[k] = rightArray[r];
+                    r++;
                 }
-            }
-            System.Diagnostics.Debug.WriteLine("ResultArray =>  " + string.Join(",", input));
-            System.Diagnostics.Debug.WriteLine("");
+            }           
         }
 
         private static void Merge(int[] array, int[] helper, int low, int middle, int high)
-        {
-            System.Diagnostics.Debug.WriteLine($"low = {low}, middle = {middle}, high = {high} ");
-            System.Diagnostics.Debug.WriteLine("Array =>  " + string.Join(",", array));
-            System.Diagnostics.Debug.WriteLine("Helper =>  " + string.Join(",", helper));
+        {        
             for (var i = low; i <= high; i++)
             {
                 helper[i] = array[i];
             }
-            System.Diagnostics.Debug.WriteLine("After copy Helper =>  " + string.Join(",", helper));
             var helperLeft = low;
             var helperRight = middle + 1;
             var current = low;
-            System.Diagnostics.Debug.WriteLine($"HelperLeft = {helperLeft}, HelperRight = {helperRight}, Current = {current} ");
             while (helperLeft <= middle && helperRight <= high)
             {
                 if (helper[helperLeft] <= helper[helperRight])
@@ -98,15 +87,13 @@ namespace Practice.SortingAlgo
                 }
                 current++;
             }
-            System.Diagnostics.Debug.WriteLine("Array =>  " + string.Join(",", array));
+
             int remaining = middle - helperLeft;
 
             for (var i = 0; i <= remaining; i++)
             {
                 array[current + i] = helper[helperLeft + i];
             }
-            System.Diagnostics.Debug.WriteLine("After copy =>  " + string.Join(",", array));
-            System.Diagnostics.Debug.WriteLine("");
         }
     }
 }

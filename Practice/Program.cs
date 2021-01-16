@@ -23,6 +23,7 @@ using Practice.NickWhiteLeetCode;
 using Practice.NickWhiteLeetCode.TreeProblems;
 using Practice.BackTracking;
 using Practice.Tree.TreeProblems;
+using Practice.SortingAlgo;
 
 namespace Practice
 {
@@ -30,7 +31,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            JewelsAndStones.Test();
+            BSTSearch_E_.Test();
+          //  CoreMergeSort.Test();
+           // JewelsAndStones.Test();
            // BinaryTreeRightSideView.Test();
            // BinaryTreeToFlattenLinkedList.Test();
            // BinaryTreeMaximumWidth.Test();
@@ -219,7 +222,7 @@ namespace Practice
             // CriticalNetworkBridge.Test();
             //MaximumPathSum.Test();
             // NumberOfThreadPools();
-            //MergeSortedList.Test();
+            MergeSortedList.Test();
             //  PmanipulateImage();
             // NewTree();
             //BinaryTreeBoundary.Test();
