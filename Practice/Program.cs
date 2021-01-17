@@ -31,8 +31,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            BSTSearch_E_.Test();
-          //  CoreMergeSort.Test();
+            FindMountainPeak.Test();
+           // BSTSearch_E_.Test();
+           //  CoreMergeSort.Test();
            // JewelsAndStones.Test();
            // BinaryTreeRightSideView.Test();
            // BinaryTreeToFlattenLinkedList.Test();
