@@ -24,6 +24,7 @@ using Practice.NickWhiteLeetCode.TreeProblems;
 using Practice.BackTracking;
 using Practice.Tree.TreeProblems;
 using Practice.SortingAlgo;
+using Practice.NickWhiteLeetCode.Matrix;
 
 namespace Practice
 {
@@ -31,7 +32,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            ReverseOnlyLettersProblem.Test();
+            SpiralMatrix.Test();
+          //  ReverseOnlyLettersProblem.Test();
           //  SumOfLeftTreeLeaves_E_.Test();
           //  FindMountainPeak.Test();
           // BSTSearch_E_.Test();
