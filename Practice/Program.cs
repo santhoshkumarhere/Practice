@@ -17,7 +17,7 @@ using Practice.LinkedList;
 using Practice.StringProblems;
 using Practice.LeetCode75.Array;
 using Practice.LeetCode75.Graph;
-using Practice.SixtyDaysChallenge;
+//using Practice.SixtyDaysChallenge;
 using Practice.Search;
 using Practice.NickWhiteLeetCode;
 using Practice.NickWhiteLeetCode.TreeProblems;
@@ -32,7 +32,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            BirthdayCakeCut.Test();
+           // BirthdayCakeCut.Test();
             //TopKFrequentWords.Test();
             // KthLargestElementArray.Test();
             //KthLargestArray.Test();
@@ -60,8 +60,8 @@ namespace Practice
             // BinaryTreePruning.Test();
             // CoinChange1.Test();
             //  ConvertAStringToAnother_Recursion_.Test();
-            CoinChange1.Test();
-             CoinChange2.Test();
+            //CoinChange1.Test();
+             //CoinChange2.Test();
             // Subset.Test();
             //MakingChange.Test();
             //Combination.Test();
@@ -81,7 +81,7 @@ namespace Practice
             //IntegerPalindrome.Test();
             //   BinarySearch.Test();
             // ValidPalindrome_E_.Test();
-            // SixtyDaysChallenge.WordBreak.Test();
+            //SixtyDaysChallenge.WordBreak.Test();
             // MakingChange.Test();
             //   GenerateParanthesis_MH_.Test();
             //Permutation.Test();
@@ -249,7 +249,7 @@ namespace Practice
             // BTZigZag.Test();
             //BSTLCA.Test();
             // BTSubTreeCheck.Test();
-            // WordBreak.Test();
+            WordBreak.Test();
             // WordBreakII.Test                ();
             // CountIslands.Test();
             // RottenOranges.Test();
