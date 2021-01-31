@@ -18,7 +18,7 @@ namespace LeetCode.GraphProblems
         static void TopologicalSortUtil(Stack<string> stack, Dictionary<string, bool> visited, string key, Graph g)
         {
             visited[key] = true;
-            if(g.Adj.ContainsKey(key))
+            if(g.Adj.ContainsKey(key)) //some values may not be in dictionary - example 'G' in the test case
             {
                 foreach(var adj in g.Adj[key])
                 {

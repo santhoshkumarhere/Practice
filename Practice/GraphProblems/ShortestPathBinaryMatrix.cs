@@ -27,12 +27,8 @@ namespace Practice.GraphProblems
         }
 
         public static int ShortestPathMatrix(int[][] grid)
-        {
-            int m = grid.Length;
-            int n = grid[0].Length;
-
+        {            
             return BFS(grid);
-
         }
 
         private static bool IsSafe(int[][] grid, int x, int y)
@@ -69,7 +65,6 @@ namespace Practice.GraphProblems
             int count = 1;
             while (q.Count > 0)
             {
-                count++;
                 for (var size = q.Count; size > 0; size--)
                 {
                     var p = q.Dequeue();
@@ -82,6 +77,7 @@ namespace Practice.GraphProblems
                         {
                             if (x == m - 1 && y == n - 1)
                             {
+                                count++;
                                 return count;
                             }
 
@@ -90,6 +86,8 @@ namespace Practice.GraphProblems
                         }
                     }
                 }
+
+                count++;
             }
             return -1;
         }
