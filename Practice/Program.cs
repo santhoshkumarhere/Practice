@@ -32,8 +32,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            TopKFrequentWords.Test();
-           // KthLargestElementArray.Test();
+            BirthdayCakeCut.Test();
+            //TopKFrequentWords.Test();
+            // KthLargestElementArray.Test();
             //KthLargestArray.Test();
             //TetstLRUCache.Test();
             //BaseballGame.Test();
@@ -59,7 +60,8 @@ namespace Practice
             // BinaryTreePruning.Test();
             // CoinChange1.Test();
             //  ConvertAStringToAnother_Recursion_.Test();
-            // CoinChange2.Test();
+            CoinChange1.Test();
+             CoinChange2.Test();
             // Subset.Test();
             //MakingChange.Test();
             //Combination.Test();
