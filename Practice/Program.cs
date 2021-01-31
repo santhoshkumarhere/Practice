@@ -32,6 +32,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            TopKFrequentWords.Test();
            // KthLargestElementArray.Test();
             //KthLargestArray.Test();
             //TetstLRUCache.Test();
@@ -119,7 +120,7 @@ namespace Practice
             // Autocomplete.Test();
             // GameOfLifeProblem.Test();
             //CountIslands.Test();
-           ShortestPathBinaryMatrix.Test();
+           //ShortestPathBinaryMatrix.Test();
             // ProductExceptSelf.Test();
             // SearchRotatedArray.Test();
             //MinimumInRotatedArray.Test();
