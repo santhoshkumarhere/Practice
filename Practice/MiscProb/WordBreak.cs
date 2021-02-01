@@ -8,7 +8,7 @@ namespace LeetCode.Misc
     {
         public static void Test()
         {
-          // var res = WordBreaks("leetcode", new List<string>() { "leet", "code" });
+          var res = WordBreaks("leetcode", new List<string>() { "leet", "code", "ee" });
              //var res2 = wordBreakQueue("catsanddog", new List<string>() { "cat", "cats", "and", "sand", "dog" });
             //var dict = new Dictionary<int, bool>();
             //var res3 = WordBreakWithMemoization("aaaaaaa", new HashSet<string>() { "aaaa", "aaa" }, 0, dict);
