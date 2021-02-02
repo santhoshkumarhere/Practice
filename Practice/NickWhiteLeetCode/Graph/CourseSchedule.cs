@@ -115,14 +115,11 @@ namespace Practice.NickWhiteLeetCode.Graph
 
         private static bool IsReachable(Dictionary<int, List<int>> graph, int key, bool[] visited, bool[] courseDone)
         {
-            if (!graph.ContainsKey(key)) //last courses with no dependencies - required  due to dictionary
+            if (!graph.ContainsKey(key) || courseDone[key]) //last courses with no dependencies or dependency on already finished course - required  due to dictionary
             {
                 courseDone[key] = true;
                 return true;
             }
-
-            if(courseDone[key])
-                return true;
 
             if (visited[key]) // if there is a visited node but with out completion then it is cyclical
                 return false;
