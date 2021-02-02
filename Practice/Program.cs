@@ -27,6 +27,7 @@ using Practice.SortingAlgo;
 using Practice.NickWhiteLeetCode.Matrix;
 using Practice.NickWhiteLeetCode.DP;
 using Practice.NickWhiteLeetCode.Recursion;
+using Practice.NickWhiteLeetCode.Graph;
 
 namespace Practice
 {
@@ -34,7 +35,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            TargetSum.Test();
+            CourseSchedule.Test();
+           // TargetSum.Test();
            // MaximumSubArray.Test();
            // BirthdayCakeCut.Test();
            //TopKFrequentWords.Test();
