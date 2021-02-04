@@ -24,6 +24,15 @@ namespace Practice.GraphProblems
                 new int[]{1, 1, 1 }
              };
             res = ShortestPathMatrix(grid);
+
+            grid = new int[][]
+           {
+                new int[]{0, 0, 0, 0 },
+                new int[]{1, 0, 1, 0 },
+                new int[]{0, 0, 0, 0 },
+                new int[]{0, 1, 1, 0 }
+           };
+            res = ShortestPathMatrix(grid);
         }
 
         public static int ShortestPathMatrix(int[][] grid)
@@ -46,7 +55,6 @@ namespace Practice.GraphProblems
 
         private static int BFS(int[][] grid)
         {
-
             int m = grid.Length;
             int n = grid[0].Length;
             if (grid[0][0] == 1 || grid[m-1][n-1] == 1)
@@ -75,7 +83,7 @@ namespace Practice.GraphProblems
                         var y = p[1] + cols[k];
                         if (IsSafe(grid, x, y))
                         {
-                            if (x == m - 1 && y == n - 1)
+                            if (x == m - 1 && y == 0)
                             {
                                 count++;
                                 return count;

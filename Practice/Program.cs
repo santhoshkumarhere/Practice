@@ -36,7 +36,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LengthOfDictionary.Test();
+            ShortestPathTreasureIsland.Test();
+            //LengthOfDictionary.Test();
             //CourseSchedule.Test();
             // TargetSum.Test();
             // MaximumSubArray.Test();
@@ -237,8 +238,9 @@ namespace Practice
             //TopKFrequent.FrequentWord(new int[] { 1}, 1);
             //TopKFrequent.FrequentWord(new int[] {5, 3, 1, 1, 1, 3, 73, 1}, 2);
 
+            //SSSPDijkstras.Test();
             // Dijkstra.Test();
-            // ShortestPathWeightedMatrixDijkstras.Test();
+            //  ShortestPathWeightedMatrixDijkstras.Test();
             // LinkedListTest.Test();
             // RemoveKthFromLinkedList.Test();
             // UniquePathII.Test();
@@ -262,8 +264,7 @@ namespace Practice
             // CountIslands.Test();
             // RottenOranges.Test();
             // MakingChangeRecursive.Test();
-            // CoinChange.Test();
-            // ShortestPathBinaryMatrix.Test();
+            // CoinChange.Test(); 
             Console.ReadLine();
         }
 

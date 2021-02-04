@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     public class ShortestPathTreasureIsland
     {
-
+        // The directions are wrong here, it is going like DFS and also step++ is wrong.. take a look at Shortestpathbinarymatrix
         private static int[] row = { 1, 0, -1, 0 };
         private static int[] col = { 0, 1, 0, -1 };
         public static int minSteps(char[,] grid)
@@ -49,12 +49,12 @@
         }
 
 
-        public static void main()
+        public static void Test()
         {
-            char[,] grid = {{'O', 'O', 'O', 'O'},
-                         {'D', 'O', 'D', 'O'},
-                         {'O', 'O', 'O', 'O'},
-                         {'X', 'D', 'D', 'O'}};
+            char[,] grid = { {'O', 'O', 'O', 'O'},
+                             {'D', 'O', 'D', 'O'},
+                             {'O', 'O', 'O', 'O'},
+                             {'X', 'D', 'D', 'O'}};
             int shortestPath = minSteps(grid);
             Console.Write(shortestPath);
         }
