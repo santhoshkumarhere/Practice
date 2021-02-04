@@ -36,7 +36,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            ShortestPathTreasureIsland.Test();
+            NickWhiteLeetCode.Graph.CloneGraph.Test();
+           // ShortestPathTreasureIsland.Test();
             //LengthOfDictionary.Test();
             //CourseSchedule.Test();
             // TargetSum.Test();
