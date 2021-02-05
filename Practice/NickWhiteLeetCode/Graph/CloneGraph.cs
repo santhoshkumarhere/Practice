@@ -41,7 +41,7 @@ namespace Practice.NickWhiteLeetCode.Graph
                         q.Enqueue(neighbor);
                         visited[neighbor] = new Node(neighbor.val, new List<Node>());
                     }
-                    visited[curr].neighbors.Add(visited[neighbor]);
+                    visited[curr].neighbors.Add(visited[neighbor]); // 2.Add(1)
                 }
             }
             return visited[node];
