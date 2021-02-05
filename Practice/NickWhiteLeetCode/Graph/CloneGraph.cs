@@ -5,8 +5,9 @@ using System.Text;
 namespace Practice.NickWhiteLeetCode.Graph
 {
 
-    public class CloneGraph
+    public class CloneGraphs
     {
+        static Dictionary<Node, Node> visited = new Dictionary<Node, Node>();
         public static void Test()
         {
             var node1 = new Node(1);
@@ -18,50 +19,48 @@ namespace Practice.NickWhiteLeetCode.Graph
             node2.neighbors.Add(node1); node2.neighbors.Add(node3);
             node3.neighbors.Add(node2); node3.neighbors.Add(node4);
             node4.neighbors.Add(node1); node4.neighbors.Add(node3);
-            var clone = CloneGraphs(node1);
+            var clone = CloneGraph(node1);
         }
 
-        private static Node CloneGraphs(Node node)
+        private static Node CloneGraphBFS(Node node)
         {
             if (node == null) return node;
 
-            var node2 = new Node(node.val);
-            var list = new List<int>();
+            var visited = new Dictionary<Node, Node>();
+            var q = new Queue<Node>();
+            q.Enqueue(node);
+            visited[node] = new Node(node.val, new List<Node>());
 
-            var q1 = new Queue<Node>();
-            var q2 = new Queue<Node>();
-            var temp = new Dictionary<int, Node>();
-            q1.Enqueue(node);
-            q2.Enqueue(node2);
-
-            while(q1.Count > 0)
-            {                
-                var c1 = q1.Dequeue();
-                var c2 = q2.Dequeue();
-
-                list.Add(c1.val);
-                foreach (var n in c1.neighbors)
+            while(q.Count > 0)
+            {
+                var curr = q.Dequeue();
+                foreach(var neighbor in curr.neighbors)
                 {
-                    if (!list.Contains(n.val))
+                    if(!visited.ContainsKey(neighbor))
                     {
-                        q1.Enqueue(n);
+                        q.Enqueue(neighbor);
+                        visited[neighbor] = new Node(neighbor.val, new List<Node>());
                     }
-                    Node newNode = null;
-                    if(temp.ContainsKey(n.val))
-                    {
-                        newNode = temp[n.val];
-                    }
-                    else
-                    {
-                        newNode = new Node(n.val);
-                        temp[n.val] = newNode;
-                    }
-                    c2.neighbors.Add(newNode);
-                    q2.Enqueue(newNode);                    
+                    visited[curr].neighbors.Add(visited[neighbor]);
                 }
             }
+            return visited[node];
+        }
 
-            return node2;
+        private static Node CloneGraph(Node node)
+        {
+            if (node == null) return node;
+
+            if (visited.ContainsKey(node)) return visited[node];
+
+            Node cloneNode = new Node(node.val, new List<Node>());
+            visited[node] = cloneNode;
+
+            foreach(var n in node.neighbors)
+            {
+                cloneNode.neighbors.Add(CloneGraph(n));
+            }
+            return cloneNode;
         }
     }
 
