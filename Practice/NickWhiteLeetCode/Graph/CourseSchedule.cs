@@ -27,64 +27,6 @@ namespace Practice.NickWhiteLeetCode.Graph
             var result1 = CanFinish2(numCourses1, prerequisites1);
         }
 
-        private static bool CanFinish(int numCourses, int[][] prerequisites)
-        {
-            if (prerequisites.Length == 0) return true;
-
-            var result = true;
-            var graph = new Dictionary<int, List<int>>();
-            var courseDone = new List<int>();
-            var visited = new bool[numCourses];
-            foreach(var item  in prerequisites)
-            {
-                if(!graph.ContainsKey(item[0]))
-                {
-                    graph.Add(item[0], new List<int>() { item[1] });
-                }
-                else
-                graph[item[0]].Add(item[1]);
-            }
-
-            foreach(var key in graph.Keys)
-            {
-                if (!visited[key] && !DFS(graph, key, visited, courseDone))
-                {
-                    return false;
-                }
-            }
-
-            return result;
-        }
-
-        private static bool DFS(Dictionary<int, List<int>> graph, int key, bool[] visited, List<int> courseDone)
-        {
-            visited[key] = true;
-
-            if (graph.ContainsKey(key))
-            {
-                foreach (var adjKey in graph[key])
-                {
-                    if (!visited[adjKey] && !DFS(graph, adjKey, visited, courseDone))
-                    {
-                        return false;
-                    }
-                }
-
-                foreach (var adjKey in graph[key])
-                {
-                    if (!courseDone.Contains(adjKey) || courseDone.Contains(key)) // if required courses are not done && if current course is already done then cycle
-                        return false;
-                }
-                courseDone.Add(key);
-                return true;
-            }
-            else
-            {
-                courseDone.Add(key); // leaves level courses with no dependencies
-                return true;
-            }
-        }
-
         private static bool CanFinish2(int numCourses, int[][] prerequisites)
         {
             if (prerequisites.Length == 0) return true;
