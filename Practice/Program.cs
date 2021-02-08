@@ -36,7 +36,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            GraphValidTree.Test();
+            DetectCycleDirectedGraph.Test();
+            //DetectCycleUndirectedGraph.Test();
+            //GraphValidTree.Test();
             //NoOfConnectedCompUndirectedGraph.Test();
             // NickWhiteLeetCode.Graph.CloneGraph.Test();
             // ShortestPathTreasureIsland.Test();

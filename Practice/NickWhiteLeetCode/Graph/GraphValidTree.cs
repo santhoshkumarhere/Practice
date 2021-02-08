@@ -58,19 +58,6 @@ namespace Practice.NickWhiteLeetCode.Graph
             stack.Push(0);
             seen.Add(0);
 
-            while (stack.Count > 0)
-            {
-                var curr = stack.Pop();
-                foreach(var key in adjList[curr])
-                {
-                    if(!seen.Contains(key))
-                    {
-                        stack.Push(key);
-                        seen.Add(key);
-                    }
-                }
-            }
-
             DFS(0, adjList, seen);
 
             return seen.Count == n; // Graph Theory - it is connected if all the edges can be visited (HashSet can eliminate duplicates for undirected graph)
