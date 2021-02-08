@@ -36,7 +36,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            DetectCycleDirectedGraph.Test();
+            CourseScheduleII.Test();
+            //DetectCycleDirectedGraph.Test();
             //DetectCycleUndirectedGraph.Test();
             //GraphValidTree.Test();
             //NoOfConnectedCompUndirectedGraph.Test();
