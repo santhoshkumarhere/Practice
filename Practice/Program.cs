@@ -36,7 +36,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            CourseScheduleII.Test();
+            LengthOfDictionaryTrie.Test();
+           // CourseScheduleII.Test();
             //DetectCycleDirectedGraph.Test();
             //DetectCycleUndirectedGraph.Test();
             //GraphValidTree.Test();
