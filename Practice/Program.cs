@@ -36,7 +36,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Practice.NickWhiteLeetCode.Sorting.MergeSort.Test();
+            MinimumHeightTree.Test();
+            //Practice.NickWhiteLeetCode.Sorting.MergeSort.Test();
             //CourseScheduleII.Test();
             //DetectCycleDirectedGraph.Test();
             //DetectCycleUndirectedGraph.Test();
