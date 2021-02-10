@@ -36,11 +36,12 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MinimumHeightTree.Test();
+            ValidateAlienDictionary.Test();
+            //MinimumHeightTree.Test();
             //Practice.NickWhiteLeetCode.Sorting.MergeSort.Test();
             //CourseScheduleII.Test();
-           // LengthOfDictionaryTrie.Test();
-           // CourseScheduleII.Test();
+            // LengthOfDictionaryTrie.Test();
+            // CourseScheduleII.Test();
             //DetectCycleDirectedGraph.Test();
             //DetectCycleUndirectedGraph.Test();
             //GraphValidTree.Test();
