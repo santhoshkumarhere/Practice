@@ -29,6 +29,7 @@ using Practice.NickWhiteLeetCode.DP;
 using Practice.NickWhiteLeetCode.Recursion;
 using Practice.NickWhiteLeetCode.Graph;
 using Practice.NickWhiteLeetCode.Trie;
+using Practice.NickWhiteLeetCode.Sorting;
 
 namespace Practice
 {
@@ -36,7 +37,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-           AlienDictionary.Test();
+            QuickSort.Test();
+           //AlienDictionary.Test();
            //  ValidateAlienDictionary.Test();
            //MinimumHeightTree.Test();
            //Practice.NickWhiteLeetCode.Sorting.MergeSort.Test();
