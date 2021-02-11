@@ -10,11 +10,12 @@ namespace Practice.StringProblems
 
         public static void Test()
         {
-            var res = AlienOrder(new string[] { "z", "x", "z" }); 
+            var res = AlienOrder(new string[] { "abc", "ab" }); 
+
             var res1 = AlienOrder(new string[] { "wrt", "wrf", "er", "ett", "rftt" });
         }
 
-        public static string AlienOrder(string[] words)
+        private static string AlienOrder(string[] words)
         {
             var n = words.Length;
             var longestLength = words.Max(c => c.Length);
@@ -113,7 +114,7 @@ namespace Practice.StringProblems
             stack.Push(key);
         }
 
-        public static string TopologicalSort(Dictionary<char, HashSet<char>> g)
+        private static string TopologicalSort(Dictionary<char, HashSet<char>> g)
         {
             var stack = new Stack<char>();
             var visited = new Dictionary<char, bool>();
