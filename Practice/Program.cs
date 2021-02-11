@@ -36,8 +36,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            AlienDict.Test();
-           //AlienDictionary.Test();
+           AlienDictionary.Test();
            //  ValidateAlienDictionary.Test();
            //MinimumHeightTree.Test();
            //Practice.NickWhiteLeetCode.Sorting.MergeSort.Test();

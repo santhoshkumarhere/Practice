@@ -43,6 +43,10 @@ namespace Practice.NickWhiteLeetCode.Graph
             }
             for(var i = 1; i < words.Length; i++)
             {
+                var word1 = words[i - 1];
+                var word2 = words[i];
+                if (word1.Length > word2.Length && word1.StartsWith(word2))
+                    return "";
                 Compare(words[i - 1], words[i], graph);
             }
 
