@@ -9,12 +9,12 @@ namespace Practice.NickWhiteLeetCode
         // minimum no of coins needed
         public static void Test()
         {
-            var res1 = CoinChangeMySolution(new int[] { 1, 2, 5 }, 11);
+            //var res1 = CoinChangeMySolution(new int[] { 1, 2, 5 }, 11);
             var res5 = CoinChangeMySolution(new int[] { 186, 419, 83, 408 }, 6249);
             var res2 = CoinChangeMySolution(new int[] { 2 }, 3);
             var res3 = CoinChangeMySolution(new int[] { 1 }, 0);
             var res4 = CoinChangeMySolution(new int[] { 1 }, 2);
-            //var res1 = MakeChange(new int[] { 1, 2, 5 }, 11, 0, 0, 0, 12);
+            var res1 = MakeChange(new int[] { 1, 2, 5 }, 11, 0, 0, 0, 12);
             //var res5 = MakeChange(new int[] { 186, 419, 83, 408 }, 6249, 0, 0, 0, 6250);
 
             //var res2 = MakeChange(new int[] { 2 }, 3, 0, 0, 0, 4);

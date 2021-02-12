@@ -37,7 +37,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            QuickSort.Test();
+           KnapSack.Test();
+           // QuickSort.Test();
            //AlienDictionary.Test();
            //  ValidateAlienDictionary.Test();
            //MinimumHeightTree.Test();
