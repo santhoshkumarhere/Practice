@@ -37,7 +37,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            TrappingRainWater_HARD.Test();
+            MaximumProductSubArray.Test();
+           // KnapSack.Test();
+            //TrappingRainWater_HARD.Test();
             //CoinChange.Test();
             //_0_1KnapSackProblem.Test();
             //KnapSack.Test();
