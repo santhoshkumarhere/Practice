@@ -8,7 +8,8 @@ namespace Practice.NickWhiteLeetCode.DP
     {
         public static void Test()
         {
-            var res = largestRectangleArea(new int[] { 6, 7, 5, 2, 4, 5, 9, 3 });
+           var res = largestRectangleArea(new int[] { 6, 7, 5, 2, 4, 5, 9, 3 });
+           // var res = largestRectangleArea(new int[] { 6, 2, 5, 4, 5, 1, 6 });
         }
 
         private static int largestRectangleArea(int[] heights)
