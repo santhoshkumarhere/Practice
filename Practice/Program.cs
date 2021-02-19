@@ -37,8 +37,10 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            LongestPalindromicSubstring.Test();
+           // LCS.Test();
            // LongestRectangularArea.Test();
-            LongestIncreasingSubsequence.Test();
+           // LongestIncreasingSubsequence.Test();
            // MaximumProductSubArray.Test();
            // KnapSack.Test();
            //TrappingRainWater_HARD.Test();

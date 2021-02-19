@@ -34,7 +34,7 @@ namespace Practice.NickWhiteLeetCode.DP
                     if (col >= weights[row - 1]) //IMPORTANT :: weights[row - 1] profits[row-1] gives current row values;
                         matrix[row, col] = Math.Max(matrix[row - 1, col], profits[row - 1] + matrix[row - 1, col - weights[row - 1]]); //Max(prevrow, current weight profit + remaining weight from previous row)
                     else
-                        matrix[row, col] = matrix[row - 1, col]; //previous ow
+                        matrix[row, col] = matrix[row - 1, col]; //previous row
                 }
             }
             return matrix[n, capacity];
