@@ -37,7 +37,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LongestPalindromicSubstring.Test();
+            CombinationSumIVBackTracking.Test();
+           // CombinationIV.Test();
+           //  LongestPalindromicSubstring.Test();
            // LCS.Test();
            // LongestRectangularArea.Test();
            // LongestIncreasingSubsequence.Test();
