@@ -8,9 +8,25 @@ namespace Practice.NickWhiteLeetCode.DP
     {
         public static void Test()
         {
-            var res = CanJump(new int[] { 2, 3, 1, 1, 4 });
-            var res1 = CanJump(new int[] { 3, 2, 1, 0, 4 });
+            var res = CanJumpDP(new int[] { 2, 3, 1, 1, 4 });
+            var res1 = CanJumpDP(new int[] { 3, 2, 1, 0, 4 });
         }
+
+        private static bool CanJumpDP(int[] nums)
+        {
+            int lastGood = nums.Length - 1;
+
+            for(int i = lastGood - 1; i >=0; i--)
+            {
+                if(i + nums[i] >= lastGood)
+                {
+                    lastGood = i;
+                }
+            }
+
+            return lastGood == 0;
+        }
+
         private static  bool CanJump(int[] nums)
         {
             if (nums.Length == 1)
