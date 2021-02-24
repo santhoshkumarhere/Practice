@@ -37,7 +37,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            DecodeWays.Test();
+            NickWhiteLeetCode.DP.UniquePath.Test();
+           // DecodeWays.Test();
             //Search2DMatrix.Test();
             // CombinationSumIVBackTracking.Test();
             // CombinationIV.Test();
