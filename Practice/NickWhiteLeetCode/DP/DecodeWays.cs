@@ -9,13 +9,35 @@ namespace Practice.NickWhiteLeetCode.DP
         public static void Test()
         {
             //draw tree to figure out the answer
-            var res = NumDecWays("0");
+            var res = NumDecDP("10");
 
             var res1 = NumDecWays("06");
 
-            var res2 = NumDecWays("11106");
+            var res2 = NumDecDP("11106");
 
-            var res3 = NumDecWays("226");
+            var res3 = NumDecDP("226");
+
+            var res4 = NumDecDP("12");
+        }
+
+        private static int NumDecDP(string s)
+        {
+            var dp = new int[s.Length+1];
+            dp[0] = 1;
+            if (s[0] != '0')
+                dp[1] = 1;
+
+            for(int i = 2; i < dp.Length; i++)
+            {
+                dp[i] = s[i-1] != '0' ? dp[i - 1] : 0;
+                
+                var twoDigit = int.Parse(s.Substring(i - 2, 2));
+                if (twoDigit >= 10 && twoDigit <=26)
+                {
+                    dp[i] += dp[i - 2];
+                }
+            }
+            return dp[s.Length];
         }
 
         private static  int NumDecWays(string s)
