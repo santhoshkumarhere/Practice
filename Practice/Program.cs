@@ -37,7 +37,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            JumpGame.Test();
+            PalindromeSubstring.Test();
+           // Practice.HashTable.Map<string, string>.Test();
+           // JumpGame.Test();
            // NickWhiteLeetCode.DP.UniquePath.Test();
            // DecodeWays.Test();
            //Search2DMatrix.Test();
