@@ -37,7 +37,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            PalindromeSubstring.Test();
+            PartitionEqualSubSetSum.Test();
+           // PalindromeSubstring.Test();
            // Practice.HashTable.Map<string, string>.Test();
            // JumpGame.Test();
            // NickWhiteLeetCode.DP.UniquePath.Test();
