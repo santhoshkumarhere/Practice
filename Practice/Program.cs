@@ -37,6 +37,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            PartitionEqualSubSetSum.Test();
+           // PalindromeSubstring.Test();
             NumberOfLIS.Test();
            // PalindromeSubstring.Test();
            // Practice.HashTable.Map<string, string>.Test();
