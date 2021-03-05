@@ -37,7 +37,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            PartitionKSubsetSum.Test();
+            BestStockBuyCoolDown.Test();
+            //PartitionKSubsetSum.Test();
             //PartitionEqualSubSetSum.Test();
             // PalindromeSubstring.Test();
             //NumberOfLIS.Test();
