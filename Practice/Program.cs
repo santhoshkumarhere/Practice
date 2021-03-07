@@ -37,10 +37,11 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            PartitionKSubSet.Test();
+            BestStockBuyCoolDown.Test();
+            //PartitionKSubsetSum.Test();
             //PartitionEqualSubSetSum.Test();
             // PalindromeSubstring.Test();
-            // NumberOfLIS.Test();
+            //NumberOfLIS.Test();
             // PalindromeSubstring.Test();
             // Practice.HashTable.Map<string, string>.Test();
             // JumpGame.Test();
