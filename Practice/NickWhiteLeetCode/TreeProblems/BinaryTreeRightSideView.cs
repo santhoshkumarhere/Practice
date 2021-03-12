@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Practice.NickWhiteLeetCode.TreeProblems
@@ -90,6 +91,37 @@ namespace Practice.NickWhiteLeetCode.TreeProblems
                 }
                
             }
+            return result;
+        }
+
+        public IList<int> RightSideViewMyCode(TreeNode root)
+        {
+            var result = new List<int>();
+
+            if (root == null) return result;
+
+            var queue = new Queue<TreeNode>();
+
+            queue.Enqueue(root);
+            result.Add(root.val);
+            while (queue.Count > 0)
+            {
+                var size = queue.Count;
+
+                for (var i = 0; i < size; i++)
+                {
+                    var curr = queue.Dequeue();
+
+                    if (curr.left != null)
+                        queue.Enqueue(curr.left);
+                    if (curr.right != null)
+                        queue.Enqueue(curr.right);
+                }
+
+                if (queue.Count > 0)
+                    result.Add(queue.Last().val);
+            }
+
             return result;
         }
     }
