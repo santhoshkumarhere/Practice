@@ -43,16 +43,16 @@ namespace Practice.Tree.TreeProblems
 
                 if (curr.left == null && curr.right == null && currSum == 0) return true;
 
-                if(curr.left != null)
-                {
-                    nodeStack.Push(curr.left);
-                    sumStack.Push(currSum - curr.left.val);
-                }
-
                 if (curr.right != null)
                 {
                     nodeStack.Push(curr.right);
                     sumStack.Push(currSum - curr.right.val);
+                }
+
+                if (curr.left != null)
+                {
+                    nodeStack.Push(curr.left);
+                    sumStack.Push(currSum - curr.left.val);
                 }
             }
             return false;
