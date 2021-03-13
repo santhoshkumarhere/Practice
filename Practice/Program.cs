@@ -37,7 +37,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-           // IsSameTree_E_.Test();
+            // IsSameTree_E_.Test();
             //ValidBST.Test();
             // BestStockBuyCoolDown.Test();
             //PartitionKSubsetSum.Test();
@@ -59,6 +59,7 @@ namespace Practice
             // MaximumProductSubArray.Test();
             // KnapSack.Test();
             //TrappingRainWater_HARD.Test();
+            TrappingRainWaterAttempt2.Test();
             //CoinChange.Test();
             //_0_1KnapSackProblem.Test();
             //KnapSack.Test();
@@ -99,7 +100,7 @@ namespace Practice
             // BinaryTreeRightSideView.Test();
             // BinaryTreeToFlattenLinkedList.Test();
             // BinaryTreeMaximumWidth.Test();
-             BinaryTreeCompleteness.Test();
+            // BinaryTreeCompleteness.Test();
             //LinkedListPartitionList.Test();
             //FindBottomLeftValueInTree.Test();
             // LinkedListMergeTwoSortedList.Test();
