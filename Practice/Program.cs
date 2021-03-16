@@ -37,7 +37,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            BinaryTreeLCA.Test();
+           // NickWhiteLeetCode.Matrix.WordSearch.Test();
+            //BinaryTreeLCA.Test();
             //LengthOfHistogram_Hard_.Test();
             // IsSameTree_E_.Test();
             //ValidBST.Test();
@@ -91,7 +92,7 @@ namespace Practice
             //BaseballGame.Test();
             //RottenOranges.Test();
             //RobotBoundedInCircle.Test();
-            // CountOfIsland.Test();
+             CountOfIsland.Test();
             // SpiralMatrix.Test();
             //  ReverseOnlyLettersProblem.Test();
             //  SumOfLeftTreeLeaves_E_.Test();
