@@ -21,6 +21,11 @@ namespace Practice.NickWhiteLeetCode.Trie
 
         TrieNode root;
 
+        public TrieImpl()
+        {
+            root = new TrieNode();
+        }
+
         public void Insert(string word)
         {
             var curr = root;
@@ -71,6 +76,8 @@ namespace Practice.NickWhiteLeetCode.Trie
             {
                 this.c = c;
             }
+
+            public TrieNode() { }
         }
 
 
