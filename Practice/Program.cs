@@ -37,6 +37,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            DecodeString.Test();
             //LetterCombinationOfPhoneNumber.Test();
             //TrieImpl.Test();
             // BinaryTreeLCA.Test();
@@ -95,7 +96,7 @@ namespace Practice
             //BaseballGame.Test();
             //RottenOranges.Test();
             //RobotBoundedInCircle.Test();
-          //  CountOfIsland.Test();
+            //  CountOfIsland.Test();
             // SpiralMatrix.Test();
             //  ReverseOnlyLettersProblem.Test();
             //  SumOfLeftTreeLeaves_E_.Test();
@@ -104,7 +105,7 @@ namespace Practice
             //  CoreMergeSort.Test();
             // JewelsAndStones.Test();
             // BinaryTreeRightSideView.Test();
-           // BinaryTreeToFlattenLinkedList.Test();
+            // BinaryTreeToFlattenLinkedList.Test();
             // BinaryTreeMaximumWidth.Test();
             // BinaryTreeCompleteness.Test();
             //LinkedListPartitionList.Test();
