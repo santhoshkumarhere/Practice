@@ -37,7 +37,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            BinaryTreeLCA.Test();
+            TrieImpl.Test();
+           // BinaryTreeLCA.Test();
             //LengthOfHistogram_Hard_.Test();
             // IsSameTree_E_.Test();
             //ValidBST.Test();
@@ -200,7 +201,6 @@ namespace Practice
             //MinimumPathSum.Test();
             //MinimumCostTreeFromLeaf.Test();
             // TopologicalSorting.Test();
-            //WordLadder.Test();
             // Map<string, int>.Test();
             // ConnectedComponentGraph.Test();
             // CountIslands.Test();

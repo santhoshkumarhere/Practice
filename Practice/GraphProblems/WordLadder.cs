@@ -14,9 +14,9 @@ namespace Practice.Matrix
             var endWord = "cog";
             var wordList = new List<string>() {"hot", "dot", "dog", "lot", "log", "cog"};
 
-            beginWord = "a";
-            endWord = "c";
-            wordList = new List<string>() { "a", "b", "c" };
+            //beginWord = "a";
+            //endWord = "c";
+            //wordList = new List<string>() { "a", "b", "c" };
             var res = LeetSolution(beginWord, endWord, wordList);
         }
        
