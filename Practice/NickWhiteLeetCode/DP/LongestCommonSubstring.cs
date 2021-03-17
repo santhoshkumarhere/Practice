@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Practice.NickWhiteLeetCode.DP
 {
-    class LCS
+    class LongestCommonSubstring
     {
         public static void Test()
         {

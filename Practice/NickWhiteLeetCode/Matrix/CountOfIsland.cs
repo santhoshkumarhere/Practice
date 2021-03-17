@@ -35,7 +35,7 @@ namespace Practice.NickWhiteLeetCode.Matrix
                 {
                     if(!processed[i, j] && grid[i][j] == 1)
                     {
-                        BFS(i, j, grid, processed);
+                        DFS(i, j, grid, processed);
                         noOfIsland++;
                     }
                 }
@@ -74,6 +74,19 @@ namespace Practice.NickWhiteLeetCode.Matrix
                     }                    
                 }
             }
+        }
+
+        private static void DFS(int i, int j, int[][] grid, bool[,] processed)
+        {
+            if (!IsSafe(i, j, grid, processed))
+                return;
+
+            processed[i, j] = true;
+
+            DFS(i - 1, j, grid, processed);
+            DFS(i, j + 1, grid, processed);
+            DFS(i + 1, j, grid, processed);
+            DFS(i, j - 1, grid, processed);            
         }
     }
 }

@@ -37,5 +37,28 @@ namespace Practice.NickWhiteLeetCode.TreeProblems
             }
             root = dummy.right;
         }
+
+        private void FlattenToList(TreeNode root)
+        {
+            if (root == null)
+                return;
+
+            var stack = new Stack<TreeNode>();
+            stack.Push(root);
+            while(stack.Count > 0)
+            {
+                var current = stack.Pop();
+
+                if (current.right != null)
+                    stack.Push(current.right);
+
+                if (current.left != null)
+                    stack.Push(current.left);
+               
+                if (stack.Count > 0)
+                    current.right = stack.Peek();
+                current.left = null;
+            }
+        }
     }
 }
