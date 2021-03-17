@@ -15,7 +15,7 @@ namespace Practice.NickWhiteLeetCode.TreeProblems
             root.left.right = new TreeNode(4);
             root.right.left = new TreeNode(7);
             root.right.right = new TreeNode(6);
-            Flatten(root);
+            FlattenToList(root);
         }
 
         public static void Flatten(TreeNode root)
@@ -38,7 +38,7 @@ namespace Practice.NickWhiteLeetCode.TreeProblems
             root = dummy.right;
         }
 
-        private void FlattenToList(TreeNode root)
+        private static void FlattenToList(TreeNode root)
         {
             if (root == null)
                 return;
