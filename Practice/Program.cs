@@ -37,7 +37,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            DecodeString.Test();
+            GenerateParenthesis.Test();
+            //DecodeString.Test();
             //LetterCombinationOfPhoneNumber.Test();
             //TrieImpl.Test();
             // BinaryTreeLCA.Test();
