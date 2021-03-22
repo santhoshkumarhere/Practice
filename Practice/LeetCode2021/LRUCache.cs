@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Practice.LeetCode2021
 {
-    public class TetstLRUCache
+    public class TestLRUCache
     {
         public static void Test()
         {
@@ -41,7 +39,7 @@ namespace Practice.LeetCode2021
             head.Next = node;
         }
 
-        private void removeNode(DLinkedNode node)
+        private static void RemoveNode(DLinkedNode node)
         {
             DLinkedNode prev = node.Prev;
             DLinkedNode next = node.Next;
@@ -52,17 +50,14 @@ namespace Practice.LeetCode2021
 
         private void MoveToHead(DLinkedNode node)
         {
-            /**
-             * Move certain node in between to the head.
-             */
-            removeNode(node);
+            RemoveNode(node);
             AddNode(node);
         }
 
         private DLinkedNode PopTail()
         {
             DLinkedNode res = tail.Prev;
-            removeNode(res);
+            RemoveNode(res);
             return res;
         }
 
