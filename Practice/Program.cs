@@ -19,17 +19,17 @@ using Practice.StringProblems;
 using Practice.LeetCode75.Graph;
 //using Practice.SixtyDaysChallenge;
 using Practice.Search;
-using Practice.NickWhiteLeetCode;
-using Practice.NickWhiteLeetCode.TreeProblems;
+using Practice.LeetCode2021;
+using Practice.LeetCode2021.TreeProblems;
 using Practice.BackTracking;
 using Practice.Tree.TreeProblems;
 using Practice.SortingAlgo;
-using Practice.NickWhiteLeetCode.Matrix;
-using Practice.NickWhiteLeetCode.DP;
-using Practice.NickWhiteLeetCode.Recursion;
-using Practice.NickWhiteLeetCode.Graph;
-using Practice.NickWhiteLeetCode.Trie;
-using Practice.NickWhiteLeetCode.Sorting;
+using Practice.LeetCode2021.Matrix;
+using Practice.LeetCode2021.DP;
+using Practice.LeetCode2021.Recursion;
+using Practice.LeetCode2021.Graph;
+using Practice.LeetCode2021.Trie;
+using Practice.LeetCode2021.Sorting;
 
 namespace Practice
 {
