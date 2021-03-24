@@ -30,6 +30,7 @@ using Practice.LeetCode2021.Recursion;
 using Practice.LeetCode2021.Graph;
 using Practice.LeetCode2021.Trie;
 using Practice.LeetCode2021.Sorting;
+using Practice.LeetCode2021.Interval;
 
 namespace Practice
 {
@@ -37,7 +38,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            NextGreaterElementsGeeks.Test();
+            PartitionLabels.Test();
+            //NextGreaterElementsGeeks.Test();//
             //GenerateParenthesis.Test();
             //DecodeString.Test();
             //LetterCombinationOfPhoneNumber.Test();
