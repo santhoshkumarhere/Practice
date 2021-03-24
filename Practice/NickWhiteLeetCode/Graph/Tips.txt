@@ -1,0 +1,4 @@
+﻿1. Connected - if you can visit all the edges[[], []].
+2. Each DFS pass, is one connected components. see ConnectedComponents problem
+3. Graph is tree if - It has n - 1 edges[[], []] and fully connected
+4. Topological sort - DFS (make sure there is no Undone course and a visited node which is cycle)

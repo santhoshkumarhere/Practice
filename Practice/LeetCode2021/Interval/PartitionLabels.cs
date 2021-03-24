@@ -13,6 +13,34 @@ namespace Practice.LeetCode2021.Interval
             var res = Partition(s);
         }
 
+        private static IList<int> PartitionLeetCode(string s)
+        {
+            var result = new List<int>();
+            if (s == null || s.Length== 0)
+                return result;
+
+            var charPositions = new int[26];
+            for (var i = 0; i < s.Length; i++)
+            {
+                charPositions[s[i] - 'a'] = i;  // 'a' - 97 = 0
+            }
+
+            var last = 0;
+            var start = 0;
+            for (var i = 0; i < s.Length; i++)
+            {
+                last = Math.Max(last, charPositions[s[i] - 'a']);
+
+                if (i == last)
+                {
+                    result.Add(last - start + 1);
+                    start = last + 1;
+                }
+            }
+
+            return result;
+        }
+
         private static IList<int> Partition(string s)
         {
             var result = new List<int>();
