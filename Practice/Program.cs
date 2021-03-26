@@ -38,7 +38,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            PartitionLabels.Test();
+            MaximalSquare.Test();
+            //PartitionLabels.Test();
             //NextGreaterElementsGeeks.Test();//
             //GenerateParenthesis.Test();
             //DecodeString.Test();
