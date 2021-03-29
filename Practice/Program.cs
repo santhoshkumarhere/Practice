@@ -38,7 +38,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MaximalSquare.Test();
+           // LRUImpl.Test();
+            //GroupAnagrams.Test();
+            //MaximalSquare.Test();
             //PartitionLabels.Test();
             //NextGreaterElementsGeeks.Test();//
             //GenerateParenthesis.Test();
