@@ -8,9 +8,9 @@ namespace Practice.LeetCode2021
     {
         public static void Test()
         {
-           // var x = SubarraySum(new int[] { 2}, 2); //2
-           // var res = SubarraySum(new int[] { 2, 1, -2, 1, 3 }, 3); //3
-           // var res1 = SubarraySum(new int[] { -3, 3, 3 }, 3);
+            var x = SubarraySum(new int[] { 2 }, 2); //2
+            var res = SubarraySum(new int[] { 2, 1, -2, 1, 3 }, 3); //3
+            var res1 = SubarraySum(new int[] { -3, 3, 3 }, 3);
             var res2 = SubarraySum(new int[] { 1, 1, -3, 5, -3 }, 2);
         }
 
@@ -31,22 +31,6 @@ namespace Practice.LeetCode2021
                 }
             }
             return count;
-            for (var start = 0; start < nums.Length; start++)
-            {
-                for(var end = start + 1; end <= nums.Length; end++)
-                {
-                    var sum = 0;
-                    for(var i = start; i < end; i++)
-                    {
-                        sum += nums[i];
-                    }
-
-                    if (sum == k)
-                        count++;
-                }
-            }
-            return count;
-
         }
     }
 }
