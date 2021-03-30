@@ -38,6 +38,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            SubArraySumK.Test();
            // LRUImpl.Test();
             //GroupAnagrams.Test();
             //MaximalSquare.Test();
