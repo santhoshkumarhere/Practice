@@ -38,6 +38,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            DailyTemperature.Test();
             SubArraySumK.Test();
            // LRUImpl.Test();
             //GroupAnagrams.Test();
