@@ -38,8 +38,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            DailyTemperature.Test();
-            SubArraySumK.Test();
+            ConstructBinaryTreeFromIn_PreOrder.Test();
+           // DailyTemperature.Test();
+           // SubArraySumK.Test();
            // LRUImpl.Test();
             //GroupAnagrams.Test();
             //MaximalSquare.Test();
