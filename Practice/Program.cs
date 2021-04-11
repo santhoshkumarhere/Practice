@@ -38,7 +38,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            Search2DMatrixII.Test();
+            JumpGameII_Greedy_.Test();
+            //Search2DMatrixII.Test();
             //FindDuplicateTortoiseHareFloyd.Test();
             //ConstructBinaryTreeFromIn_PreOrder.Test();
             // DailyTemperature.Test();
