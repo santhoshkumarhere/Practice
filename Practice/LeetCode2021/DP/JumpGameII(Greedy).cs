@@ -21,7 +21,7 @@ namespace Practice.LeetCode2021.DP
 
                 //when loop reaches currentIndex maximum position, update Jump & see how far we can jump
                 // from index 0, max we can reach is index 1, but along the way 3 can go farthest
-                if (i == currentJumpEnd)
+                if (i == currentJumpEnd) // always enters when i = 0
                 {
                     jumps++;
                     currentJumpEnd = farthestIndex;
