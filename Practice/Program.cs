@@ -38,7 +38,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            BinaryTreeInOrderTraversal.Test();
+            FindAllAnagramsInString.Test();
+           // BinaryTreeInOrderTraversal.Test();
             //JumpGameII_Greedy_.Test();
             //Search2DMatrixII.Test();
             //FindDuplicateTortoiseHareFloyd.Test();
