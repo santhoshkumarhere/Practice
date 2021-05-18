@@ -24,7 +24,7 @@ namespace Practice.LeetCode2021.DP
                 for(var c = 0; c < coins.Length; c++)
                 {
                     if (i >= coins[c]) //amount > coins
-                        dp[i] = Math.Min(dp[i], 1 + dp[i - coins[c]]); // 1+  1 coin taken 
+                        dp[i] = Math.Min(dp[i], 1 + dp[i - coins[c]]); // 1+ = 1 current coin taken & add remaining from dp
                 }
             }
             return dp[amount] > amount ? -1 : dp[amount];
