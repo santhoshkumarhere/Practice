@@ -44,7 +44,7 @@ namespace Practice.LeetCode2021.DP
                 {
                     if(nums[j] < nums[i])
                     {
-                        dp[i] = Math.Max(dp[i], 1 + dp[j]);
+                        dp[i] = Math.Max(dp[i], 1 + dp[j]); // this is little confusing draw boxes and understand. You care only ith index in dp
                         maxLength = Math.Max(maxLength, dp[i]);
                     }
                 }
