@@ -98,7 +98,7 @@ namespace Practice.LeetCode2021.Matrix
                 steps++;
             }
 
-            return noOfFreshOranges > 0 ? - 1 : steps; //if fresh oranges lft then retunr -1;
+            return noOfFreshOranges > 0 ? - 1 : steps; //if fresh oranges left then retunr -1;
         }
     }
 }
