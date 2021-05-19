@@ -38,11 +38,11 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            FindUnSortedSubArray.Test();
+            //FindUnSortedSubArray.Test();
             //QueueReconstructionByHeight.Test();
             //FindAllAnagramsInString.Test();
             // BinaryTreeInOrderTraversal.Test();
-            //JumpGameII_Greedy_.Test();
+            JumpGameII_Greedy_.Test();
             //Search2DMatrixII.Test();
             //FindDuplicateTortoiseHareFloyd.Test();
             //ConstructBinaryTreeFromIn_PreOrder.Test();

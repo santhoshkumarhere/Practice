@@ -19,7 +19,7 @@ namespace Practice.LeetCode2021
 
             for(int i = 0; i<= arr.Length; i++)
             {
-                var h = (i == arr.Length) ? 0 : arr[i];
+                var h = (i == arr.Length) ? 0 : arr[i]; // handle last element 
                 if (stack.Count == 0 || h >= arr[stack.Peek()])
                     stack.Push(i);
                 else

@@ -20,7 +20,8 @@ namespace Practice.LeetCode2021.DP
                 farthestIndex = Math.Max(farthestIndex, i + nums[i]);
 
                 //when loop reaches currentIndex maximum position, update Jump & see how far we can jump
-                // from index 0, max we can reach is index 1, but along the way 3 can go farthest
+                // from index 0, max we can reach is index 2, but along the way 3 can go farthest
+                // when we reach currentJumpEnd, jump to farthest index
                 if (i == currentJumpEnd) // always enters when i = 0
                 {
                     jumps++;
