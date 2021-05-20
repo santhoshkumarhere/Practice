@@ -38,7 +38,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LongestPalindromicSubsequence.Test();
+            KthSmallestBST.Test();
+            //LongestPalindromicSubsequence.Test();
             //FindUnSortedSubArray.Test();
             //QueueReconstructionByHeight.Test();
             //FindAllAnagramsInString.Test();
