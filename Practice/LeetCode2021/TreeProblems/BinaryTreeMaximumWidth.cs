@@ -29,7 +29,7 @@ namespace Practice.LeetCode2021.TreeProblems
             root.val = 1;
             ans = 1;
             q.Enqueue(root);
-
+            // The catch of this problem is if the node is null then it should be taken in to the count as well
             while (q.Count > 0)
             {
                 var size = q.Count;
@@ -54,6 +54,5 @@ namespace Practice.LeetCode2021.TreeProblems
             }
             return ans;
         }
-
     }
 }

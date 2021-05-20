@@ -38,11 +38,12 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            LongestPalindromicSubsequence.Test();
             //FindUnSortedSubArray.Test();
             //QueueReconstructionByHeight.Test();
             //FindAllAnagramsInString.Test();
             // BinaryTreeInOrderTraversal.Test();
-          //  JumpGameII_Greedy_.Test();
+            //  JumpGameII_Greedy_.Test();
             //Search2DMatrixII.Test();
             //FindDuplicateTortoiseHareFloyd.Test();
             //ConstructBinaryTreeFromIn_PreOrder.Test();
@@ -67,7 +68,7 @@ namespace Practice
             //PartitionKSubsetSum.Test();
             //PartitionEqualSubSetSum.Test();
             // PalindromeSubstring.Test();
-            NumberOfLIS.Test();
+            //NumberOfLIS.Test();
             // PalindromeSubstring.Test();
             // Practice.HashTable.Map<string, string>.Test();
             // JumpGame.Test();
@@ -123,7 +124,7 @@ namespace Practice
             // JewelsAndStones.Test();
             // BinaryTreeRightSideView.Test();
             // BinaryTreeToFlattenLinkedList.Test();
-            // BinaryTreeMaximumWidth.Test();
+            //BinaryTreeMaximumWidth.Test();
             // BinaryTreeCompleteness.Test();
             //LinkedListPartitionList.Test();
             //FindBottomLeftValueInTree.Test();
