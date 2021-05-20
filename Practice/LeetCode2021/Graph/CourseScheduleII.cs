@@ -85,7 +85,6 @@ namespace Practice.LeetCode2021.Graph
                {
                     if (!result.Contains(adjKey))
                     {
-                        recursiveStack[adjKey] = false; //remove from stack - course completed
                         result.Add(adjKey);
                     }
                }

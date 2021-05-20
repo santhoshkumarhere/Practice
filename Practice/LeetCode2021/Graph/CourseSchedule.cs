@@ -29,6 +29,7 @@ namespace Practice.LeetCode2021.Graph
 
         private static bool CanFinish2(int numCourses, int[][] prerequisites)
         {
+            //Accepted faster
             if (prerequisites.Length == 0) return true;
             
             var graph = new Dictionary<int, List<int>>();
@@ -46,7 +47,7 @@ namespace Practice.LeetCode2021.Graph
 
             foreach (var key in graph.Keys)
             {
-                if (!IsReachable(graph, key, visited, courseDone))
+                if (IsCyclical(graph, key, visited, courseDone))
                 {
                     return false;
                 }
@@ -55,27 +56,29 @@ namespace Practice.LeetCode2021.Graph
             return true;
         }
 
-        private static bool IsReachable(Dictionary<int, List<int>> graph, int key, bool[] visited, bool[] courseDone)
+        private static bool IsCyclical(Dictionary<int, List<int>> graph, int key, bool[] visited, bool[] currentStack)
         {
-            if (!graph.ContainsKey(key) || courseDone[key]) //last courses with no dependencies or dependency on already finished course - required  due to dictionary
-            {
-                courseDone[key] = true;
-                return true;
-            }
+            if(!graph.ContainsKey(key)) // no following courses no loop
+                 return false;
 
-            if (visited[key]) // if there is a visited node but with out completion then it is cyclical
+            if (currentStack[key]) // loop exists so cycle
+                return true;
+
+            if (visited[key])
                 return false;
 
+            currentStack[key] = true;
             visited[key] = true;
             foreach (var adjKey in graph[key])
             {
-                if (!IsReachable(graph, adjKey, visited, courseDone))
+                if (IsCyclical(graph, adjKey, visited, currentStack))
                 {
-                    return false;
+                    return true;
                 }
             }
-            courseDone[key] = true;
-            return true; 
+
+            currentStack[key] = false; //remove from stack
+            return false; 
         }
     }
 }

@@ -38,7 +38,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            KthSmallestBST.Test();
+            //KthSmallestBST.Test();
             //LongestPalindromicSubsequence.Test();
             //FindUnSortedSubArray.Test();
             //QueueReconstructionByHeight.Test();
@@ -84,7 +84,7 @@ namespace Practice
             // LongestIncreasingSubsequence.Test();
             // MaximumProductSubArray.Test();
             // KnapSack.Test();
-            //TrappingRainWater_HARD.Test();
+          //  TrappingRainWater_HARD.Test();
             // TrappingRainWaterAttempt2.Test();
             //CoinChange.Test();
             //_0_1KnapSackProblem.Test();
@@ -104,7 +104,8 @@ namespace Practice
             // NickWhiteLeetCode.Graph.CloneGraph.Test();
             // ShortestPathTreasureIsland.Test();
             //LengthOfDictionary.Test();
-            //CourseSchedule.Test();
+            CourseSchedule.Test();
+            CourseScheduleAttempt.Test();
             // TargetSum.Test();
             // MaximumSubArray.Test();
             // BirthdayCakeCut.Test();
