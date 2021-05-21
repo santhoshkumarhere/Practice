@@ -29,7 +29,7 @@ namespace Practice.LeetCode2021.DP
             if (subSetSum == 0)
                 return true;
 
-            if (n == nums.Length - 1 || subSetSum < 0)
+            if (n == nums.Length || subSetSum < 0)
                 return false;
 
             if (memo.ContainsKey((n, subSetSum)))
