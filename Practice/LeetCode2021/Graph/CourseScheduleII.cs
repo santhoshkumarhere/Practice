@@ -77,6 +77,7 @@ namespace Practice.LeetCode2021.Graph
 
             foreach(var adjKey in graph[key])
             {
+                Console.WriteLine(adjKey);
                if(IsCyclic(graph, adjKey, visited, recursiveStack, result))
                {
                     return true;

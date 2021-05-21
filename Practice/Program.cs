@@ -96,7 +96,7 @@ namespace Practice
             //Practice.NickWhiteLeetCode.Sorting.MergeSort.Test();
             //CourseScheduleII.Test();
             // LengthOfDictionaryTrie.Test();
-            // CourseScheduleII.Test();
+             CourseScheduleII.Test();
             //DetectCycleDirectedGraph.Test();
             //DetectCycleUndirectedGraph.Test();
             //GraphValidTree.Test();
@@ -104,8 +104,7 @@ namespace Practice
             // NickWhiteLeetCode.Graph.CloneGraph.Test();
             // ShortestPathTreasureIsland.Test();
             //LengthOfDictionary.Test();
-            CourseSchedule.Test();
-            CourseScheduleAttempt.Test();
+            //CourseSchedule.Test(); 
             // TargetSum.Test();
             // MaximumSubArray.Test();
             // BirthdayCakeCut.Test();
