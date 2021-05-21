@@ -67,7 +67,7 @@ namespace Practice
             //ValidBST.Test();
             // BestStockBuyCoolDown.Test();
             //PartitionKSubsetSum.Test();
-            //PartitionEqualSubSetSum.Test();
+            PartitionEqualSubSetSum.Test();
             // PalindromeSubstring.Test();
             //NumberOfLIS.Test();
             // PalindromeSubstring.Test();
@@ -96,7 +96,7 @@ namespace Practice
             //Practice.NickWhiteLeetCode.Sorting.MergeSort.Test();
             //CourseScheduleII.Test();
             // LengthOfDictionaryTrie.Test();
-             CourseScheduleII.Test();
+            // CourseScheduleII.Test();
             //DetectCycleDirectedGraph.Test();
             //DetectCycleUndirectedGraph.Test();
             //GraphValidTree.Test();

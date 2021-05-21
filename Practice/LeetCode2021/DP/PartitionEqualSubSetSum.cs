@@ -23,6 +23,24 @@ namespace Practice.LeetCode2021.DP
             var res = DFSLeet(nums, 0, subset, memo);
         }
 
+        public static bool DFSLeet(int[] nums, int n, int subSetSum, Dictionary<(int, int), bool> memo)
+        {
+            //similar to knapsack problem
+            if (subSetSum == 0)
+                return true;
+
+            if (n == nums.Length - 1 || subSetSum < 0)
+                return false;
+
+            if (memo.ContainsKey((n, subSetSum)))
+                return memo[(n, subSetSum)];
+
+            var result = DFSLeet(nums, n + 1, subSetSum - nums[n], memo) || DFSLeet(nums, n + 1, subSetSum, memo); //include current value or exclude current  value
+
+            memo[(n, subSetSum)] = result;
+            return result;
+        }
+
         private static bool DFS(int remaining, int start, int[] nums, Dictionary<(int, int), bool> memo)
         {
             if (remaining == 0)
@@ -43,23 +61,6 @@ namespace Practice.LeetCode2021.DP
             }
             memo[(start, remaining)] = false;
             return false;
-        }
-
-        public static bool DFSLeet(int[] nums, int n, int subSetSum, Dictionary<(int, int), bool> memo)
-        {
-            if (subSetSum == 0)
-                return true;
-
-            if (n == nums.Length - 1 || subSetSum < 0)
-                return false;
-
-            if (memo.ContainsKey((n, subSetSum)))
-                return memo[(n, subSetSum)];
-
-            var result = DFSLeet(nums, n + 1 , subSetSum - nums[n + 1], memo) ||  DFSLeet(nums, n + 1, subSetSum, memo);
-
-            memo[(n, subSetSum)] = result;
-            return result;
-        }
+        }       
     }
 }
