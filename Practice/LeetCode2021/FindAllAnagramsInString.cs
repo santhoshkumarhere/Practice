@@ -33,11 +33,10 @@ namespace Practice.LeetCode2021
             {
                 pHash[c - 'a']++;
             }
-
-            var i = 0;
+                    
             var windowSize = p.Length;
            
-            for(i = 0; i < s.Length ; i++)
+            for(var i = 0; i < s.Length ; i++)
             {
                 sHash[s[i] - 'a']++;
                 
