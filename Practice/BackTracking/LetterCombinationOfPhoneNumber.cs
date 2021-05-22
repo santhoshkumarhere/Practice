@@ -6,6 +6,7 @@ namespace Practice.BackTracking
 {
     public class LetterCombinationOfPhoneNumber
     {
+        //O(4^N * N) where N = Length of digit & 4 = longest value in hashmap
         public static void Test()
         {
             Dictionary<char, string> dict = new Dictionary<char, string>();

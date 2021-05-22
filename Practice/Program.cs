@@ -38,6 +38,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            BackTracking.WordBreak.Test();
             //KthSmallestBST.Test();
             //LongestPalindromicSubsequence.Test();
             //FindUnSortedSubArray.Test();
@@ -67,7 +68,7 @@ namespace Practice
             //ValidBST.Test();
             // BestStockBuyCoolDown.Test();
             //PartitionKSubsetSum.Test();
-            PartitionEqualSubSetSum.Test();
+            //PartitionEqualSubSetSum.Test();
             // PalindromeSubstring.Test();
             //NumberOfLIS.Test();
             // PalindromeSubstring.Test();
