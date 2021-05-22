@@ -38,14 +38,14 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            FirstNonRepeatedCharacter.Test();
+            //FirstNonRepeatedCharacter.Test();
             //NextPermutation.Test();
             // BackTracking.WordBreak.Test();
             //KthSmallestBST.Test();
             //LongestPalindromicSubsequence.Test();
             //FindUnSortedSubArray.Test();
             //QueueReconstructionByHeight.Test();
-            //FindAllAnagramsInString.Test();
+            FindAllAnagramsInString.Test();
             // BinaryTreeInOrderTraversal.Test();
             //  JumpGameII_Greedy_.Test();
             //Search2DMatrixII.Test();

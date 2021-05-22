@@ -11,10 +11,46 @@ namespace Practice.LeetCode2021
             var s = "abab";
             var p = "ab";
             var result = FindAnagramsON2(s, p);
+            var result2 = FindAnagrams(s, p);
 
             s = "cbaebabacd";
             p = "abc";
             result = FindAnagramsON2(s, p);
+            result2 = FindAnagrams(s, p);
+        }
+
+        private static IList<int> FindAnagrams(string s, string p)
+        {
+            var res = new List<int>();
+
+            if (string.IsNullOrEmpty(s) || string.IsNullOrEmpty(p) || s.Length < p.Length)
+                return res;
+
+            var pHash = new char[26];
+            var sHash = new char[26];
+
+            foreach(var c in p)
+            {
+                pHash[c - 'a']++;
+            }
+
+            var i = 0;
+            var windowSize = p.Length;
+           
+            for(i = 0; i < s.Length ; i++)
+            {
+                sHash[s[i] - 'a']++;
+                
+                if(i >= windowSize)
+                {
+                    sHash[s[i - windowSize] - 'a']--; //remove left side of window
+                }
+                if (new string(sHash).Equals(new string(pHash)))
+                    res.Add(i - windowSize + 1); //current window starting index
+                
+            }
+
+            return res;
         }
 
         private static IList<int> FindAnagramsON2(string s, string p)
