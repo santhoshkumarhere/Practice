@@ -38,7 +38,7 @@ namespace Practice.LeetCode2021
                     right--;
                 }
 
-                //keep in mind right can go beyond right because of inner while loop
+                //keep in mind left can go beyond right because of inner while loop
                 if (left <= right && left <= s.Length - 1 && right >= 0 && (char.ToLower(s[left]) != char.ToLower(s[right])))
                 {
                     return false;
