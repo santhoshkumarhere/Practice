@@ -45,7 +45,7 @@ namespace Practice
             //LongestPalindromicSubsequence.Test();
             //FindUnSortedSubArray.Test();
             //QueueReconstructionByHeight.Test();
-            FindAllAnagramsInString.Test();
+            //FindAllAnagramsInString.Test();
             // BinaryTreeInOrderTraversal.Test();
             //  JumpGameII_Greedy_.Test();
             //Search2DMatrixII.Test();
@@ -300,7 +300,7 @@ namespace Practice
             // Combinations.Test();
             // MakingChange.Test(); 
             // MaxProfit.Test();
-            // RotateMatrix.Test();
+            RotateMatrix.Test();
             //TopKFrequent.RecursionTest(new string[]{"xxx", "xx", "er", "df", "ab", "ab", "cert", "cer", "bat", "bat"}, 2);
             //TopKFrequent.FrequentWord(new int[]{1, 1, 1, 2, 2, 3, 3}, 2);
             //TopKFrequent.FrequentWord(new int[] { 1}, 1);

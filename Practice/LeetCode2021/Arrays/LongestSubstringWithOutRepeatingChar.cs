@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Practice.LeetCode2021.Array
+namespace Practice.LeetCode2021.Arrays
 {
     public class LongestSubstringWithOutRepeatingChar
     {

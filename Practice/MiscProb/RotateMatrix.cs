@@ -19,41 +19,71 @@ namespace Practice.MiscProb
             RotateClockwise(input);
         }
 
-        public static void RotateAntiClockWise(int[][] mat)
+        public static void RotateByTranspose(int[][] mat)
         {
             var length = mat.Length;
 
-            for (var i = 0; i < length / 2; i++)
+            for(int row = 0; row < length; row++)
             {
-                for (var j = i; j < length - i - 1; j++)
+                for(int col = row; col < length; col++)
                 {
-                    var temp = mat[i][j];
-                    mat[i][j] = mat[j][length - 1 - i];
-                    mat[j][length - 1 - i] = mat[length - 1 - i][length - 1 - j];
-                    mat[length - 1 - i][length - 1 - j] = mat[length - 1 - j][i];
-                    mat[length - 1 - j][i] = temp;
+                    var temp = mat[row][col];
+                    mat[row][col] = mat[col][row];
+                    mat[col][row] = temp;
+                }                
+            } // transpose
+
+            //reverse
+            for(int row = 0; row < length; row++)
+            {
+                for(int col = 0; col < length/2; col++)
+                {
+                    var temp = mat[row][col];
+                    mat[row][col] = mat[row][length - 1 - col];
+                    mat[row][length - 1 - col] = temp;
                 }
             }
-
         }
 
         public static void RotateClockwise(int[][] mat)
         {
-            var length = mat.GetLength(0);
+            var length = mat.Length;
 
-            for (var i = 0; i < length / 2; i++)
+            for (var row = 0; row < length / 2; row++)
             {
-                for (var j = i; j < length - i - 1; j++)
+                for (var col = row; col < length - row - 1; col++)
                 {
-                    var temp = mat[i][j];
-                    mat[i][j] = mat[length - 1 - j][i];
-                    mat[length - 1- j][i] = mat[length - 1 - i][length - 1 - j];
+                    //think that replacing rows with columns & vice versa
+                    //draw 4 x 4 matrix and then see this logic
+                    var temp = mat[row][col];
+                    mat[row][col] = mat[length - 1 - col][row];
+                    mat[length - 1 - col][row] = mat[length - 1 - row][length - 1 - col];
 
-                    mat[length - i - 1][length - 1 - j] = mat[j][length - 1 - i];
-                    mat[j][length - 1 - i] = temp;
+                    mat[length - 1 - row][length - 1 - col] = mat[col][length - 1 - row];
+                    mat[col][length - 1 - row] = temp;
                 }
             }
         }
+
+        public static void RotateAntiClockWise(int[][] mat)
+        {
+            var length = mat.Length;
+
+            for (var row = 0; row < length / 2; row++)
+            {
+                for (var col = row; col < length - row - 1; col++)
+                {
+                    var temp = mat[row][col];
+                    mat[row][col] = mat[col][length - 1 - row];
+                    mat[col][length - 1 - row] = mat[length - 1 - row][length - 1 - col];
+                    mat[length - 1 - row][length - 1 - col] = mat[length - 1 - col][row];
+                    mat[length - 1 - col][row] = temp;
+                }
+            }
+
+        }
+
+        
 
         //public static void Rotate(int[,] matrix)
         //{
