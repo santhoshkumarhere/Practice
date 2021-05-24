@@ -37,7 +37,7 @@ namespace Practice.LeetCode2021.TreeProblems
             zero.left = new TreeNode(-1);
 
             var x = new TreeNode(1);
-            x.right = new TreeNode(1);
+            x.right = new TreeNode(2);
             var res = FindBottomLeftValue(x);
             var ers1 = FindBottomLeftValue(zero);
             var ers2 = FindBottomLeftValue(root);
