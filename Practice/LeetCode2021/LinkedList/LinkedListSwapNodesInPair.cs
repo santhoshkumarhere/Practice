@@ -17,7 +17,32 @@ namespace Practice.LeetCode2021
             n2.Next = n3;
             n3.Next = n4;
             n4.Next = n5;
-           var res = SwapPairs(n1);
+          // var res = SwapPairs(n1);
+            var ress = SwapPairs2(n1);
+        }
+
+        private static ListNode SwapPairs2(ListNode head)
+        {
+            var dummy = new ListNode(0);
+
+            dummy.Next = head;
+            var prevNode = dummy;
+            while(head != null && head.Next != null)
+            {
+                var firstNode = head;
+                var secondNode = head.Next;
+
+                // Swapping              
+                firstNode.Next = secondNode.Next; // 1->3->4->5
+                secondNode.Next = firstNode; // 2-> 1-> 3-> 4-> 5 
+                prevNode.Next = secondNode; // 0 => 2-> 1-> 3-> 4-> 5 look dummy gets modified
+
+                // Reinitializing the head and prevNode for next swap
+                prevNode = firstNode;
+                head = prevNode.Next;
+            }
+
+            return dummy.Next;
         }
 
         private static ListNode SwapPairs(ListNode head)

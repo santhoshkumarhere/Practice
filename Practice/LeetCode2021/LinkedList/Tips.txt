@@ -1,0 +1,3 @@
+﻿1. Only pointer tracks the head or dummy can modify head
+2. that pointer can be moved like curr = curr.next
+3. See LinkedListSwap Nodes in Pair and study line by line

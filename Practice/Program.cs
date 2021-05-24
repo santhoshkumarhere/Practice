@@ -106,7 +106,7 @@ namespace Practice
             //NoOfConnectedCompUndirectedGraph.Test();
             // NickWhiteLeetCode.Graph.CloneGraph.Test();
             // ShortestPathTreasureIsland.Test();
-            LengthOfDictionary.Test();
+            //LengthOfDictionary.Test();
             //CourseSchedule.Test(); 
             // TargetSum.Test();
             // MaximumSubArray.Test();
@@ -133,7 +133,7 @@ namespace Practice
             //LinkedListPartitionList.Test();
             //FindBottomLeftValueInTree.Test();
             // LinkedListMergeTwoSortedList.Test();
-            //LinkedListSwapNodesInPair.Test();
+            LinkedListSwapNodesInPair.Test();
             // HandOfStraights.Test();
             // BinaryTreePruning.Test();
             // CoinChange1.Test();
