@@ -11,12 +11,27 @@ namespace Practice.LeetCode2021.Trie
         {
             var trie = new TrieImpl();
             trie.Insert("apple");
-            trie.Insert("application");
+            trie.Insert("application");           
             trie.Insert("baby");
             trie.Insert("babs");
-
             var startWith = trie.StartsWith("bab");
             var exists = trie.Search("baby");
+
+            string[] products = new string[] { "mobile", "mouse", "moneypot", "monitor", "mousepad" };
+            string searchWord = "mou";
+
+            trie = new TrieImpl();
+            var result = new List<IList<string>>();
+            // Add all words to trie.
+            foreach (var word in products)
+                trie.Insert(word);
+
+            var prefix = string.Empty;
+            foreach (var c in searchWord)
+            {
+                prefix += c;
+                result.Add(trie.GetWordsStartingWith(prefix));
+            }           
         }
 
         TrieNode root;
@@ -40,6 +55,34 @@ namespace Practice.LeetCode2021.Trie
             curr.isLeaf = true;
         }
 
+        private List<string> GetWordsStartingWith(string prefix)
+        {
+            var curr = root;
+            var resultBuffer = new List<string>();
+
+            // Move curr to the end of prefix in its trie representation.
+            foreach (var c in prefix)
+            {
+                if (!curr.children.ContainsKey(c))
+                    return resultBuffer;
+                curr = curr.children[c];
+            }
+            DFSwithPrefix(curr, prefix, resultBuffer);
+            return resultBuffer;
+        }
+
+        void DFSwithPrefix(TrieNode curr, string word, List<string> resultBuffer)
+        {
+            if (resultBuffer.Count == 3)
+                return;
+            if (curr.isLeaf)
+                resultBuffer.Add(word);
+
+            // Run DFS on all possible paths.
+            for (char c = 'a'; c <= 'z'; c++)
+                if (curr.children.ContainsKey(c))
+                    DFSwithPrefix(curr.children[c], word + c, resultBuffer);
+        }
 
         public bool Search(string word)
         {
