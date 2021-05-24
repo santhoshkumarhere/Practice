@@ -37,7 +37,7 @@ namespace Practice.LeetCode2021.TreeProblems
 
             parent[root] = null;
             stack.Push(root);
-
+            //preorder
             while(!parent.ContainsKey(p) || !parent.ContainsKey(q))
             {
                 var curr = stack.Pop();
@@ -57,7 +57,7 @@ namespace Practice.LeetCode2021.TreeProblems
 
             var ancestor = new HashSet<TreeNode>();
 
-            while(p != null)
+            while(p != null) //until you hit the root
             {
                 ancestor.Add(p);
                 p = parent[p];

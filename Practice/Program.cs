@@ -94,7 +94,7 @@ namespace Practice
             //KnapSack.Test();
             // QuickSort.Test();
             //AlienDictionary.Test();
-            //  ValidateAlienDictionary.Test();
+            //ValidateAlienDictionary.Test();
             //MinimumHeightTree.Test();
             //Practice.NickWhiteLeetCode.Sorting.MergeSort.Test();
             //CourseScheduleII.Test();
@@ -106,7 +106,7 @@ namespace Practice
             //NoOfConnectedCompUndirectedGraph.Test();
             // NickWhiteLeetCode.Graph.CloneGraph.Test();
             // ShortestPathTreasureIsland.Test();
-            //LengthOfDictionary.Test();
+            LengthOfDictionary.Test();
             //CourseSchedule.Test(); 
             // TargetSum.Test();
             // MaximumSubArray.Test();
