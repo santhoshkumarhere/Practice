@@ -52,7 +52,7 @@ namespace Practice
             //FindDuplicateTortoiseHareFloyd.Test();
             //ConstructBinaryTreeFromIn_PreOrder.Test();
             // DailyTemperature.Test();
-            // SubArraySumK.Test();
+             SubArraySumK.Test();
             // LRUImpl.Test();
             //GroupAnagrams.Test();
             //MaximalSquare.Test();
@@ -215,7 +215,7 @@ namespace Practice
             //RemoveLinkedListElement.Test();
             //  ValidatingAlienDictionary.Test(); 
             //AlienDictionaryLeetCode.Test();
-             WordLadder.Test();
+            // WordLadder.Test();
             // AlienDictionary.Test();
             //RemoveDuplicatesFromSortedArray.Test();
             // VowelSpellChecker.Test();
