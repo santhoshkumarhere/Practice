@@ -45,7 +45,7 @@ namespace Practice.LeetCode2021.Graph
             {
                 var word1 = words[i - 1];
                 var word2 = words[i];
-                if (word1.Length > word2.Length && word1.StartsWith(word2))
+                if (word1.Length > word2.Length && word1.StartsWith(word2)) //edge case santhosh, santh
                     return "";
                 Compare(words[i - 1], words[i], graph);
             }
