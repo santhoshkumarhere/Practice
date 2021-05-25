@@ -61,7 +61,7 @@ namespace Practice
             //GenerateParenthesis.Test();
             //DecodeString.Test();
             //LetterCombinationOfPhoneNumber.Test();
-            TrieImpl.Test();
+            //TrieImpl.Test();
             // BinaryTreeLCA.Test();
             // NickWhiteLeetCode.Matrix.WordSearch.Test();
             //BinaryTreeLCA.Test();
@@ -215,7 +215,7 @@ namespace Practice
             //RemoveLinkedListElement.Test();
             //  ValidatingAlienDictionary.Test(); 
             //AlienDictionaryLeetCode.Test();
-            // WordLadder.Test();
+             WordLadder.Test();
             // AlienDictionary.Test();
             //RemoveDuplicatesFromSortedArray.Test();
             // VowelSpellChecker.Test();
