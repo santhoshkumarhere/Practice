@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Practice.LeetCode2021.Trie
@@ -78,10 +79,18 @@ namespace Practice.LeetCode2021.Trie
             if (curr.isLeaf)
                 resultBuffer.Add(word);
 
-            // Run DFS on all possible paths.
-            for (char c = 'a'; c <= 'z'; c++)
-                if (curr.children.ContainsKey(c))
-                    DFSwithPrefix(curr.children[c], word + c, resultBuffer);
+            // Run DFS on all possible paths. 
+            //for (char c = 'a'; c <= 'z'; c++) //740ms
+            //{
+            //    if (curr.children.ContainsKey(c))
+            //        DFSwithPrefix(curr.children[c], word + c, resultBuffer);
+            //}
+            var keys = curr.children.Keys.ToList(); //550 ms
+            keys.Sort();
+            foreach(var c in keys)
+            {
+               DFSwithPrefix(curr.children[c], word + c, resultBuffer);
+            }
         }
 
         public bool Search(string word)
