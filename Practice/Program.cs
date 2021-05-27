@@ -31,6 +31,7 @@ using Practice.LeetCode2021.Graph;
 using Practice.LeetCode2021.Trie;
 using Practice.LeetCode2021.Sorting;
 using Practice.LeetCode2021.Interval;
+using Practice.LeetCode2021.Arrays;
 
 namespace Practice
 {
@@ -38,6 +39,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            LongestSubstringAtMostKDistinctChars.Test();
+            //LongestSubsWithAlmostTwoDisctinctCharacters.Test();
+            //LongestSubstringWithOutRepeatingChar.Test();
             //FirstNonRepeatedCharacter.Test();
             //NextPermutation.Test();
             // BackTracking.WordBreak.Test();
@@ -52,7 +56,7 @@ namespace Practice
             //FindDuplicateTortoiseHareFloyd.Test();
             //ConstructBinaryTreeFromIn_PreOrder.Test();
             // DailyTemperature.Test();
-             SubArraySumK.Test();
+            // SubArraySumK.Test();
             // LRUImpl.Test();
             //GroupAnagrams.Test();
             //MaximalSquare.Test();
@@ -133,7 +137,7 @@ namespace Practice
             //LinkedListPartitionList.Test();
             //FindBottomLeftValueInTree.Test();
             // LinkedListMergeTwoSortedList.Test();
-           // LinkedListSwapNodesInPair.Test();
+            // LinkedListSwapNodesInPair.Test();
             // HandOfStraights.Test();
             // BinaryTreePruning.Test();
             // CoinChange1.Test();
