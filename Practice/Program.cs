@@ -39,7 +39,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LongestSubstringAtMostKDistinctChars.Test();
+            TwoSumBST.Test();
+            //LongestSubstringAtMostKDistinctChars.Test();
             //LongestSubsWithAlmostTwoDisctinctCharacters.Test();
             //LongestSubstringWithOutRepeatingChar.Test();
             //FirstNonRepeatedCharacter.Test();
