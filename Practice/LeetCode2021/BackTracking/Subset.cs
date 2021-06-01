@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Practice.BackTracking
+namespace Practice.LeetCode2021.BackTracking
 {
     public class Subset
     {

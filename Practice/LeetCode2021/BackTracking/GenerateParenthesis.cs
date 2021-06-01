@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace Practice.BackTracking
+namespace Practice.LeetCode2021.BackTracking
 {
     public class GenerateParenthesis
     {
