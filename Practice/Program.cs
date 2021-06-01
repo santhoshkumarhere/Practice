@@ -39,7 +39,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            NoOfDiceRollsWithTargetSum.Test();
+            NumberOfProvince.Test();
+            //NoOfDiceRollsWithTargetSum.Test();
             //MatrixDFSTraversal.Test();
             //NoOfEquivalentDominoes.Test();
             //TwoSumBST.Test();
