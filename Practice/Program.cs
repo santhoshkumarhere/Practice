@@ -39,7 +39,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            NoOfEquivalentDominoes.Test();
+            MatrixDFSTraversal.Test();
+            //NoOfEquivalentDominoes.Test();
             //TwoSumBST.Test();
             //LongestSubstringAtMostKDistinctChars.Test();
             //LongestSubsWithAlmostTwoDisctinctCharacters.Test();
