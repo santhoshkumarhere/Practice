@@ -39,7 +39,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MatrixDFSTraversal.Test();
+            NoOfDiceRollsWithTargetSum.Test();
+            //MatrixDFSTraversal.Test();
             //NoOfEquivalentDominoes.Test();
             //TwoSumBST.Test();
             //LongestSubstringAtMostKDistinctChars.Test();
