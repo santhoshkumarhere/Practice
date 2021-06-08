@@ -32,6 +32,7 @@ using Practice.LeetCode2021.Trie;
 using Practice.LeetCode2021.Sorting;
 using Practice.LeetCode2021.Interval;
 using Practice.LeetCode2021.Arrays;
+using Practice.Patterns.Factory;
 
 namespace Practice
 {
@@ -39,7 +40,11 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            NumberOfProvince.Test();
+            //IPizzaStore pizzaStore = new NewyorkPizzaStore();
+            //pizzaStore.OrderPizza("chicken");
+            SortColors.Test();
+
+            //NumberOfProvince.Test();
             //NoOfDiceRollsWithTargetSum.Test();
             //MatrixDFSTraversal.Test();
             //NoOfEquivalentDominoes.Test();
