@@ -24,7 +24,6 @@ namespace Practice.LeetCode2021.LinkedList
             var slowPointer = head;
             var fastPointer = head;
             var start = head;
-            var pos = 0;
             
             while(fastPointer != null && fastPointer.next != null)
             {
