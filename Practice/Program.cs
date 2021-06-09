@@ -33,6 +33,7 @@ using Practice.LeetCode2021.Sorting;
 using Practice.LeetCode2021.Interval;
 using Practice.LeetCode2021.Arrays;
 using Practice.Patterns.Factory;
+using Practice.LeetCode2021.LinkedList;
 
 namespace Practice
 {
@@ -40,9 +41,10 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            LinkedListCycleII.Test();
             //IPizzaStore pizzaStore = new NewyorkPizzaStore();
             //pizzaStore.OrderPizza("chicken");
-            SortColors.Test();
+            //SortColors.Test();
 
             //NumberOfProvince.Test();
             //NoOfDiceRollsWithTargetSum.Test();
