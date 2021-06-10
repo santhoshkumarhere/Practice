@@ -52,3 +52,6 @@ namespace Practice.DSA
         }
     }
 }
+//Parent -> 1 2 -1
+//nodes  -> 0 1  2
+// 0 and 1 points to same parent 2
