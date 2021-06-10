@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Practice.LeetCode2021.Sorting
+namespace Practice.DSA.Sorting
 {
     public class QuickSort
     {

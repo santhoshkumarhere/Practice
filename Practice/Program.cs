@@ -29,11 +29,12 @@ using Practice.LeetCode2021.DP;
 using Practice.LeetCode2021.Recursion;
 using Practice.LeetCode2021.Graph;
 using Practice.LeetCode2021.Trie;
-using Practice.LeetCode2021.Sorting;
+using Practice.DSA.Sorting;
 using Practice.LeetCode2021.Interval;
 using Practice.LeetCode2021.Arrays;
 using Practice.Patterns.Factory;
 using Practice.LeetCode2021.LinkedList;
+using Practice.DSA;
 
 namespace Practice
 {
@@ -41,7 +42,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LinkedListCycleII.Test();
+            UnionFindDetectCycle.Test();
+            //LinkedListCycleII.Test();
             //IPizzaStore pizzaStore = new NewyorkPizzaStore();
             //pizzaStore.OrderPizza("chicken");
             //SortColors.Test();
