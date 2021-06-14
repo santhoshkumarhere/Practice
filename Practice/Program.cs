@@ -35,6 +35,7 @@ using Practice.LeetCode2021.Arrays;
 using Practice.Patterns.Factory;
 using Practice.LeetCode2021.LinkedList;
 using Practice.DSA;
+using Practice.DSA.BinarySearchTree;
 
 namespace Practice
 {
@@ -42,7 +43,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            UnionFindDetectCycle.Test();
+            DSA.BinarySearchTree.BinarySearchTree.Test();
+            //UnionFindDetectCycle.Test();
             //LinkedListCycleII.Test();
             //IPizzaStore pizzaStore = new NewyorkPizzaStore();
             //pizzaStore.OrderPizza("chicken");
@@ -561,11 +563,11 @@ namespace Practice
 
         }
 
-        static BinarySearchTree CreateBST()
+        static Tree.BinarySearchTree CreateBST()
         {
              var arr = new int[] { 20, 15, 25, 45, 16, 22, 13, 70 };
              
-            var bst = new BinarySearchTree();
+            var bst = new Tree.BinarySearchTree();
 
             foreach (var i in arr)
             {
