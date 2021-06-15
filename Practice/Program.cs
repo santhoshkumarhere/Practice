@@ -43,7 +43,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            DSA.BinarySearchTree.BinarySearchTree.Test();
+            CatalanNumber.Test();
+             //DSA.BinarySearchTree.BinarySearchTree.Test();
             //UnionFindDetectCycle.Test();
             //LinkedListCycleII.Test();
             //IPizzaStore pizzaStore = new NewyorkPizzaStore();
