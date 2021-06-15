@@ -43,14 +43,15 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LinkedListSortONLogN.Test();
-           // CatalanNumber.Test();
-           //DSA.BinarySearchTree.BinarySearchTree.Test();
-           //UnionFindDetectCycle.Test();
-           //LinkedListCycleII.Test();
-           //IPizzaStore pizzaStore = new NewyorkPizzaStore();
-           //pizzaStore.OrderPizza("chicken");
-           //SortColors.Test();
+            BinarySearchTreeInOrderSuccessor.Test();
+            //LinkedListSortONLogN.Test();
+            // CatalanNumber.Test();
+            //DSA.BinarySearchTree.BinarySearchTree.Test();
+            //UnionFindDetectCycle.Test();
+            //LinkedListCycleII.Test();
+            //IPizzaStore pizzaStore = new NewyorkPizzaStore();
+            //pizzaStore.OrderPizza("chicken");
+            //SortColors.Test();
 
             //NumberOfProvince.Test();
             //NoOfDiceRollsWithTargetSum.Test();
