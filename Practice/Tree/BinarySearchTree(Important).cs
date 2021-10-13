@@ -182,7 +182,7 @@ namespace Practice.Tree
             }
         }
 
-        public void PostOrderTraverseIterative(Node currentNode)
+        public IList<int> PostOrderTraverseIterative(Node currentNode)
         {
             var result = new LinkedList<int>();
 
@@ -202,6 +202,7 @@ namespace Practice.Tree
             {
                 Console.Write(" " +list);
             }
+            return (IList<int>)result; // may be wrong
         }
 
         public void LevelOrder()
