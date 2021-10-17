@@ -36,6 +36,7 @@ namespace Practice.Tree.TreeProblems
             nodeStack.Push(root);
             sumStack.Push(sum - root.val);
 
+            // This nothing but a pre-order travesal
             while(nodeStack.Count > 0)
             {
                 var curr = nodeStack.Pop();
