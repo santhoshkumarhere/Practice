@@ -14,13 +14,13 @@ namespace Practice.Tree.TreeProblems
 
         private bool HasPathSum(TreeNode root, int sum)
         {
-            if (root == null || (root.left == null && root.right == null && root.val != sum))
+            if (root == null)
             {
                 return false;
             }
-            if (root.left == null && root.right == null && root.val == sum)
+            if (root.left == null && root.right == null)
             {
-                return true;
+                return root.val == sum;
             }
 
             return HasPathSum(root.left, sum - root.val) || HasPathSum(root.right, sum - root.val);
@@ -36,7 +36,7 @@ namespace Practice.Tree.TreeProblems
             nodeStack.Push(root);
             sumStack.Push(sum - root.val);
 
-            // This nothing but a pre-order travesal
+            // This is nothing but a pre-order travesal
             while(nodeStack.Count > 0)
             {
                 var curr = nodeStack.Pop();
