@@ -36,6 +36,7 @@ using Practice.Patterns.Factory;
 using Practice.LeetCode2021.LinkedList;
 using Practice.DSA;
 using Practice.DSA.BinarySearchTree;
+using Practice.LeetCode2021.BinarySearch;
 
 namespace Practice
 {
@@ -43,7 +44,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            BinarySearchTreeInOrderSuccessor.Test();
+            FindFirstAndLastPositionInSortedArray.Test();
+            //BinarySearchTreeInOrderSuccessor.Test();
             //LinkedListSortONLogN.Test();
             // CatalanNumber.Test();
             //DSA.BinarySearchTree.BinarySearchTree.Test();
