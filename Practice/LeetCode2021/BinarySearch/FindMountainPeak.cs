@@ -22,12 +22,12 @@ namespace Practice.LeetCode2021
             {
                 var middle = (left + right) / 2;
                 if (arr[middle] < arr[middle + 1])
-                {
-                    left = middle + 1;
+                {                        //     m
+                    left = middle + 1;  // 69, 100, 99
                 }
                 else
-                {
-                    right = middle;
+                {                    //    m        the number before 67 could be less than 67 which could make it Peak
+                    right = middle; // 78, 67, 36
                 }
             }
             return left;
