@@ -8,7 +8,7 @@ namespace Practice.LeetCode2021.BinarySearch
     {
         public static void Test()
         {
-            var nums = new int[] { -20, -18, -17, -5, -4, -3, -2, -1, 0, 5, 7, 9, 23, 45 };
+            var nums = new int[] { -20, -18, -17, -4, -3, -2, -1, 0, 5, 7, 9, 23, 45 };
             var count = Find(nums);
         }
 
@@ -21,16 +21,25 @@ namespace Practice.LeetCode2021.BinarySearch
             {
                 var mid = (left + right) / 2;
 
-                if(nums[mid] >=0 )
+                if (nums[mid] < 0)
                 {
-                    right = mid; // -ve numbers will be in left side so move to left side
+                    left = mid + 1; // -ve numbers will be in left side so move to left side
                 }
                 else
                 {
-                    left = mid + 1;
+                    right = mid;
                 }
+
+                //if(nums[mid] >=0 )
+                //{
+                //    right = mid; // -ve numbers will be in left side so move to left side
+                //}
+                //else
+                //{
+                //    left = mid + 1;
+                //}
             }
-            return right;
+            return left;
         }
     }
 }
