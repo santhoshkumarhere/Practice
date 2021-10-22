@@ -22,7 +22,7 @@ namespace Practice.LeetCode2021
             {
                 var middle = (left + right) / 2;
                 if (arr[middle] < arr[middle + 1])
-                {                        //     m
+                {                        // m  
                     left = middle + 1;  // 69, 100, 99
                 }
                 else

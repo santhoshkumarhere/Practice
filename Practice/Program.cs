@@ -44,7 +44,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            FindFirstAndLastPositionInSortedArray.Test();
+            FindNumberOfNegativeElements.Test();
+            //FindFirstAndLastPositionInSortedArray.Test();
             //BinarySearchTreeInOrderSuccessor.Test();
             //LinkedListSortONLogN.Test();
             // CatalanNumber.Test();
