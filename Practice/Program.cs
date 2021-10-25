@@ -44,7 +44,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            FindNumberOfNegativeElements.Test();
+            KokoEatingBananaSpeed.Test();
+            //FindNumberOfNegativeElements.Test();
             //FindFirstAndLastPositionInSortedArray.Test();
             //BinarySearchTreeInOrderSuccessor.Test();
             //LinkedListSortONLogN.Test();
