@@ -44,7 +44,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            KokoEatingBananaSpeed.Test();
+            SortColors.Test();
+            //SortColorDutchFlagEPI.Test();
+            //KokoEatingBananaSpeed.Test();
             //FindNumberOfNegativeElements.Test();
             //FindFirstAndLastPositionInSortedArray.Test();
             //BinarySearchTreeInOrderSuccessor.Test();
