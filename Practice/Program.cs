@@ -37,6 +37,7 @@ using Practice.LeetCode2021.LinkedList;
 using Practice.DSA;
 using Practice.DSA.BinarySearchTree;
 using Practice.LeetCode2021.BinarySearch;
+using Practice.LeetCode2021.SlidingWindow;
 
 namespace Practice
 {
@@ -44,7 +45,10 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            SortColors.Test();
+            FindAllAnagramsSlidingWindow.Test();
+            //MinimumWindowSubstring.Test();
+            // MinCostClaimbingStairs_E.Test();
+            //SortColors.Test();
             //SortColorDutchFlagEPI.Test();
             //KokoEatingBananaSpeed.Test();
             //FindNumberOfNegativeElements.Test();
