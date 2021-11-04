@@ -45,7 +45,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            FindAllAnagramsSlidingWindow.Test();
+            LongestSubstringWithTwoDistinctChar.Test();
+           // LongestSubstringWithoutRepeatingChars.Test();
+            //FindAllAnagramsSlidingWindow.Test();
             //MinimumWindowSubstring.Test();
             // MinCostClaimbingStairs_E.Test();
             //SortColors.Test();
