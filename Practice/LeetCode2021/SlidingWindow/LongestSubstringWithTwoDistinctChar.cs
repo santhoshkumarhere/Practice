@@ -29,7 +29,7 @@ namespace Practice.LeetCode2021.SlidingWindow
                     map[currentChar] = 1;
                 }
 
-                while (map.Keys.Count > 2)
+                while (map.Keys.Count > 2) // for k distinct problem replace 2 with k
                 {
                     var beginChar = s[start];
                     map[beginChar]--;
