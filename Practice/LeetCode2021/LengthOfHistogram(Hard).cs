@@ -8,7 +8,7 @@ namespace Practice.LeetCode2021
     {
         public static void Test()
         {
-            var arr = new int[]{ 6, 2, 5, 4, 5, 1, 6 };
+            var arr = new int[]  { 6, 2, 5, 4, 5, 1, 6 };
             var res = LengthOfHistogram(arr);
         }
 
@@ -19,8 +19,8 @@ namespace Practice.LeetCode2021
 
             for(int i = 0; i<= arr.Length; i++)
             {
-                var h = (i == arr.Length) ? 0 : arr[i]; // handle last element 
-                if (stack.Count == 0 || h >= arr[stack.Peek()])
+                var currentElement = (i == arr.Length) ? 0 : arr[i]; // handle last element 
+                if (stack.Count == 0 || currentElement >= arr[stack.Peek()])
                     stack.Push(i);
                 else
                 {

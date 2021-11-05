@@ -59,7 +59,7 @@ namespace Practice.LeetCode2021
                     r--;
                 }
             }
-            return new String(ch);
+            return new string(ch);
         }
     }
 }
