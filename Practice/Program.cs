@@ -46,7 +46,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LengthOfHistogram.Test();
+            NextGreaterElement.Test();
+           // LengthOfHistogram.Test();
            // LongestSubstringWithTwoDistinctChar.Test();
            // LongestSubstringWithoutRepeatingChars.Test();
            //FindAllAnagramsSlidingWindow.Test();
@@ -102,7 +103,7 @@ namespace Practice
             // BinaryTreeLCA.Test();
             // NickWhiteLeetCode.Matrix.WordSearch.Test();
             //BinaryTreeLCA.Test();
-           // LengthOfHistogram_Hard_.Test();
+            // LengthOfHistogram_Hard_.Test();
             // IsSameTree_E_.Test();
             //ValidBST.Test();
             // BestStockBuyCoolDown.Test();
