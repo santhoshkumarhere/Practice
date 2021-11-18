@@ -46,7 +46,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            NextGreaterElement.Test();
+            LeetCode2021.DP.MinimumPathSum.Test();
+           // NextGreaterElement.Test();
            // LengthOfHistogram.Test();
            // LongestSubstringWithTwoDistinctChar.Test();
            // LongestSubstringWithoutRepeatingChars.Test();
