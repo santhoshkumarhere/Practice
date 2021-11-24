@@ -11,7 +11,7 @@ namespace Practice.LeetCode2021.Graph
         {
            var edges = new int[][]{
                new int[] { 1, 0 },
-            new int[] { 0, 2},
+           // new int[] { 0, 2},
             new int[] {2, 1},
             new int[] {0, 3},
             new int[] {3, 4}
@@ -61,7 +61,7 @@ namespace Practice.LeetCode2021.Graph
                         return true;
                 }
                 else{
-                    if (key != parent)
+                    if (adjKey != parent)
                         return true;
                 }
             }

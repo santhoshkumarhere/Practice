@@ -46,28 +46,29 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            DetectCycleUndirectedGraph.Test();
           //  LeetCode2021.DP.MinimumPathSum.Test();
-           // NextGreaterElement.Test();
-           // LengthOfHistogram.Test();
-           // LongestSubstringWithTwoDistinctChar.Test();
-           // LongestSubstringWithoutRepeatingChars.Test();
-           //FindAllAnagramsSlidingWindow.Test();
-           //MinimumWindowSubstring.Test();
-           // MinCostClaimbingStairs_E.Test();
-           //SortColors.Test();
-           //SortColorDutchFlagEPI.Test();
-           //KokoEatingBananaSpeed.Test();
-           //FindNumberOfNegativeElements.Test();
-           //FindFirstAndLastPositionInSortedArray.Test();
-           //BinarySearchTreeInOrderSuccessor.Test();
-           //LinkedListSortONLogN.Test();
-           // CatalanNumber.Test();
-           //DSA.BinarySearchTree.BinarySearchTree.Test();
-           //UnionFindDetectCycle.Test();
-           //LinkedListCycleII.Test();
-           //IPizzaStore pizzaStore = new NewyorkPizzaStore();
-           //pizzaStore.OrderPizza("chicken");
-           //SortColors.Test();
+          // NextGreaterElement.Test();
+          // LengthOfHistogram.Test();
+          // LongestSubstringWithTwoDistinctChar.Test();
+          // LongestSubstringWithoutRepeatingChars.Test();
+          //FindAllAnagramsSlidingWindow.Test();
+          //MinimumWindowSubstring.Test();
+          // MinCostClaimbingStairs_E.Test();
+          //SortColors.Test();
+          //SortColorDutchFlagEPI.Test();
+          //KokoEatingBananaSpeed.Test();
+          //FindNumberOfNegativeElements.Test();
+          //FindFirstAndLastPositionInSortedArray.Test();
+          //BinarySearchTreeInOrderSuccessor.Test();
+          //LinkedListSortONLogN.Test();
+          // CatalanNumber.Test();
+          //DSA.BinarySearchTree.BinarySearchTree.Test();
+          //UnionFindDetectCycle.Test();
+          //LinkedListCycleII.Test();
+          //IPizzaStore pizzaStore = new NewyorkPizzaStore();
+          //pizzaStore.OrderPizza("chicken");
+          //SortColors.Test();
 
             //NumberOfProvince.Test();
             //NoOfDiceRollsWithTargetSum.Test();
@@ -107,7 +108,7 @@ namespace Practice
             // LengthOfHistogram_Hard_.Test();
             // IsSameTree_E_.Test();
             //ValidBST.Test();
-             BestStockBuyCoolDown.Test();
+            //  BestStockBuyCoolDown.Test();
             //PartitionKSubsetSum.Test();
             //PartitionEqualSubSetSum.Test();
             // PalindromeSubstring.Test();
