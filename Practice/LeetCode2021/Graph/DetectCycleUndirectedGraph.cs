@@ -53,7 +53,7 @@ namespace Practice.LeetCode2021.Graph
         {
             visited[key] = true;
 
-            foreach(var adjKey in graph[key])
+            foreach(var adjKey in graph[key]) // draw recursion tree and understand. If a visited node is not an immediate parent
             {
                 if(!visited[adjKey])
                 {

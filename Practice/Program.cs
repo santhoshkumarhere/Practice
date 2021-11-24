@@ -46,7 +46,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LeetCode2021.DP.MinimumPathSum.Test();
+          //  LeetCode2021.DP.MinimumPathSum.Test();
            // NextGreaterElement.Test();
            // LengthOfHistogram.Test();
            // LongestSubstringWithTwoDistinctChar.Test();
@@ -107,7 +107,7 @@ namespace Practice
             // LengthOfHistogram_Hard_.Test();
             // IsSameTree_E_.Test();
             //ValidBST.Test();
-            // BestStockBuyCoolDown.Test();
+             BestStockBuyCoolDown.Test();
             //PartitionKSubsetSum.Test();
             //PartitionEqualSubSetSum.Test();
             // PalindromeSubstring.Test();

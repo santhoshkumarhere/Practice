@@ -10,12 +10,29 @@ namespace Practice.LeetCode2021.DP
         public static void Test()
         {
             var prices = new int[] { 1, 2, 3, 0, 2 };
-            var res1 = MaxProfit(prices);
+            var res1 = MaxProfitDP(prices);
 ;
-            var res2 = MaxProfit(new int[] { 1, 2, 3, 0, 2, 0, 4, 1, 2, 0, 4, 9, 18 });
+           // var res2 = MaxProfit(new int[] { 1, 2, 3, 0, 2, 0, 4, 1, 2, 0, 4, 9, 18 });
         }
 
-        private static int MaxProfit(int[] prices)
+        private static int MaxProfitDP(int[] prices)
+        {
+            var prevBuy = 0;
+            var prevSell = new int[prices.Length];
+            var buy = prices[0] * -1;
+            var sell = 0;
+
+            for (var i = 1; i < prices.Length; i++)
+            {
+                prevBuy = buy;
+                buy = Math.Max( i > 1 ? (prevSell[i-2] - prices[i]) : -1 * prices[i], prevBuy); // buy = Max(Profit before cooling period - spend current price, hold)
+                sell = Math.Max(prevBuy + prices[i], sell); // sell = Max(selling previous holding, hold)
+                prevSell[i] = sell;
+            }
+            return sell;
+        }
+
+            private static int MaxProfit(int[] prices)
         {
             if (prices.Length <= 1)
                 return 0;
