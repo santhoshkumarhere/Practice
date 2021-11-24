@@ -1,6 +1,6 @@
 ﻿Array
 	Two Sum
-	Best Time to Buy and Sell Stock
+	Best Time to Buy and Sell Stock ✓
 	Contains Duplicate
 	Product of Array Except Self
 	Maximum Subarray
@@ -17,7 +17,7 @@ Binary
 	Reverse Bits
 Dynamic Programming
 	Climbing Stairs
-	Coin Change
+	Coin Change ✓
 	Longest Increasing Subsequence
 	Longest Common Subsequence
 	Word Break Problem
@@ -27,8 +27,8 @@ Dynamic Programming
 	Decode Ways
 	Unique Paths
 	Jump Game
-Graph
-	Clone Graph
+Graph 
+	Clone Graph ✓ 
 	Course Schedule
 	Pacific Atlantic Water Flow
 	Number of Islands
@@ -36,7 +36,7 @@ Graph
 	Alien Dictionary (Leetcode Premium)
 	Graph Valid Tree (Leetcode Premium)
 	Number of Connected Components in an Undirected Graph (Leetcode Premium)
-	Interval
+Interval
 	Insert Interval
 	Merge Intervals
 	Non-overlapping Intervals
@@ -55,10 +55,10 @@ Matrix
 	Rotate Image
 	Word Search
 String
-	Longest Substring Without Repeating Characters
-	Longest Repeating Character Replacement
-	Minimum Window Substring
-	Valid Anagram
+	Longest Substring Without Repeating Characters ✓
+	Longest Repeating Character Replacement ✓
+	Minimum Window Substring ✓
+	Valid Anagram ✓
 	Group Anagrams
 	Valid Parentheses
 	Valid Palindrome
@@ -66,15 +66,15 @@ String
 	Palindromic Substrings
 	Encode and Decode Strings (Leetcode Premium)
 Tree
-	Maximum Depth of Binary Tree
-	Same Tree
-	Invert/Flip Binary Tree
-	Binary Tree Maximum Path Sum
-	Binary Tree Level Order Traversal
+	Maximum Depth of Binary Tree ✓
+	Same Tree ✓
+	Invert/Flip Binary Tree ✓
+	Binary Tree Maximum Path Sum ✓
+	Binary Tree Level Order Traversal ✓
 	Serialize and Deserialize Binary Tree
 	Subtree of Another Tree
 	Construct Binary Tree from Preorder and Inorder Traversal
-	Validate Binary Search Tree
+	Validate Binary Search Tree 
 	Kth Smallest Element in a BST
 	Lowest Common Ancestor of BST
 	Implement Trie (Prefix Tree)

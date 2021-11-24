@@ -43,23 +43,20 @@ namespace Practice.LeetCode75.Graph
         private static Node Clone(Node node)
         {
             if (node == null)
-            {
                 return node;
-            }
             if (visited.ContainsKey(node))
-            {
                 return visited[node];
-            }
 
-            Node clonedNode = new Node(node.val, new List<Node>());
+            var clonedNode = new Node(node.val, new List<Node>());
             visited[node] = clonedNode;
 
-            foreach (var neighbor in node.neighbors)
+            foreach(var neighbour in node.neighbors)
             {
-                clonedNode.neighbors.Add(Clone(neighbor));
+                clonedNode.neighbors.Add(Clone(neighbour));
             }
             return clonedNode;
         }
+
     }
 }
- 
+
