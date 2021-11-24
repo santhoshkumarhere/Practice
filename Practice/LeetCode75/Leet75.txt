@@ -55,9 +55,9 @@ Matrix
 	Rotate Image
 	Word Search
 String
-	Longest Substring Without Repeating Characters ✓
-	Longest Repeating Character Replacement ✓
-	Minimum Window Substring ✓
+	Longest Substring Without Repeating Characters - abba ✓
+	Longest Repeating Character Replacement - ccaabb dictionary ✓
+	Minimum Window Substring - end ptr to find entire substring/ once found move begin to find minimum substring ✓
 	Valid Anagram ✓
 	Group Anagrams
 	Valid Parentheses

@@ -46,14 +46,14 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            DetectCycleUndirectedGraph.Test();
+          //  DetectCycleUndirectedGraph.Test();
           //  LeetCode2021.DP.MinimumPathSum.Test();
           // NextGreaterElement.Test();
           // LengthOfHistogram.Test();
           // LongestSubstringWithTwoDistinctChar.Test();
           // LongestSubstringWithoutRepeatingChars.Test();
           //FindAllAnagramsSlidingWindow.Test();
-          //MinimumWindowSubstring.Test();
+          MinimumWindowSubstring.Test();
           // MinCostClaimbingStairs_E.Test();
           //SortColors.Test();
           //SortColorDutchFlagEPI.Test();

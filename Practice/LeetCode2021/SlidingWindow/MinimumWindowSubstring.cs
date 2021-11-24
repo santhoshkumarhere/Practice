@@ -8,7 +8,63 @@ namespace Practice.LeetCode2021.SlidingWindow
     {
         public static void Test()
         {
-            var res = MinWindow("ADOBECODEBANC", "ABC");
+            var res = MinWindowMap("aa", "aa"); ;
+            var res1 = MinWindowMap("ADOBECODEBANC", "ABC");
+        }
+
+        private static string MinWindowMap(string s, string t)
+        {
+            var begin = 0;
+            var end = 0;
+
+            //var map = GetFrequencyMap(t);
+            var map = new Dictionary<char, int>();
+            foreach(var c in t)
+            {
+                if (map.ContainsKey(c))
+                    map[c]++;
+                else
+                    map[c] = 1;
+            }
+            var counter = t.Length;
+            var minLen = int.MaxValue;
+            var head = 0;
+
+            while (end < s.Length)
+            {
+                var endChar = s[end];
+                
+                if(map.ContainsKey(endChar))
+                {
+                    if (map[endChar] > 0)
+                        counter--;
+
+                    map[endChar]--;
+                }
+
+                end++;
+
+                while (counter == 0)
+                {
+                    var beginChar = s[begin];
+
+                    if(end - begin < minLen)
+                    {
+                        head = begin;
+                        minLen = end - begin;
+                    }
+
+                    if(map.ContainsKey(beginChar))
+                    {
+                        map[beginChar]++;
+                        if (map[beginChar] > 0)
+                            counter++;
+                    }                    
+                    begin++;
+                }
+            }
+
+            return minLen == int.MaxValue ? "" : s.Substring(head, minLen);
         }
 
         private static string MinWindow(string s, string t)
