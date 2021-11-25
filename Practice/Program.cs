@@ -46,6 +46,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            WordBreak.Test();
           //  DetectCycleUndirectedGraph.Test();
           //  LeetCode2021.DP.MinimumPathSum.Test();
           // NextGreaterElement.Test();
@@ -53,7 +54,7 @@ namespace Practice
           // LongestSubstringWithTwoDistinctChar.Test();
           // LongestSubstringWithoutRepeatingChars.Test();
           //FindAllAnagramsSlidingWindow.Test();
-          MinimumWindowSubstring.Test();
+         // MinimumWindowSubstring.Test();
           // MinCostClaimbingStairs_E.Test();
           //SortColors.Test();
           //SortColorDutchFlagEPI.Test();
