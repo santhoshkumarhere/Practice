@@ -47,7 +47,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LongestContinuousSubsequence.Test();
+           // LongestContinuousSubsequence.Test();
            // FindKthLargestArrayPQ.Test();
            // WordBreak.Test();
            //  DetectCycleUndirectedGraph.Test();
@@ -96,7 +96,7 @@ namespace Practice
             //FindDuplicateTortoiseHareFloyd.Test();
             //ConstructBinaryTreeFromIn_PreOrder.Test();
             // DailyTemperature.Test();
-            // SubArraySumK.Test();
+             SubArraySumK.Test();
             // LRUImpl.Test();
             //GroupAnagrams.Test();
             //MaximalSquare.Test();
