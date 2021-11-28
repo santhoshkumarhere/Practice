@@ -18,8 +18,8 @@ Binary
 Dynamic Programming
 	Climbing Stairs
 	Coin Change ✓
-	Longest Increasing Subsequence
-	Longest Common Subsequence
+	Longest Increasing Subsequence ✓ - DP with two FOR LOOPS - outer is end and inner is start
+	Longest Common Subsequence ✓ - 2D MATRIX extra '0' rows and '0' column - simulate recursion conditions to find which column to take
 	Word Break Problem ✓ - Two for loops - outer is end and inner is start 'LeetCode'
 	Combination Sum
 	House Robber
@@ -33,7 +33,7 @@ Graph
 	Pacific Atlantic Water Flow
 	Number of Islands
 	Longest Consecutive Sequence
-	Alien Dictionary (Leetcode Premium)
+	Alien Dictionary (Leetcode Premium) ✓ Graph Cycle in DAG DFS easy
 	Graph Valid Tree (Leetcode Premium)
 	Number of Connected Components in an Undirected Graph (Leetcode Premium)
 Interval
@@ -84,3 +84,8 @@ Heap
 	Merge K Sorted Lists
 	Top K Frequent Elements
 	Find Median from Data Stream
+
+
+Graph 
+Find cycle in DAG - current stack and visited stack & no !isVisited Condition
+Find cycle in DAG - run loop if !isVisited

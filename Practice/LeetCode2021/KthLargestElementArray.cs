@@ -15,7 +15,7 @@ namespace Practice.LeetCode2021
 
         internal class MinHeap
         {
-            public SortedDictionary<int, int> sorted = new SortedDictionary<int, int>();
+            public SortedDictionary<int, int> sorted = new SortedDictionary<int, int>(); // O(log n)
 
             public void Add (int key)
             {

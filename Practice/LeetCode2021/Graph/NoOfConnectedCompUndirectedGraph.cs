@@ -77,7 +77,7 @@ namespace Practice.LeetCode2021.Graph
 
         private static void DFS(Dictionary<int, List<int>> dict, int key, bool[] visited)
         {
-            if (visited[key]) 
+            if (visited[key]) // this is not necessary 
                 return;
 
             visited[key] = true;

@@ -33,5 +33,25 @@ namespace Practice.LeetCode2021.DP
 
             return dp[m, n];
         }
+
+        private static int LongestCommonSubsequenceV2(string t1, string t2)
+        {
+            var m = t2.Length;
+            var n = t1.Length;
+
+            var dp = new int[m + 1, n + 1];
+
+            for(int row = 1; row <= m; row++)
+            {
+                for(int col = 1; col <= n; col++)
+                {
+                    if (t1[col - 1] == t2[row - 1])
+                        dp[row, col] = 1 + dp[row - 1, col - 1];
+                    else
+                        dp[row, col] = Math.Max(dp[row - 1, col], dp[row, col - 1]);
+                }
+            }
+            return dp[m, n];
+        }
     }
 }

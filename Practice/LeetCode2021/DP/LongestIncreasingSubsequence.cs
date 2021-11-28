@@ -38,14 +38,14 @@ namespace Practice.LeetCode2021.DP
             var dp = new int[nums.Length];
             Array.Fill(dp, 1);
             var maxLength = 1;
-            for(int i = 1; i < nums.Length; i++)
+            for(int end = 1; end < nums.Length; end++)
             {
-                for(int j = 0; j < i; j++)
+                for(int start = 0; start < end; start++)
                 {
-                    if(nums[j] < nums[i])
+                    if(nums[start] < nums[end])
                     {
-                        dp[i] = Math.Max(dp[i], 1 + dp[j]); // this is little confusing draw boxes and understand. You care only ith index in dp
-                        maxLength = Math.Max(maxLength, dp[i]);
+                        dp[end] = Math.Max(dp[end], 1 + dp[start]);
+                        maxLength = Math.Max(maxLength, dp[end]);
                     }
                 }
             }

@@ -39,6 +39,7 @@ using Practice.DSA.BinarySearchTree;
 using Practice.LeetCode2021.BinarySearch;
 using Practice.LeetCode2021.SlidingWindow;
 using Practice.LeetCode2021.MonotonicStack;
+using Practice.LeetCode2021.PriorityQueue;
 
 namespace Practice
 {
@@ -46,30 +47,31 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            WordBreak.Test();
-          //  DetectCycleUndirectedGraph.Test();
-          //  LeetCode2021.DP.MinimumPathSum.Test();
-          // NextGreaterElement.Test();
-          // LengthOfHistogram.Test();
-          // LongestSubstringWithTwoDistinctChar.Test();
-          // LongestSubstringWithoutRepeatingChars.Test();
-          //FindAllAnagramsSlidingWindow.Test();
-         // MinimumWindowSubstring.Test();
-          // MinCostClaimbingStairs_E.Test();
-          //SortColors.Test();
-          //SortColorDutchFlagEPI.Test();
-          //KokoEatingBananaSpeed.Test();
-          //FindNumberOfNegativeElements.Test();
-          //FindFirstAndLastPositionInSortedArray.Test();
-          //BinarySearchTreeInOrderSuccessor.Test();
-          //LinkedListSortONLogN.Test();
-          // CatalanNumber.Test();
-          //DSA.BinarySearchTree.BinarySearchTree.Test();
-          //UnionFindDetectCycle.Test();
-          //LinkedListCycleII.Test();
-          //IPizzaStore pizzaStore = new NewyorkPizzaStore();
-          //pizzaStore.OrderPizza("chicken");
-          //SortColors.Test();
+            FindKthLargestArrayPQ.Test();
+           // WordBreak.Test();
+           //  DetectCycleUndirectedGraph.Test();
+           //  LeetCode2021.DP.MinimumPathSum.Test();
+           // NextGreaterElement.Test();
+           // LengthOfHistogram.Test();
+           // LongestSubstringWithTwoDistinctChar.Test();
+           // LongestSubstringWithoutRepeatingChars.Test();
+           //FindAllAnagramsSlidingWindow.Test();
+           // MinimumWindowSubstring.Test();
+           // MinCostClaimbingStairs_E.Test();
+           //SortColors.Test();
+           //SortColorDutchFlagEPI.Test();
+           //KokoEatingBananaSpeed.Test();
+           //FindNumberOfNegativeElements.Test();
+           //FindFirstAndLastPositionInSortedArray.Test();
+           //BinarySearchTreeInOrderSuccessor.Test();
+           //LinkedListSortONLogN.Test();
+           // CatalanNumber.Test();
+           //DSA.BinarySearchTree.BinarySearchTree.Test();
+           //UnionFindDetectCycle.Test();
+           //LinkedListCycleII.Test();
+           //IPizzaStore pizzaStore = new NewyorkPizzaStore();
+           //pizzaStore.OrderPizza("chicken");
+           //SortColors.Test();
 
             //NumberOfProvince.Test();
             //NoOfDiceRollsWithTargetSum.Test();
