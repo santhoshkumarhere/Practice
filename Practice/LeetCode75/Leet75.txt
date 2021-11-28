@@ -7,7 +7,7 @@
 	Maximum Product Subarray
 	Find Minimum in Rotated Sorted Array
 	Search in Rotated Sorted Array
-	3 Sum
+	3 Sum ✓ - Sort and then two pointer two sum
 	Container With Most Water
 Binary
 	Sum of Two Integers
@@ -32,7 +32,7 @@ Graph
 	Course Schedule
 	Pacific Atlantic Water Flow
 	Number of Islands
-	Longest Consecutive Sequence
+	Longest Consecutive Sequence - ✓ Graph && HashSet
 	Alien Dictionary (Leetcode Premium) ✓ Graph Cycle in DAG DFS easy
 	Graph Valid Tree (Leetcode Premium)
 	Number of Connected Components in an Undirected Graph (Leetcode Premium)

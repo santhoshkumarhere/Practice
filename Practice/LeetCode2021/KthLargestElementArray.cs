@@ -9,7 +9,7 @@ namespace Practice.LeetCode2021
     {
         public static void Test()
         {
-            var inp = new int[] { 3, 2, 3, 1, 2, 4, 5, 5, 6 };
+            var inp = new int[] { 3, 2, 3, 1, 2, 4, 5, 5, 6 }; // ans = 4
             var res = FindKthLargest(inp, 4);
         }
 

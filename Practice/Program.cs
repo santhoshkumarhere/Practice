@@ -47,7 +47,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            FindKthLargestArrayPQ.Test();
+            LongestContinuousSubsequence.Test();
+           // FindKthLargestArrayPQ.Test();
            // WordBreak.Test();
            //  DetectCycleUndirectedGraph.Test();
            //  LeetCode2021.DP.MinimumPathSum.Test();
