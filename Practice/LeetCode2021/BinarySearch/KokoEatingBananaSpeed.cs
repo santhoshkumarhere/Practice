@@ -35,7 +35,7 @@ namespace Practice.LeetCode2021.BinarySearch
             var right = piles.Max();
 
             //can be solved like find first and last position method as well with 'ans' variable
-            while (left < right)
+            while (left <= right)
             {
                 var mid = (left + right) / 2;
 
@@ -46,7 +46,7 @@ namespace Practice.LeetCode2021.BinarySearch
                 }
                 else
                 {
-                    right = mid;
+                    right = mid - 1;
                     //left = mid + 1;
                 }
             }

@@ -61,7 +61,7 @@ namespace Practice
            // MinCostClaimbingStairs_E.Test();
            //SortColors.Test();
            //SortColorDutchFlagEPI.Test();
-           //KokoEatingBananaSpeed.Test();
+           KokoEatingBananaSpeed.Test();
            //FindNumberOfNegativeElements.Test();
            //FindFirstAndLastPositionInSortedArray.Test();
            //BinarySearchTreeInOrderSuccessor.Test();
@@ -96,7 +96,7 @@ namespace Practice
             //FindDuplicateTortoiseHareFloyd.Test();
             //ConstructBinaryTreeFromIn_PreOrder.Test();
             // DailyTemperature.Test();
-             SubArraySumK.Test();
+            // SubArraySumK.Test();
             // LRUImpl.Test();
             //GroupAnagrams.Test();
             //MaximalSquare.Test();
