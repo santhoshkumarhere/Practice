@@ -61,7 +61,7 @@ namespace Practice
            // MinCostClaimbingStairs_E.Test();
            //SortColors.Test();
            //SortColorDutchFlagEPI.Test();
-           KokoEatingBananaSpeed.Test();
+          // KokoEatingBananaSpeed.Test();
            //FindNumberOfNegativeElements.Test();
            //FindFirstAndLastPositionInSortedArray.Test();
            //BinarySearchTreeInOrderSuccessor.Test();
