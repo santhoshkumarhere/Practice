@@ -47,6 +47,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            LinkedListRemoveNthFromEnd.Test();
            // LongestContinuousSubsequence.Test();
            // FindKthLargestArrayPQ.Test();
            // WordBreak.Test();
@@ -61,7 +62,7 @@ namespace Practice
            // MinCostClaimbingStairs_E.Test();
            //SortColors.Test();
            //SortColorDutchFlagEPI.Test();
-          // KokoEatingBananaSpeed.Test();
+           // KokoEatingBananaSpeed.Test();
            //FindNumberOfNegativeElements.Test();
            //FindFirstAndLastPositionInSortedArray.Test();
            //BinarySearchTreeInOrderSuccessor.Test();
