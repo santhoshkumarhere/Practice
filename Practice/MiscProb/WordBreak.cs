@@ -87,7 +87,7 @@ namespace LeetCode.Misc
 
         public static bool WordBreakWithMemoization(string s, HashSet<string> set, int start, Dictionary<int, bool> memo)
         {
-            if (start == s.Length)
+            if (start == s.Length) // use this for memo solution 12/1/2021
             {
                 return true;
             }
