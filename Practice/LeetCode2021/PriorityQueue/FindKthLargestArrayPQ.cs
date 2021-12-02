@@ -17,16 +17,17 @@ namespace Practice.LeetCode2021.PriorityQueue
 
         private static int FindKthLargest(int[] nums, int k)
         {
-            var queue = new PriorityQueue<int, int>(); // Leetcode is not ready for this c# version yet
+            return 1; 
+            //var queue = new PriorityQueue<int, int>(); // Leetcode is not ready for this c# version yet
 
-            foreach(var item in nums)
-            {
-                queue.Enqueue(item, item);
+            //foreach(var item in nums)
+            //{
+            //    queue.Enqueue(item, item);
 
-                if (queue.Count > k)
-                    queue.Dequeue();
-            }
-            return queue.Dequeue();
+            //    if (queue.Count > k)
+            //        queue.Dequeue();
+            //}
+            //return queue.Dequeue();
         }
     }
 }
