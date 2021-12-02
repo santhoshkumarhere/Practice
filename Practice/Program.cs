@@ -48,8 +48,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            var x  = new BasicCalculatorExpression();
-            x.Calculate("(7-(8+9))");
+            RangeAddition.Test();
+            //var x  = new BasicCalculatorExpression();
+            // x.Calculate("(7-(8+9))");
             //LinkedListRemoveNthFromEnd.Test();
             // LongestContinuousSubsequence.Test();
             // FindKthLargestArrayPQ.Test();
