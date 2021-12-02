@@ -54,5 +54,21 @@ namespace Practice.MiscProb
             return currMax;
         }
 
+        public static int HouseThief2021(int[] nums)
+        {
+            if (nums.Length == 1)
+                return nums[0];
+
+            var dp = new int[nums.Length];
+
+            dp[0] = nums[0];
+
+            for(int i = 1; i < nums.Length; i++)
+            {
+                dp[i] = Math.Max(dp[i - 1], nums[i] + (i > 1 ? dp[i - 2] : 0));
+            }
+            return dp[nums.Length - 1];
+        }
+
     }
 }
