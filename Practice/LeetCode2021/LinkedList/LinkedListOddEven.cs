@@ -30,6 +30,26 @@ namespace Practice.LeetCode2021
             OddEvenList(n1);
         }
 
+        private static ListNode OddEvenListV2021(ListNode head)
+        {
+            var dummy = new ListNode(0);
+            dummy.Next = head;
+            var odd = head;
+            var evenHead = odd.Next;
+            var even = head.Next;
+
+            while (even != null && even.Next != null)
+            {
+                odd.Next = even.Next;
+                odd = odd.Next;
+                even.Next = odd.Next;
+                even = even.Next;
+            }
+            odd.Next = evenHead;
+
+            return dummy.Next;
+        }
+
         private static ListNode OddEvenList(ListNode head)
         {
             if (head == null) return head;
