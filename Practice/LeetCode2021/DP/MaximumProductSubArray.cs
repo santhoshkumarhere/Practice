@@ -40,19 +40,7 @@ namespace Practice.LeetCode2021.DP
                 result = Math.Max(result, max_so_far);
             }
             return result;
-        }
-
- 
-
-       
-            int curr = nums[i];
-        int temp_max = Math.Max(curr, Math.Max(max_so_far * curr, min_so_far * curr));
-        min_so_far = Math.Min(curr, Math.Min(max_so_far* curr, min_so_far* curr));
-
-            max_so_far = temp_max;
-
-            result = Math.Max(max_so_far, result);
-      
+        }      
 
         private static int MaxProduct(int[] nums)
         {
