@@ -25,6 +25,35 @@ namespace Practice.LeetCode2021.DP
             var result5 = MaxProduct(nums5);
         }
 
+        private static int MaxProduct2021(int[] nums)
+        {
+            if (nums.Length == 0) return 0;
+            var max_so_far = nums[0];
+            var min_so_far = nums[0];
+            var result = max_so_far;
+
+            for(int i = 1; i < nums.Length;  i++)
+            {
+                var prevMaxSofar = max_so_far; // this is VERY IMPORTANT WE NEED TO MULTIPLY PREVIOUS MAX SO FAR
+                max_so_far = Math.Max(nums[i], Math.Max(max_so_far * nums[i], min_so_far * nums[i]));
+                min_so_far = Math.Min(nums[i], Math.Min(prevMaxSofar * nums[i], min_so_far * nums[i]));
+                result = Math.Max(result, max_so_far);
+            }
+            return result;
+        }
+
+ 
+
+       
+            int curr = nums[i];
+        int temp_max = Math.Max(curr, Math.Max(max_so_far * curr, min_so_far * curr));
+        min_so_far = Math.Min(curr, Math.Min(max_so_far* curr, min_so_far* curr));
+
+            max_so_far = temp_max;
+
+            result = Math.Max(max_so_far, result);
+      
+
         private static int MaxProduct(int[] nums)
         {
             if (nums.Length == 0) return 0;
