@@ -49,6 +49,10 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            MaximumProductSubArray.Test();
+            //RangeAddition.Test();
+            //var x  = new BasicCalculatorExpression();
+            // x.Calculate("(7-(8+9))");
             StreamOfCharacter_Hard_.Test();
            // var x  = new BasicCalculatorExpression();
             //x.Calculate("(7-(8+9))");

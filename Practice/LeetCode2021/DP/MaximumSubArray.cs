@@ -15,12 +15,12 @@ namespace Practice.LeetCode2021.DP
         private static int MaxSubArrayGreedy(int[] nums)
         {
             var maxSum = nums[0];
-            var currRunningSum = nums[0];
+            var max_so_far = nums[0]; //power of max_so_Far
 
             for (var i = 1; i < nums.Length; i++)
             {
-                currRunningSum = Math.Max(currRunningSum + nums[i], nums[i]);
-                maxSum = Math.Max(currRunningSum, maxSum);
+                max_so_far = Math.Max(nums[i], max_so_far + nums[i]);
+                maxSum = Math.Max(max_so_far, maxSum);
             }
 
             return maxSum;
