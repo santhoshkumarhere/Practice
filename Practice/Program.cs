@@ -41,6 +41,7 @@ using Practice.LeetCode2021.SlidingWindow;
 using Practice.LeetCode2021.MonotonicStack;
 using Practice.LeetCode2021.PriorityQueue;
 using Practice.LeetCode2021.BasicCalculator;
+using Practice.LeetCode2021.String;
 
 namespace Practice
 {
@@ -48,8 +49,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            var x  = new BasicCalculatorExpression();
-            x.Calculate("(7-(8+9))");
+            StreamOfCharacter_Hard_.Test();
+           // var x  = new BasicCalculatorExpression();
+            //x.Calculate("(7-(8+9))");
             //LinkedListRemoveNthFromEnd.Test();
             // LongestContinuousSubsequence.Test();
             // FindKthLargestArrayPQ.Test();
