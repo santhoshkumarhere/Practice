@@ -14,7 +14,29 @@ namespace Practice.LeetCode2021.MonotonicStack
             res = LengthOfHistogramsV2(arr);
         }
 
-        private static int LengthOfHistogramsV2(int[] arr)
+        private static int LengthOfHistogramsV32021Dec(int[] arr)
+        {
+            var max_area = 0;
+            var stack = new Stack<int>();
+            stack.Push(-1);
+
+            for (int end = 0; end <= arr.Length; end++)
+            {
+                var currentValue = end == arr.Length ? 0 : arr[end];
+                while (stack.Peek() != -1 && currentValue < arr[stack.Peek()])
+                {
+                    var height = arr[stack.Pop()];
+                    var width = end - stack.Peek() - 1;
+                    max_area = Math.Max(max_area, height * width);
+                }
+                stack.Push(end);
+            }
+
+            return max_area;
+
+        }
+
+            private static int LengthOfHistogramsV2(int[] arr)
         {
             var max_area = 0;
             var stack = new Stack<int>();
