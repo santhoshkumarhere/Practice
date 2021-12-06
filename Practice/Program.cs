@@ -49,12 +49,13 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MaximumProductSubArray.Test();
+            MininumCostToMoveChips.Test();
+            //MaximumProductSubArray.Test();
             //RangeAddition.Test();
             //var x  = new BasicCalculatorExpression();
             // x.Calculate("(7-(8+9))");
-            StreamOfCharacter_Hard_.Test();
-           // var x  = new BasicCalculatorExpression();
+            //StreamOfCharacter_Hard_.Test();
+            // var x  = new BasicCalculatorExpression();
             //x.Calculate("(7-(8+9))");
             //LinkedListRemoveNthFromEnd.Test();
             // LongestContinuousSubsequence.Test();

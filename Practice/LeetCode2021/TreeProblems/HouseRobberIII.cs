@@ -19,8 +19,28 @@ namespace Practice.LeetCode2021.TreeProblems
             var res = Math.Max(ans.CurrentRob, ans.PrevRob);
         }
 
+        private static int[] RobV1(TreeNode node)
+        {
+            if (node == null)
+                return new int[] { 0, 0 };
+
+            var left = RobV1(node.left);    //// 3
+            var right = RobV1(node.right);   //2   1
+
+            var rob = node.val + left[1] + right[1];
+            var norob = Math.Max(left[0], left[1]) + Math.Max(right[0], right[1]);
+
+            return new int[] { rob, norob };
+        }
+
         private static RobHelper Rob(TreeNode node)
         {
+            var stack = new Stack<(TreeNode, int[])>();
+            stack.Push((node, new[] { node.val, 0 }));
+            var c = stack.Pop();
+            var x = c.Item1;
+            var y = c.Item2;
+
             if (node == null)
                 return new RobHelper(0, 0);
 
