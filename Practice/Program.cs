@@ -49,7 +49,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MininumCostToMoveChips.Test();
+            MinimalRectangle.Test();
+            //MininumCostToMoveChips.Test();
             //MaximumProductSubArray.Test();
             //RangeAddition.Test();
             //var x  = new BasicCalculatorExpression();
