@@ -49,7 +49,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MinimalRectangle.Test();
+            LinkedListConvertBinaryToInteger.Test();
+            //MinimalRectangle.Test();
             //MininumCostToMoveChips.Test();
             //MaximumProductSubArray.Test();
             //RangeAddition.Test();
