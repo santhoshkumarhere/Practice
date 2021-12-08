@@ -20,7 +20,7 @@ namespace Practice.LeetCode2021.TreeProblems
 
             int leftSum = GetSum(node.left);
             int rightSum = GetSum(node.right);
-            tilt += Math.Abs(leftSum - rightSum);
+            tilt += Math.Abs(leftSum - rightSum); // this is the seed for BinaryTreeMaxPathSum Hard Frequent ask question
 
             return node.val + leftSum + rightSum;
         }
