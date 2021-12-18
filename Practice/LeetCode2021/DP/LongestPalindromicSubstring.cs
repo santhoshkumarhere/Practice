@@ -21,7 +21,7 @@ namespace Practice.LeetCode2021.DP
             {
                 Console.WriteLine(i);
                 int len1 = expandAroundCenter(s, i, i);
-                int len2 = expandAroundCenter(s, i, i + 1);
+                int len2 = expandAroundCenter(s, i, i + 1); // to handle even number length string 
                 int len = Math.Max(len1, len2);
                 if (len > maxLen) // if (len > end - start)
                 {

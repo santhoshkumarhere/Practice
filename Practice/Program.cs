@@ -49,7 +49,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            AllNodesDistanceK.Test();
+            //AllNodesDistanceK.Test();
             //LinkedListConvertBinaryToInteger.Test();
             //MinimalRectangle.Test();
             //MininumCostToMoveChips.Test();
@@ -139,7 +139,7 @@ namespace Practice
             //Search2DMatrix.Test();
             // CombinationSumIVBackTracking.Test();
             // CombinationIV.Test();
-            //  LongestPalindromicSubstring.Test();
+              LongestPalindromicSubstring.Test();
             // LCS.Test();
             // LongestRectangularArea.Test();
             // LongestIncreasingSubsequence.Test();

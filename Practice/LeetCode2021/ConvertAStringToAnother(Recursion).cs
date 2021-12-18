@@ -34,6 +34,9 @@ namespace Practice.LeetCode2021
 
         private static int FindMinOperationsDP(int[,] dp, string s1, string s2, int i1, int i2)
         {
+            if (dp[i1, i2] != 0)
+                return dp[i1, i2];
+
             if (i1 == s1.Length) // if we have reached the end of s1, then insert all the remaining characters of s2
             {
                 dp[i1, i2] = s2.Length - i2;
@@ -52,9 +55,9 @@ namespace Practice.LeetCode2021
                 return dp[i1, i2];
             }
 
-            var ins = 1 + FindMinOperationsDP(dp, s1, s2, i1 + 1, i2);
-            var del = 1 + FindMinOperationsDP(dp, s1, s2, i1, i2 + 1);
-            var upd = 1 + FindMinOperationsDP(dp, s1, s2, i1 + 1, i2 + 1);
+            var ins = 1 + FindMinOperationsDP(dp, s1, s2, i1 + 1, i2); //table tble => insert 'a' in i2 since cursor is at b, dont need to move i2
+            var del = 1 + FindMinOperationsDP(dp, s1, s2, i1, i2 + 1); // table taable => delete 'a' and move i2
+            var upd = 1 + FindMinOperationsDP(dp, s1, s2, i1 + 1, i2 + 1);//table tagle
 
             dp[i1, i2] = Math.Min(del, Math.Min(ins, upd));
 

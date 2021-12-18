@@ -34,10 +34,33 @@ namespace Practice.LeetCode2021.DP
             return dp[m, n];
         }
 
+        public int Find(string s1, string s2, int i1, int i2)
+        {
+            var c1 = 0;
+            var c2 = 0;
+            var c3 = 0;
+
+            if (i1 == s1.Length || i2 == s2.Length)
+            {
+                return 0;
+            }
+
+            //  Console.WriteLine($"{s1[i1]} = {s2[i2]}");
+
+            if (s1[i1] == s2[i2])
+            {
+                c1 = 1 + Find(s1, s2, i1 + 1, i2 + 1);
+            }
+
+            c2 = Find(s1, s2, i1 + 1, i2);
+            c3 = Find(s1, s2, i1, i2 + 1);
+            return Math.Max(Math.Max(c1, c2), c3);
+        }
+
         private static int LongestCommonSubsequenceV2(string t1, string t2)
         {
             var m = t2.Length;
-            var n = t1.Length;
+            var n = t1.Length; //solve it by recursion and come here
 
             var dp = new int[m + 1, n + 1];
 
