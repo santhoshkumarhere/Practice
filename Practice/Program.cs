@@ -49,6 +49,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            BinaryTreeVerticalTraversal.Test();
             //AllNodesDistanceK.Test();
             //LinkedListConvertBinaryToInteger.Test();
             //MinimalRectangle.Test();
