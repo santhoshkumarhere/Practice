@@ -8,6 +8,49 @@ namespace Practice.LeetCode2021.BasicCalculator
 {
     class BasicCalculatorExpression
     {
+
+        public static void Test()
+        {
+            var res = EvaluateExpression("7-(8+9)");
+        }
+
+        private static int EvaluateExpression(string s)
+        {
+            Stack<int> stack = new Stack<int>();
+            int operand = 0;
+            int result = 0;
+            int sign = 1;
+            foreach(var c in s)
+            {
+                if(Char.IsDigit(c))
+                {
+                    operand = operand * 10 + (c - '0');
+                }
+                else if(c == '+' || c == '-')
+                {
+                    result += operand * sign;
+                    sign = c == '-' ? -1 : 1;
+                    operand = 0;
+                }
+                else if(c == '(')
+                {
+                    stack.Push(result);
+                    stack.Push(sign);
+                    result = 0;
+                    sign = 1;
+                }
+                else if( c == ')')
+                {
+                    result += operand * sign;
+                    result *= stack.Pop(); // multiply with sign
+                    result += stack.Pop();
+                    operand = 0;
+                }
+            }
+            return result + (operand * sign);
+
+        }
+
         public int Calculate(string s)
         {
 
@@ -22,16 +65,10 @@ namespace Practice.LeetCode2021.BasicCalculator
                 char ch = s[i];
                 if (Char.IsDigit(ch))
                 {
-
-                    // Forming operand, since it could be more than one digit
                     operand = 10 * operand + (int)(ch - '0');
-
                 }
                 else if (ch == '+')
                 {
-
-                    // Evaluate the expression to the left,
-                    // with result, sign, operand
                     result += sign * operand;
 
                     // Save the recently encountered '+' sign
@@ -51,9 +88,6 @@ namespace Practice.LeetCode2021.BasicCalculator
                 }
                 else if (ch == '(')
                 {
-
-                    // Push the result and sign on to the stack, for later
-                    // We push the result first, then sign
                     stack.Push(result);
                     stack.Push(sign);
 
@@ -64,19 +98,9 @@ namespace Practice.LeetCode2021.BasicCalculator
                 }
                 else if (ch == ')')
                 {
-
-                    // Evaluate the expression to the left
-                    // with result, sign and operand
                     result += sign * operand;
-
-                    // ')' marks end of expression within a set of parenthesis
-                    // Its result is multiplied with sign on top of stack
-                    // as stack.pop() is the sign before the parenthesis
                     result *= stack.Pop();
 
-                    // Then add to the next operand on the top.
-                    // as stack.pop() is the result calculated before this parenthesis
-                    // (operand on stack) + (sign on stack * (result from parenthesis))
                     result += stack.Pop();
 
                     // Reset the operand
