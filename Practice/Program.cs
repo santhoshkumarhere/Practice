@@ -49,7 +49,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MaximumSlidingWindow.Test();
+            //KthSmallestQuickSelect.Test();
+            KthClosestPointsToOrigin.Test();
+            //MaximumSlidingWindow.Test();
             //BasicCalculatorExpression.Test();
             //ReOrderList.ReOrderListTest();
             //PacificAtlanticFlow.Test();
