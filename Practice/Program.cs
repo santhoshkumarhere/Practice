@@ -42,6 +42,7 @@ using Practice.LeetCode2021.MonotonicStack;
 using Practice.LeetCode2021.PriorityQueue;
 using Practice.LeetCode2021.BasicCalculator;
 using Practice.LeetCode2021.String;
+using System.Collections.Generic;
 
 namespace Practice
 {
@@ -49,8 +50,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            LeetCode2021.Graph.CriticalNetworkBridge.CriticalConnections(4, new List<IList<int>>()); ;
             //KthSmallestQuickSelect.Test();
-            KthClosestPointsToOrigin.Test();
+            //KthClosestPointsToOrigin.Test();
             //MaximumSlidingWindow.Test();
             //BasicCalculatorExpression.Test();
             //ReOrderList.ReOrderListTest();
