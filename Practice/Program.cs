@@ -50,7 +50,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            LeetCode2021.Graph.CriticalNetworkBridge.CriticalConnections(4, new List<IList<int>>()); ;
+            new CheapesetFlightPQDijkstra().Test();
+            //LeetCode2021.Graph.CriticalNetworkBridge.CriticalConnections(4, new List<IList<int>>()); ;
             //KthSmallestQuickSelect.Test();
             //KthClosestPointsToOrigin.Test();
             //MaximumSlidingWindow.Test();

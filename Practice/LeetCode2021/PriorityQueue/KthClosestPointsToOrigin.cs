@@ -86,11 +86,13 @@ namespace Practice.LeetCode2021.PriorityQueue
             }
         }
 
+      
+
         private static int[][] KClosestPQ(int[][] points, int k)
         {
             var pq = new PriorityQueue<int[], int>();
 
-            foreach(var p in points)
+            foreach (var p in points)
             {
                 pq.Enqueue(p, p[0] * p[0] + p[1] * p[1]);
 
