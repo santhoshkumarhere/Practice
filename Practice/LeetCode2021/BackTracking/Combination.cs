@@ -61,5 +61,8 @@ namespace Practice.LeetCode2021.BackTracking
     }
 }
 
+//Let N be the number of candidates, T be the target value, and M be the minimal value among the candidates.
+// O (N^T/M)
+
 //Input: candidates = [2, 3, 5], target = 8
 //Output:[[2,2,2,2],[2,3,3],[3,5]]
