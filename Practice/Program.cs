@@ -43,6 +43,7 @@ using Practice.LeetCode2021.PriorityQueue;
 using Practice.LeetCode2021.BasicCalculator;
 using Practice.LeetCode2021.String;
 using System.Collections.Generic;
+using Practice.LeetCode2021.BackTracking;
 
 namespace Practice
 {
@@ -50,7 +51,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            new CheapesetFlightPQDijkstra().Test();
+            CombinateMultiDimensionalArray.Test();
+            //new CheapesetFlightPQDijkstra().Test();
             //LeetCode2021.Graph.CriticalNetworkBridge.CriticalConnections(4, new List<IList<int>>()); ;
             //KthSmallestQuickSelect.Test();
             //KthClosestPointsToOrigin.Test();

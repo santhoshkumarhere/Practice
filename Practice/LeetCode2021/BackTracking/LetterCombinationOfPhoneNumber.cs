@@ -33,7 +33,7 @@ namespace Practice.LeetCode2021.BackTracking
             }
 
             var letters = dict[digits[index]]; // 0
-            foreach(var c in letters) // abc
+            foreach(var c in letters) // abc 4^N - there could be 4 letters 'pqrs' so 4 times we are calling backtracking recursive call
             {
                 prefix.Append(c);
                 BackTracking(index + 1, prefix, digits, dict, result);

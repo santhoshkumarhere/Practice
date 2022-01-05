@@ -27,7 +27,50 @@ namespace Practice.LeetCode2021.Graph
             var result1 = CanFinish2(numCourses1, prerequisites1);
         }
 
-        private static bool CanFinish2(int numCourses, int[][] prerequisites)
+        private static bool CanFinishGraphColoring2022(int numCourses, int[][] prerequisites)
+        {
+            if (prerequisites.Length == 0)
+                return true;
+
+            var graph = new Dictionary<int, List<int>>();
+            var visited = new int[numCourses];
+            for(int i = 0; i < numCourses;i++)
+            {
+                graph[i] = new List<int>();
+            }
+
+            foreach(var item in prerequisites)
+            {
+                graph[item[0]].Add(item[1]);
+            }
+
+            foreach(var key in graph.Keys)
+            {
+                if (visited[key] == 0) //not processed
+                    if (IsCyclical(key, graph, visited))
+                        return false;
+            }
+
+            return true;
+        }
+
+        private static bool IsCyclical(int key, Dictionary<int, List<int>> graph, int[] visited)
+        {
+            if (visited[key] == 2)
+                return true;
+            visited[key] = 2; //processing
+
+            foreach(var adj in graph[key])
+            {
+                if (visited[adj] != 1)
+                    if (IsCyclical(adj, graph, visited))
+                        return true;
+            }
+            visited[key] = 1; //processed
+            return false;
+        }
+
+            private static bool CanFinish2(int numCourses, int[][] prerequisites)
         {
             //Accepted faster
             if (prerequisites.Length == 0) return true;
