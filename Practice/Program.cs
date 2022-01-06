@@ -51,7 +51,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            CombinateMultiDimensionalArray.Test();
+            MedianFinder.Test();
+            //CombinateMultiDimensionalArray.Test();
             //new CheapesetFlightPQDijkstra().Test();
             //LeetCode2021.Graph.CriticalNetworkBridge.CriticalConnections(4, new List<IList<int>>()); ;
             //KthSmallestQuickSelect.Test();
@@ -151,7 +152,7 @@ namespace Practice
             //Search2DMatrix.Test();
             // CombinationSumIVBackTracking.Test();
             // CombinationIV.Test();
-              LongestPalindromicSubstring.Test();
+            //  LongestPalindromicSubstring.Test();
             // LCS.Test();
             // LongestRectangularArea.Test();
             // LongestIncreasingSubsequence.Test();
