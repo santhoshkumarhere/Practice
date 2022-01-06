@@ -36,7 +36,7 @@ namespace Practice.LeetCode2021.TreeProblems
                 if (--k == 0)
                     return top.val;
 
-                if (top.right != null)
+                // if (top.right != null)
                     curr = top.right;
             } 
         }

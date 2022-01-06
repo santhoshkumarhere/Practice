@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Practice.LeetCode2021.DP
+namespace Practice.LeetCode2021.BackTracking
 {
     public class PartitionKSubsetSum
     {
