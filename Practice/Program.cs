@@ -41,7 +41,7 @@ using Practice.LeetCode2021.SlidingWindow;
 using Practice.LeetCode2021.MonotonicStack;
 using Practice.LeetCode2021.PriorityQueue;
 using Practice.LeetCode2021.BasicCalculator;
-using Practice.LeetCode2021.String;
+using Practice.LeetCode2021.StringProblem;
 using System.Collections.Generic;
 using Practice.LeetCode2021.BackTracking;
 
@@ -51,10 +51,10 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MedianFinder.Test();
+           // MedianFinder.Test();
             //CombinateMultiDimensionalArray.Test();
             //new CheapesetFlightPQDijkstra().Test();
-            //LeetCode2021.Graph.CriticalNetworkBridge.CriticalConnections(4, new List<IList<int>>()); ;
+            LeetCode2021.Graph.CriticalNetworkBridge.CriticalConnections(4, new List<IList<int>>()); ;
             //KthSmallestQuickSelect.Test();
             //KthClosestPointsToOrigin.Test();
             //MaximumSlidingWindow.Test();

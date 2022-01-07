@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Practice.LeetCode2021
 {
-    public class ValidateAlienDictionary
+    public class StringProblems
     {
 
         public static void Test()

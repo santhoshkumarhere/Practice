@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Practice.LeetCode2021.String
+namespace Practice.LeetCode2021.StringProblem
 {
     public class StreamOfCharacter_Hard_
     {

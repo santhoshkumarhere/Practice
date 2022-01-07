@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Practice.LeetCode2021.String
+namespace Practice.LeetCode2021.StringProblem
 {
     public class IsAnagram_E
     {
