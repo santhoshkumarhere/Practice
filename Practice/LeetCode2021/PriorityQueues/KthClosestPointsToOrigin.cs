@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Practice.LeetCode2021.PriorityQueue
+namespace Practice.LeetCode2021.PriorityQueues
 {
     internal class KthClosestPointsToOrigin
     {
