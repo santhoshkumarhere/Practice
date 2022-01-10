@@ -51,7 +51,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            DijkstrasAlgo.Test();
+            BasicCalculatorI.Test();
+           // DijkstrasAlgo.Test();
            // MedianFinder.Test();
            //CombinateMultiDimensionalArray.Test();
            //new CheapesetFlightPQDijkstra().Test();
