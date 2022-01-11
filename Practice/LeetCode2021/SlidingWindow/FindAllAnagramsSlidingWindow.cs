@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Practice.LeetCode2021.SlidingWindow
@@ -8,8 +9,38 @@ namespace Practice.LeetCode2021.SlidingWindow
     {
         public static void Test()
         {
-            var result = FindAnagrams("cbaebabacd", "abc");
+            var result = FindAnagrams2022("cbaebabacd", "abc");
         }
+
+        private static IList<int> FindAnagrams2022(string s, string p)
+        {
+            var result = new List<int>();
+            if (string.IsNullOrEmpty(s) || string.IsNullOrEmpty(p) || s.Length < p.Length)
+                return result;
+
+            var k = p.Length;
+            var hashS = new int[26];
+            var hashP = new int[26];
+            for(int i = 0; i < k; i++)
+            {
+                hashP[p[i] - 'a']++;
+                hashS[s[i] - 'a']++;
+            }
+
+            if (Enumerable.SequenceEqual<int>(hashS, hashP))
+                result.Add(0);
+
+            for(int i = k; i < s.Length; i++)
+            {
+                hashS[s[i - k] - 'a']--;
+                hashS[s[i] - 'a']++;
+
+               if(Enumerable.SequenceEqual<int>(hashS, hashP))
+                    result.Add(i - k + 1);
+            }
+            return result;
+        }
+
 
         private static IList<int> FindAnagrams(string s, string p)
         {

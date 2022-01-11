@@ -51,7 +51,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            BasicCalculatorI.Test();
+            FindAllAnagramsSlidingWindow.Test();
+           // BasicCalculatorI.Test();
            // DijkstrasAlgo.Test();
            // MedianFinder.Test();
            //CombinateMultiDimensionalArray.Test();
