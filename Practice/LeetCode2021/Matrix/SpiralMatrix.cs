@@ -18,7 +18,48 @@ namespace Practice.LeetCode2021.Matrix
 
         }
 
-        private static IList<int> SpiralOrder(int[][] matrix)
+        private static IList<int> SpiralOrder2022(int[][] matrix)
+        {
+            var res = new List<int>();
+            int rowBegin = 0, rowEnd = matrix.Length - 1, colBegin = 0, colEnd = matrix[0].Length - 1;
+
+            while(rowBegin <= rowEnd && colBegin <= colEnd)
+            {
+                for(int col = colBegin; col <= colEnd; col++)
+                {
+                    res.Add(matrix[rowBegin][col]);
+                }
+                rowBegin++; // first row is processed
+       
+                for (int row = rowBegin; row <= rowEnd; row++)
+                {
+                    res.Add(matrix[row][colEnd]);
+                }
+                colEnd--; // last column is processed
+
+                if (rowEnd >= rowBegin)
+                {
+                    for (int col = colEnd; col >= colBegin; col--)
+                    {
+                        res.Add(matrix[rowEnd][col]); //last row is processed
+                    }
+                    rowEnd--;
+                }
+
+                if (colEnd >= colBegin)
+                {
+                    for (int row = rowEnd; row >= rowBegin; row--)
+                    {
+                        res.Add(matrix[row][colBegin]); //first column
+                    }
+                    colBegin++;
+                }
+            }
+
+            return res;
+        }
+
+            private static IList<int> SpiralOrder(int[][] matrix)
         {
             var res = new List<int>();
             var rowBegin = 0;
