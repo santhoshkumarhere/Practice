@@ -41,3 +41,6 @@ namespace Practice.LeetCode2021.DP
         }
     }
 }
+
+//col = capaity
+//row = what if includes current row and previous row involved // Tech Dose

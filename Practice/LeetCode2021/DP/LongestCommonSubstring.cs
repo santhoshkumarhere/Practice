@@ -25,7 +25,7 @@ namespace Practice.LeetCode2021.DP
                 {
                     if(s1[row-1] == s2[col-1])
                     {
-                        dp[row, col] = dp[row - 1, col - 1] + 1;
+                        dp[row, col] = 1 + dp[row - 1, col - 1]; // same as Longest common subsequence except here we dont care about if it does not match
                         result = Math.Max(result, dp[row, col]);
                     }
                 }
