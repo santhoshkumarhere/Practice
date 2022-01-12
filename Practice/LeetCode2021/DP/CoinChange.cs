@@ -21,7 +21,7 @@ namespace Practice.LeetCode2021.DP
 
             for(int amt = 1; amt <= amount; amt++)
             {
-                for(int coin = 0; coin <= coins.Length; coin++)
+                for(int coin = 0; coin < coins.Length; coin++)
                 {
                     if(coins[coin] <= amt)
                     {
