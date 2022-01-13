@@ -16,45 +16,46 @@ namespace Practice.LeetCode2021
 
         private static IList<IList<int>> ThreeSum(int[] nums)
         {
-            var res = new List<IList<int>>();
-            if (nums == null || nums.Length <= 2) return res;
+            var result = new List<IList<int>>();
 
-            Array.Sort<int>(nums);
+            if (nums.Length == 0 || nums.Length <= 2)
+                return result;
 
-            for (var i = 0; i < nums.Length && nums[i] <= 0; i++)
+            Array.Sort(nums);
+
+            for (int i = 0; i < nums.Length; i++)
             {
-                if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) // (1) process first record (2) skip duplicates, since we processed it already
-                {
-                    TwoSum(nums, i, res);
-                }
+                if (i == 0 || nums[i - 1] != nums[i]) //skip duplicates
+                    FindTwoSum(i, nums, result);
             }
 
-            return res;
+            return result;
         }
 
-        private static void TwoSum(int[] nums, int i, List<IList<int>> res)
+        private static void FindTwoSum(int i, int[] sortedNums, IList<IList<int>> result)
         {
-            int left = i + 1, right = nums.Length - 1;
+            int left = i + 1, right = sortedNums.Length - 1;
+
             while (left < right)
             {
-                int sum = nums[i] + nums[left] + nums[right];
-
-                if (sum < 0)
+                var currSum = sortedNums[i] + sortedNums[left] + sortedNums[right];
+                if (currSum == 0)
                 {
+                    result.Add(new List<int> { sortedNums[i], sortedNums[left], sortedNums[right] });
+
+                    while (left < right && sortedNums[left] == sortedNums[left + 1]) // skip duplicates
+                        left++;
+
                     left++;
+                    right--;
                 }
-                else if (sum > 0)
+                else if (currSum > 0)
                 {
                     right--;
                 }
                 else
                 {
-                    res.Add(new List<int> { nums[i], nums[left], nums[right] });
-                    while (left < right && nums[left] == nums[left + 1])
-                        left++;
-
                     left++;
-                    right--;
                 }
             }
         }
@@ -66,7 +67,6 @@ namespace Practice.LeetCode2021
             if (nums == null || nums.Length <= 2) return res;
             
             Array.Sort<int>(nums);
-
             
             for(var i = 0; i < nums.Length - 2; i++)
             {
