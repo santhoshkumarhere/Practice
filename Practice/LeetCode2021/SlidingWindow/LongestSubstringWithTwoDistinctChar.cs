@@ -11,6 +11,39 @@ namespace Practice.LeetCode2021.SlidingWindow
             var res3 = LengthOfLongestSubstringTwoDistinct("ccaabbb");
         }
 
+        private static int LengthOfLongestSubstringTwoDistinct2022(string s)
+        {
+            int start = 0, end = 0, maxLength = 0;
+
+            var map = new Dictionary<char, int>();
+
+            while (end < s.Length)
+            {
+                if(map.ContainsKey(s[end]))
+                {
+                    map[s[end]]++;
+                }
+                else
+                {
+                    map[s[end]] = 1;
+                }
+                end++;
+
+                if(map.Keys.Count > 2)
+                {
+                    while(map.Keys.Count > 2)
+                    {
+                        map[s[start]]--;
+                        if (map[s[start]] == 0)
+                            map.Remove(s[start]);
+                        start++;                        
+                    }
+                }
+                maxLength = Math.Max(maxLength, end - start);
+            }
+            return maxLength;
+        }
+
         private static int LengthOfLongestSubstringTwoDistinct(string s)
         {
             int start = 0, end = 0, maxLength = 0;

@@ -9,10 +9,28 @@ namespace Practice.LeetCode2021.SlidingWindow
         public static void Test()
         {
             var s = "abba";
-            var res = LongestSubsMap(s);
+            var res = LongestSubsMap2022(s);
         }
 
-        private static int LongestSubsMap(string s)
+        private static int LongestSubsMap2022(string s)
+        {
+            var map = new Dictionary<char, int>();
+            int start = -1, end = 0, ans = 0;
+
+            while(end < s.Length)
+            {
+                if(map.ContainsKey(s[end]))
+                {
+                    start = Math.Max(start, map[s[end]]);
+                }
+                ans = Math.Max(ans, end - start);
+                map[s[end]] = end;
+                end++;
+            }
+            return ans;
+        }
+
+            private static int LongestSubsMap(string s)
         {
             var map = new Dictionary<char, int>();
             int start = 0, end = 0, ans = 0;
