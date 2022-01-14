@@ -23,7 +23,7 @@ namespace Practice.LeetCode2021
                 {
                     return 0;
                 }
-                if(reversed < int.MinValue/10 || reversed == int.MinValue && rem <- 8 )
+                if(reversed < int.MinValue/10 || reversed == int.MinValue && rem < -8 )
 
                 {
                     return 0;

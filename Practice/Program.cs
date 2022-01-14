@@ -51,6 +51,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            MyAtoi.Test();
             //MergeKSortedLinkList.Test();
             //TopKFrequentElements.Test();
             //CoinChange.Test();
@@ -88,7 +89,7 @@ namespace Practice
             // NextGreaterElement.Test();
             // LengthOfHistogram.Test();
             // LongestSubstringWithTwoDistinctChar.Test();
-             LongestSubstringWithoutRepeatingChars.Test();
+            // LongestSubstringWithoutRepeatingChars.Test();
             //FindAllAnagramsSlidingWindow.Test();
             // MinimumWindowSubstring.Test();
             // MinCostClaimbingStairs_E.Test();
