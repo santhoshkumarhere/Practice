@@ -19,6 +19,27 @@ namespace Practice.MiscProb
             Merged(test);
         }
 
+        public int[][] Merge(int[][] intervals)
+        {
+            Array.Sort(intervals, (a, b) =>
+            {
+                return a[0] - b[0];
+            });
+
+            var mergedMeeting = new List<int[]>();
+            foreach(var interval in intervals)
+            {
+                if(mergedMeeting.Count == 0 || interval[0] > mergedMeeting.Last()[1]) //current meeting starts after last meeting ends or if it is a first meeting
+                    mergedMeeting.Add(interval);
+                else
+                {
+                    mergedMeeting.Last()[1] = Math.Max(mergedMeeting.Last()[1], interval[1]);
+                }
+            }
+
+            return mergedMeeting.ToArray();
+        } 
+
         public static void Merged(List<Meeting> meetings)
         {
             var sortedMeeting = meetings.Select(m => new Meeting(m.StartTime, m.EndTime)).OrderBy(x => x.StartTime).ToList();
