@@ -24,7 +24,7 @@ namespace Practice.LeetCode2021.PriorityQueues
             var curr = dummy;
             foreach (var list in lists)
             {
-               pq.Enqueue(list, list.Val);
+               pq.Enqueue(list, list.Val); // insret only the first values from lists to PQ
             }
             
             while (pq.Count > 0)
