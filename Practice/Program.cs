@@ -51,7 +51,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            MyAtoi.Test();
+            IntervalListIntersection.Test();
+            //MyAtoi.Test();
             //MergeKSortedLinkList.Test();
             //TopKFrequentElements.Test();
             //CoinChange.Test();
