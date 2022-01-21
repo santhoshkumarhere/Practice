@@ -29,8 +29,10 @@ namespace Practice.MiscProb
             var mergedMeeting = new List<int[]>();
             foreach(var interval in intervals)
             {
-                if(mergedMeeting.Count == 0 || interval[0] > mergedMeeting.Last()[1]) //current meeting starts after last meeting ends or if it is a first meeting
+                if (mergedMeeting.Count == 0 || interval[0] > mergedMeeting.Last()[1]) //current meeting starts after last meeting ends or if it is a first meeting
+                {
                     mergedMeeting.Add(interval);
+                }
                 else
                 {
                     mergedMeeting.Last()[1] = Math.Max(mergedMeeting.Last()[1], interval[1]);
