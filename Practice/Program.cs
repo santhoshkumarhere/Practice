@@ -51,7 +51,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            EraseOverlappingInterval.Test();
+            SerializeAndDeserializeBinaryTree.Test();
+            //EraseOverlappingInterval.Test();
             //IntervalListIntersection.Test();
             //MyAtoi.Test();
             //MergeKSortedLinkList.Test();
