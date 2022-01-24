@@ -34,7 +34,6 @@ namespace Practice.LeetCode2021.General
             }
 
             return totalTank >= 0 ? startingPos : -1;
-
         }
     }
 }
