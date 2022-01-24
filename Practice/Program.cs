@@ -44,6 +44,7 @@ using Practice.LeetCode2021.BasicCalculator;
 using Practice.LeetCode2021.StringProblem;
 using System.Collections.Generic;
 using Practice.LeetCode2021.BackTracking;
+using Practice.LeetCode2021.General;
 
 namespace Practice
 {
@@ -51,7 +52,8 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            SerializeAndDeserializeBinaryTree.Test();
+            GasStationProblem.Test();
+            //SerializeAndDeserializeBinaryTree.Test();
             //EraseOverlappingInterval.Test();
             //IntervalListIntersection.Test();
             //MyAtoi.Test();
