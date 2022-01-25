@@ -58,11 +58,9 @@ namespace Practice.LeetCode2021.Graph
             var visitedLocal = new int[numCourses];
             foreach(var key in graph.Keys)
             {
-                if (visitedLocal[key] == 0)
-                {
-                    if (IsCycleExists(visitedLocal, graph, key))
+                if (visitedLocal[key] == 0 
+                        && IsCycleExists(visitedLocal, graph, key))
                         return result.ToArray();
-                }
             }
 
             foreach (var key in graph.Keys)
@@ -94,10 +92,8 @@ namespace Practice.LeetCode2021.Graph
 
             foreach (var adj in graph[key])
             {
-                if (visited[adj] != 1) { 
-                    if (IsCycleExists(visited, graph, adj))
-                    return true;
-                }
+                if (visited[adj] != 1 && IsCycleExists(visited, graph, adj))
+                    return true;                
             }
             visited[key] = 1;
             return false;
