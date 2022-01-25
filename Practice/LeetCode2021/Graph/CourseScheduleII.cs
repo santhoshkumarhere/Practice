@@ -18,13 +18,13 @@ namespace Practice.LeetCode2021.Graph
             var prerequisites = new int[][] { new int[] { 1, 0 } };
             var result = FindOrder(numCourses, prerequisites);
 
-            var numCourses44 = 2;
-            var prerequisites44 = new int[][] {  };
-            var result44 = FindOrder(numCourses44, prerequisites44);
+            //var numCourses44 = 2;
+            //var prerequisites44 = new int[][] {  };
+            //var result44 = FindOrder(numCourses44, prerequisites44);
 
-            var numCourses45 = 4;
-            var prerequisites45 = new int[][] { };
-            var result45= FindOrder(numCourses45, prerequisites45);
+            //var numCourses45 = 4;
+            //var prerequisites45 = new int[][] { };
+            //var result45= FindOrder(numCourses45, prerequisites45);
 
             numCourses = 5;
             prerequisites = new int[][] { new int[] { 1, 4 }, new int[] { 2, 4 }, new int[] { 3, 1 }, new int[] { 3, 2 } };
@@ -41,6 +41,8 @@ namespace Practice.LeetCode2021.Graph
             var courseDone = new bool[numCourses];
             var visited = new bool[numCourses];
             var result = new List<int>();
+            if (prerequisites.Length == 0)
+                return result.ToArray();
 
             for (var i = 0; i < numCourses; i++)
             {
@@ -51,17 +53,66 @@ namespace Practice.LeetCode2021.Graph
             {
                 if(item != null)
                 graph[item[0]].Add(item[1]);
-            }           
+            }
 
-            foreach (var key in graph.Keys)
+            var visitedLocal = new int[numCourses];
+            foreach(var key in graph.Keys)
             {
-                if (IsCyclic(graph, key, visited, courseDone, result))
+                if (visitedLocal[key] == 0)
                 {
-                    return new int[] {};
+                    if (IsCycleExists(visitedLocal, graph, key))
+                        return result.ToArray();
                 }
             }
 
+            foreach (var key in graph.Keys)
+            {
+                if (!visited[key])
+                {
+                    TopologicalSort(result, graph, key, visited);
+                }
+            }
+
+           
+            //foreach (var key in graph.Keys)
+            //{
+            //    if (IsCyclic(graph, key, visited, courseDone, result))
+            //    {
+            //        return new int[] {};
+            //    }
+            //}
+
             return result.ToArray();
+        }
+
+        private static bool IsCycleExists(int[] visited, Dictionary<int, List<int>> graph, int key)
+        {
+            if (visited[key] == 2)
+                return true;
+
+            visited[key] = 2;
+
+            foreach (var adj in graph[key])
+            {
+                if (visited[adj] != 1) { 
+                    if (IsCycleExists(visited, graph, adj))
+                    return true;
+                }
+            }
+            visited[key] = 1;
+            return false;
+        }
+
+        private static void TopologicalSort(List<int> list, Dictionary<int, List<int>> graph, int key, bool[] visited)        
+        {
+            visited[key] = true;
+
+            foreach(var adj in graph[key])
+            {
+                if (!visited[adj])
+                    TopologicalSort(list, graph, adj, visited);
+            }
+            list.Add(key);
         }
 
         private static bool IsCyclic(Dictionary<int, List<int>> graph, int key, bool[] visited, bool[] recursiveStack, List<int> result)

@@ -65,7 +65,7 @@ namespace Practice
            // DijkstrasAlgo.Test();
             // MedianFinder.Test();
             //CombinateMultiDimensionalArray.Test();
-            new CheapesetFlightPQDijkstra().Test();
+            //new CheapesetFlightPQDijkstra().Test();
             // LeetCode2021.Graph.CriticalNetworkBridge.CriticalConnections(4, new List<IList<int>>()); ;
             //KthSmallestQuickSelect.Test();
             //KthClosestPointsToOrigin.Test();
@@ -180,7 +180,7 @@ namespace Practice
             //ValidateAlienDictionary.Test();
             //MinimumHeightTree.Test();
             //Practice.NickWhiteLeetCode.Sorting.MergeSort.Test();
-            //CourseScheduleII.Test();
+            CourseScheduleII.Test();
             // LengthOfDictionaryTrie.Test();
             // CourseScheduleII.Test();
             //DetectCycleDirectedGraph.Test();
