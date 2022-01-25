@@ -52,7 +52,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            GasStationProblem.Test();
+           // GasStationProblem.Test();
             //SerializeAndDeserializeBinaryTree.Test();
             //EraseOverlappingInterval.Test();
             //IntervalListIntersection.Test();
@@ -62,10 +62,10 @@ namespace Practice
             //CoinChange.Test();
             // FindAllAnagramsSlidingWindow.Test();
             // BasicCalculatorI.Test();
-            // DijkstrasAlgo.Test();
+           // DijkstrasAlgo.Test();
             // MedianFinder.Test();
             //CombinateMultiDimensionalArray.Test();
-            //new CheapesetFlightPQDijkstra().Test();
+            new CheapesetFlightPQDijkstra().Test();
             // LeetCode2021.Graph.CriticalNetworkBridge.CriticalConnections(4, new List<IList<int>>()); ;
             //KthSmallestQuickSelect.Test();
             //KthClosestPointsToOrigin.Test();

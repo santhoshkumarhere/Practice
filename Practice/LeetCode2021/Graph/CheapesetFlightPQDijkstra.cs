@@ -11,10 +11,55 @@ namespace Practice.LeetCode2021.Graph
 
         public void Test()
         {
-           var result = findCheapestPrice(3, new int[][] { new int[] { 0, 1, 100 }, new int[] { 1, 2, 100 }, new int[] { 0, 2, 500 } },
+           var result = FindCheapestPriceDijkstra(3, new int[][] { new int[] { 0, 1, 100 }, new int[] { 1, 2, 100 }, new int[] { 0, 2, 500 } },
                  0, 2, 1);
         }
 
+        public int FindCheapestPriceDijkstra(int n, int[][] flights, int src, int dst, int K)
+        {
+            var graph = new Dictionary<int, List<AdjNode>>();
+
+            for(int i = 0; i < n; i++)
+            {
+                graph[i] = new List<AdjNode>();
+            }
+
+            foreach(var row in flights)
+            {
+                graph[row[0]].Add(new AdjNode(row[1], row[2], 0));
+            }
+
+            var distance = new int[n];
+            Array.Fill(distance, int.MaxValue);
+
+            var pq = new PriorityQueue<AdjNode, int>();
+            pq.Enqueue(new AdjNode(0, 0, 0), 0);
+            distance[0] = 0;
+
+            while(pq.Count > 0)
+            {
+                var parent = pq.Dequeue();
+                var stops = parent.Stops;
+
+                if (parent.Vertex == dst)
+                    return parent.Cost; // return cost
+
+                if (stops == K + 1) // circuit break
+                    continue;
+
+                foreach(var child in graph[parent.Vertex])
+                {
+                    var currentCost = distance[parent.Vertex] + child.Cost;
+                    if(currentCost < distance[child.Vertex])
+                    {
+                        distance[child.Vertex] = currentCost;
+                        pq.Enqueue(new AdjNode(child.Vertex, currentCost, stops + 1), currentCost);
+                    }
+                }
+            }
+            return distance[dst] == int.MaxValue ? -1 : distance[dst];
+        }
+        
         public int findCheapestPrice(int n, int[][] flights, int src, int dst, int K)
         {
 
@@ -89,13 +134,19 @@ namespace Practice.LeetCode2021.Graph
 
             return distances[dst] == int.MaxValue ? -1 : distances[dst];
         }
+    }
 
-        private class DecreaseKey<TKey> : IComparer<TKey> where TKey : IComparable
+    internal class AdjNode
+    {
+        public readonly int Vertex;
+        public readonly int Cost;
+        public readonly int Stops;
+
+        public AdjNode(int vertex, int cost, int stops)
         {
-            public int Compare(TKey x, TKey y)
-            {
-                return y.CompareTo(x);
-            }
+            this.Vertex = vertex;
+            this.Cost = cost;
+            this.Stops = stops;
         }
     }
 }

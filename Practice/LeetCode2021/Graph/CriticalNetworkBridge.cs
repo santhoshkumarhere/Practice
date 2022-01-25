@@ -58,7 +58,7 @@ namespace Practice.LeetCode2021.Graph
                     FindBridge(v, disc, low, parent, graph, bridge);
                     low[u] = Math.Min(low[u], low[v]);
 
-                    if (low[v] > disc[u]) // bridge
+                    if (low[v] > disc[u]) // bridge child can go to ancestor
                     {
                         bridge.Add(new List<int> { u, v });
                     }
