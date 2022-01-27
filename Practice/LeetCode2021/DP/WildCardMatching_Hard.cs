@@ -16,6 +16,7 @@ namespace Practice.LeetCode2021.DP
         }
         private static bool IsMatch(string s, string p, int i, int j)
         {
+            // TL Exceeded
             if (i >= s.Length && j >= p.Length)
                 return true;
             if (j >= p.Length)
@@ -23,7 +24,7 @@ namespace Practice.LeetCode2021.DP
 
             if(i >= s.Length) // if i ended then check remaing patterns are *
             {
-                for(int k = j; j < p.Length;k++)
+                for(int k = j; k < p.Length;k++)
                 {
                     if (p[k] != '*')
                         return false;
@@ -48,9 +49,9 @@ namespace Practice.LeetCode2021.DP
 
             //var match = i < s.Length && (s[i] == p[j] || p[j] == '?');
 
-            //if(j+1 < p.Length && p[j+1] == '*')
+            //if (j + 1 < p.Length && p[j + 1] == '*')
             //{
-            //    return (IsMatch(s, p, i + 1, j) || IsMatch(s, p, i, j+1)); //ignore char move I or ignore * and move j
+            //    return (IsMatch(s, p, i + 1, j) || IsMatch(s, p, i, j + 1)); //ignore char move I or ignore * and move j
             //}
 
             //if (match)
@@ -63,28 +64,7 @@ namespace Practice.LeetCode2021.DP
 
 /*
  * 
- logo
-Explore
-Problems
-Interview
-Contest
-Discuss
-Store
-🔈 LeetCode is hiring! Apply NOW.🔈
-6
-Description
-Solution
-Discuss (999+)
-Submissions
-Back
-Java Recursion and DP
-5
-miaoz's avatar
-miaoz
-259
-Last Edit: October 4, 2019 2:29 AM
-
-674 VIEWS
+ 
 
 Fristly, the recursive solution is pretty easy:
 
@@ -146,36 +126,5 @@ class Solution
         return f[0][0];
     }
 }
-Comments: 1
-BestMost VotesNewest to OldestOldest to Newest
-Type comment here... (Markdown is supported)
 
-Preview
-
-Post
-glucky's avatar
-glucky
--1
-February 18, 2020 4:19 AM
-
-Read More
-recursive solution is TLE
-
--1
-Show 1 reply
-Reply
-Share
-Report
-Copyright © 2022 LeetCode
-Help Center
-Jobs
-Bug Bounty
-Online Interview
-Students
-Terms
-Privacy Policy
-United StatesUnited States
-Type here...(Markdown is enabled)
-​
-Saved
 */
