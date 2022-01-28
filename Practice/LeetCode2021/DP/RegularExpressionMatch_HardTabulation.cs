@@ -10,6 +10,7 @@ namespace Practice.LeetCode2021.DP
     {
         public static void Test()
         {
+            //take smaller examples and work through it aa a*
             // Difference between Regular and WildCard is, Regualar wont start with * so we can do j+1, but  WildCard can start with *, so we cannot do j+1
             var result = DFS("aab", "c*a*b", 0, 0, new Dictionary<(int, int), bool>());
         }

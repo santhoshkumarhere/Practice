@@ -11,8 +11,8 @@ namespace Practice.LeetCode2021.DP
         public static void Test()
         {
             // Difference between Regular and WildCard is, Regualar wont start with * so we can do j+1, but  WildCard can start with *, so we cannot do j+1
-            string str = "aa";
-            string pattern = "*";
+            string str = "ba";
+            string pattern = "*x";
             var result = IsMatch(str, pattern, 0, 0);
         }
         private static bool IsMatch(string s, string p, int i, int j)
