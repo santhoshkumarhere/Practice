@@ -19,10 +19,10 @@ namespace Practice.ThreadConcepts
         public static void Main()
         {
             Console.WriteLine("Main thread: Start a Second thread.");
-            Thread t = new Thread(new ThreadStart(ThreadProc));
+            Thread t = new Thread(ThreadProc);
 
             t.Start();
-            //Thread.Sleep(100);
+            Thread.Sleep(100);
 
             for (int i = 0; i < 4; i++)
             {

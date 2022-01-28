@@ -45,6 +45,7 @@ using Practice.LeetCode2021.StringProblem;
 using System.Collections.Generic;
 using Practice.LeetCode2021.BackTracking;
 using Practice.LeetCode2021.General;
+using Practice.ThreadConcepts;
 
 namespace Practice
 {
@@ -52,8 +53,9 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            WordBreakII.Test();
-           // GasStationProblem.Test();
+            ThreadExample.Main();
+            //WordBreakII.Test();
+            // GasStationProblem.Test();
             //SerializeAndDeserializeBinaryTree.Test();
             //EraseOverlappingInterval.Test();
             //IntervalListIntersection.Test();
@@ -63,7 +65,7 @@ namespace Practice
             //CoinChange.Test();
             // FindAllAnagramsSlidingWindow.Test();
             // BasicCalculatorI.Test();
-           // DijkstrasAlgo.Test();
+            // DijkstrasAlgo.Test();
             // MedianFinder.Test();
             //CombinateMultiDimensionalArray.Test();
             //new CheapesetFlightPQDijkstra().Test();
@@ -338,7 +340,7 @@ namespace Practice
             // Console.ReadLine();
             // MonkWatchFight();
 
-            //ThreadExample.Main();
+
 
             // new HashTableExample().FindStringLength("Santhosh");
 
