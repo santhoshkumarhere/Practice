@@ -8,6 +8,11 @@ namespace Practice.LeetCode2021.Graph
     {
         public static void Test()
         {
+            /*
+             1. Build graph with all har from the words
+             2. Compare words i-1 & i , add first non-equal to graph and break
+             3. Cyclic & topological sort (Cycle in DAG)
+             * */
             var words = new string[] { "wrt", "wrf", "er", "ett", "rftt" };
             var res1 = AlienOrder(words);
 

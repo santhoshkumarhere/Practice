@@ -52,6 +52,7 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            WordBreakII.Test();
            // GasStationProblem.Test();
             //SerializeAndDeserializeBinaryTree.Test();
             //EraseOverlappingInterval.Test();
@@ -180,7 +181,7 @@ namespace Practice
             //ValidateAlienDictionary.Test();
             //MinimumHeightTree.Test();
             //Practice.NickWhiteLeetCode.Sorting.MergeSort.Test();
-            CourseScheduleII.Test();
+            //CourseScheduleII.Test();
             // LengthOfDictionaryTrie.Test();
             // CourseScheduleII.Test();
             //DetectCycleDirectedGraph.Test();
