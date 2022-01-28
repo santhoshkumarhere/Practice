@@ -10,6 +10,7 @@ namespace Practice.LeetCode2021.DP
     {
         public static void Test()
         {
+            // Difference between Regular and WildCard is, Regualar wont start with * so we can do j+1, but  WildCard can start with *, so we cannot do j+1
             string str = "aa";
             string pattern = "*";
             var result = IsMatch(str, pattern, 0, 0);
@@ -17,7 +18,7 @@ namespace Practice.LeetCode2021.DP
         private static bool IsMatch(string s, string p, int i, int j)
         {
             // TL Exceeded
-            if (i >= s.Length && j >= p.Length)
+            if (i >= s.Length && j >= p.Length) //goal is to increment j and i, do not think about two characters should match
                 return true;
             if (j >= p.Length)
                 return false;

@@ -10,6 +10,7 @@ namespace Practice.LeetCode2021.DP
     {
         public static void Test()
         {
+            // Difference between Regular and WildCard is, Regualar wont start with * so we can do j+1, but  WildCard can start with *, so we cannot do j+1
             var result = DFS("aab", "c*a*b", 0, 0, new Dictionary<(int, int), bool>());
         }
 
@@ -50,8 +51,7 @@ namespace Practice.LeetCode2021.DP
 
             if(j + 1 < p.Length && p[j+1] == '*')
             {
-                return DFS(s, p, i, j + 2)  ||
-                    match && DFS(s, p, i + 1, j);
+                return ( match && DFS(s, p, i + 1, j) ) || DFS(s, p, i, j + 2); // aa a* a[i] == a[j] && a[i+1] == a[j] && a[i+2] == a[j]   || skip * i.e., j+2
             }
 
             if(match)
