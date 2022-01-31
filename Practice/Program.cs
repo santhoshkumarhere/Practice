@@ -53,9 +53,10 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            WildCardMatching_Hard.Test();
-           // RegularExpressionMatch_HardTabulation.Test();
-           // GasStationProblem.Test();
+            RotateArray.Test();
+            //WildCardMatching_Hard.Test();
+            // RegularExpressionMatch_HardTabulation.Test();
+            // GasStationProblem.Test();
             //SerializeAndDeserializeBinaryTree.Test();
             //EraseOverlappingInterval.Test();
             //IntervalListIntersection.Test();
@@ -65,7 +66,7 @@ namespace Practice
             //CoinChange.Test();
             // FindAllAnagramsSlidingWindow.Test();
             // BasicCalculatorI.Test();
-           // DijkstrasAlgo.Test();
+            // DijkstrasAlgo.Test();
             // MedianFinder.Test();
             //CombinateMultiDimensionalArray.Test();
             //new CheapesetFlightPQDijkstra().Test();
