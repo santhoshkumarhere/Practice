@@ -10,22 +10,29 @@ namespace Practice.LeetCode2021.Arrays
     {
         public static void Test()
         {
-            int[] arr = new int[] { 1, 2, 3, 4, 5 };
-            Rotate(arr, 3);
+            int[] arr = new int[] { -1, -100, 3, 99 }; // 3, 99, -1, -100
+            Rotate(arr, 10);
         }
 
         private static void Rotate(int[] arr, int k)
         {
-            int prev = arr[0];
-            int index = 0;
+            int count = 0;
             int len = arr.Length;
-            do
-            {
-                var idx = (index + k) % len;
-                var temp = arr[idx];
-                arr[idx] = temp;
-                index = idx;
-            } while (index != 0);
+           // k = k % len;
+            for (int start = 0; count < arr.Length; start++)            {
+
+                int prev = arr[start];
+                int currentIndex = start;
+                do
+                {
+                    var next = (currentIndex + k) % len;
+                    var temp = arr[next];
+                    arr[next] = prev;
+                    prev = temp;
+                    currentIndex = next;
+                    count++;
+                } while (currentIndex != start);
+            }
         }
     }
 }
